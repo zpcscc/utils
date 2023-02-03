@@ -1,4 +1,5 @@
 {
+  "extends": "@dxsixpc/configs/tsconfig",
   "compilerOptions": {
     "strict": true,
     "declaration": true,
