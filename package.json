@@ -69,7 +69,7 @@
     "@dxsixpc/configs": "^0.1.4",
     "@types/axios": "^0.14.0",
     "@types/lodash": "^4.14.191",
-    "@umijs/lint": "^4.0.0",
+    "@umijs/lint": "^4.0.49",
     "dumi": "^2.0.2",
     "eslint": "^8.23.0",
     "father": "^4.1.0",
