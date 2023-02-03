@@ -1,7 +1,7 @@
-# utils
+# @dxsixpc/utils
 
-[![NPM version](https://img.shields.io/npm/v/utils.svg?style=flat)](https://npmjs.org/package/utils)
-[![NPM downloads](http://img.shields.io/npm/dm/utils.svg?style=flat)](https://npmjs.org/package/utils)
+[![NPM version](https://img.shields.io/npm/v/@dxsixpc/utils.svg?style=flat)](https://npmjs.org/package/@dxsixpc/utils)
+[![NPM downloads](http://img.shields.io/npm/dm/@dxsixpc/utils.svg?style=flat)](https://npmjs.org/package/@dxsixpc/utils)
 
 工具库
 

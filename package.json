@@ -2,6 +2,11 @@
   "name": "@dxsixpc/utils",
   "version": "0.0.8",
   "description": "工具库",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dxsixpc/utils",
+    "branch": "master"
+  },
   "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,9 +16,10 @@
   "scripts": {
     "build": "father build",
     "build:watch": "father dev",
-    "deploy": "sh deploy.sh",
+    "deploy": "npm run docs:build && npm run docs:deploy",
     "dev": "dumi dev",
     "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
     "doctor": "father doctor",
     "lint": "npm run lint:es && npm run lint:css",
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
@@ -58,6 +64,7 @@
     "dumi": "^2.0.2",
     "eslint": "^8.23.0",
     "father": "^4.1.0",
+    "gh-pages": "^5.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",

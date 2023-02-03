@@ -4,5 +4,5 @@ hero:
   description: 工具库
   actions:
     - text: 文档
-      link: /document
+      link: /document/request
 ---
