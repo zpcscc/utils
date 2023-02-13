@@ -1,13 +1,9 @@
 {
   "extends": "@dxsixpc/configs/tsconfig",
   "compilerOptions": {
-    "strict": true,
-    "declaration": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "jsx": "react",
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
+      "src/*": ["src/*"],
       "@@/*": [".dumi/tmp/*"],
       "@dxsixpc/utils": ["src"],
       "@dxsixpc/utils/*": ["src/*", "*"]
