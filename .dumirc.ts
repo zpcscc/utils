@@ -15,7 +15,5 @@ export default defineConfig({
   publicPath: `/${name}/`,
   alias: {
     '@dxsixpc/utils': resolve(__dirname, './src'),
-    src: resolve(__dirname, './src'),
-    srcccc: resolve(__dirname, './src'),
   },
 });
