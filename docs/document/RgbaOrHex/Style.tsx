@@ -5,5 +5,7 @@ interface ColorProps {
 }
 
 export const Color = styled.div<ColorProps>`
+  width: 20px;
+  height: 20px;
   background-color: ${(props) => props.bg};
 `;

@@ -1,10 +1,12 @@
 import { rgbaToHex } from '@dxsixpc/utils';
-import type React from 'react';
+
+import { Button, Input, Space } from 'antd';
 import { useState } from 'react';
+import { Color } from './Style';
 
 const RgbaToHex: React.FC = () => {
   const [result, setResult] = useState<string>('');
-  const [input, setInput] = useState<string>('');
+  const [input, setInput] = useState<string>('rgba(102,204,255,1)');
 
   const onChange = (rgbaValue: any) => {
     setInput(rgbaValue.target.value);
@@ -15,11 +17,26 @@ const RgbaToHex: React.FC = () => {
   };
 
   return (
-    <>
-      <input type='text' defaultValue={input} onChange={onChange} />
-      <button onClick={onClick}>转换</button>
-      <span>{result}</span>
-    </>
+    <Space>
+      <Input.Group compact>
+        <Input
+          style={{ width: '240px' }}
+          addonBefore='rgba'
+          defaultValue={input}
+          onChange={onChange}
+          suffix={<Color bg={input} />}
+        />
+      </Input.Group>
+      <Button type='primary' onClick={onClick}>
+        转换
+      </Button>
+      <Input
+        style={{ width: '240px' }}
+        addonBefore='16进制'
+        value={result}
+        suffix={<Color bg={result} />}
+      />
+    </Space>
   );
 };
 

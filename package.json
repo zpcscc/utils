@@ -10,7 +10,7 @@
   "license": "MIT",
   "author": {
     "name": "dxsix",
-    "email": "desixpc@gmail.com"
+    "email": "dxsixpc@gmail.com"
   },
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,17 +21,17 @@
     "build": "father build",
     "build:watch": "father dev",
     "commit": "git add . && git-cz",
-    "deploy": "npm run docs:build && npm run docs:deploy",
+    "deploy": "pnpm run docs:build && pnpm run docs:deploy",
     "dev": "dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "doctor": "father doctor",
-    "lint": "npm run lint:es && npm run lint:css",
+    "lint": "pnpm run lint:es && pnpm run lint:css",
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
-    "prepublishOnly": "father doctor && npm run build",
-    "start": "npm run dev"
+    "prepublishOnly": "father doctor && pnpm run build",
+    "start": "pnpm run dev"
   },
   "lint-staged": {
     "*.{md,json}": [
@@ -62,14 +62,14 @@
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@commitlint/cz-commitlint": "^17.4.4",
-    "@dxsixpc/configs": "^0.3.3",
+    "@dxsixpc/configs": "^0.4.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@types/lodash": "^4.14.191",
     "@types/react": "^18.0.28",
     "antd": "^5.2.2",
     "commitizen": "^4.0.3",
-    "dumi": "^2.1.10",
+    "dumi": "^2.1.11",
     "eslint": "^8.34.0",
     "father": "^4.1.5",
     "gh-pages": "^5.0.0",
