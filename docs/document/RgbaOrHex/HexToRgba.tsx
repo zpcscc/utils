@@ -19,7 +19,7 @@ const HexToRgba: React.FC = () => {
     <Space>
       <Input.Group compact>
         <Input
-          style={{ width: '240px' }}
+          style={{ width: '250px' }}
           addonBefore='16进制'
           defaultValue={input}
           onChange={onChange}
@@ -30,7 +30,7 @@ const HexToRgba: React.FC = () => {
         转换
       </Button>
       <Input
-        style={{ width: '240px' }}
+        style={{ width: '250px' }}
         addonBefore='rgba'
         value={result}
         suffix={<Color bg={result} />}

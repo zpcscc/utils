@@ -1,7 +1,6 @@
 ---
 nav:
   title: 文档
-  order: 1
 title: rgba-hex
 group: 颜色转换
 ---
