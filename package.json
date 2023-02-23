@@ -3,10 +3,7 @@
   "version": "0.1.0",
   "description": "工具库",
   "homepage": "https://dxsixpc.github.io/utils",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dxsixpc/utils"
-  },
+  "repository": "https://github.com/dxsixpc/utils",
   "license": "MIT",
   "author": {
     "name": "dxsix",
