@@ -2,7 +2,7 @@
 nav:
   title: 文档
   order: 1
-title: dataToString
+title: data-string
 group: 数据转换
 ---
 
