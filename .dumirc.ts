@@ -8,12 +8,14 @@ export default defineConfig({
   themeConfig: {
     name,
     socialLinks: {
-      github: 'https://github.com/dxsixpc/utils',
+      github: `https://github.com/dxsixpc/${name}`,
     },
+    logo: `/${name}/logo.png`,
   },
   base: `/${name}/`,
   publicPath: `/${name}/`,
   alias: {
     '@dxsixpc/utils': resolve(__dirname, './src'),
+    docs: resolve(__dirname, './docs'),
   },
 });
