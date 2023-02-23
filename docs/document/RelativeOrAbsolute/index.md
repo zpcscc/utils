@@ -1,7 +1,7 @@
 ---
 nav:
   title: 文档
-title: relativeOrAbsolute
+title: relative-absolute
 ---
 
 # 相对路径 转 绝对路径

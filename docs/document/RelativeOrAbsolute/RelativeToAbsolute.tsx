@@ -2,7 +2,6 @@ import { CopyOutlined } from '@ant-design/icons';
 import { relativeToAbsolute } from '@dxsixpc/utils';
 import { Button, Input, message, Space, Tooltip } from 'antd';
 import ClipboardJS from 'clipboard';
-import type React from 'react';
 import { useEffect, useState } from 'react';
 
 const clipboard = new ClipboardJS('.copy-btn');
@@ -10,8 +9,6 @@ const clipboard = new ClipboardJS('.copy-btn');
 const RelativeToAbsolute: React.FC = () => {
   const [result, setResult] = useState<string>('');
   const [input, setInput] = useState<string>('/utils/logo.png');
-  // const CopyOutlinedIcon = CopyOutlined as React.ForwardRefExoticComponent<PickProps<typeof Icon>>;
-  // const CopyOutlinedIcon = CopyOutlined as PickIconPropsOf<'CopyOutlined'>;
 
   const onChange = (rgbaValue: any) => {
     setInput(rgbaValue.target.value);
@@ -39,7 +36,7 @@ const RelativeToAbsolute: React.FC = () => {
         转换
       </Button>
       <Input.Group compact>
-        <Input style={{ width: '400px' }} addonBefore='绝对路径' value={result} />
+        <Input style={{ width: '350px' }} addonBefore='绝对路径' value={result} />
         <Tooltip title='复制'>
           <Button icon={<CopyOutlined />} className='copy-btn' data-clipboard-text={result} />
         </Tooltip>
