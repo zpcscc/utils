@@ -7,8 +7,8 @@ import { useEffect, useState } from 'react';
 const clipboard = new ClipboardJS('.copy-btn');
 
 const RelativeToAbsolute: React.FC = () => {
-  const [result, setResult] = useState<string>('');
   const [input, setInput] = useState<string>('/utils/logo.png');
+  const [result, setResult] = useState<string>('');
 
   const onChange = (rgbaValue: any) => {
     setInput(rgbaValue.target.value);

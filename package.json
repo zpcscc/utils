@@ -1,6 +1,6 @@
 {
   "name": "@dxsixpc/utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "工具库",
   "homepage": "https://dxsixpc.github.io/utils",
   "repository": "https://github.com/dxsixpc/utils",
@@ -28,7 +28,8 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "father doctor && pnpm run build",
-    "start": "pnpm run dev"
+    "start": "pnpm run dev",
+    "test": "jest"
   },
   "lint-staged": {
     "*.{md,json}": [
@@ -60,14 +61,19 @@
   "devDependencies": {
     "@ant-design/icons": "^5.0.1",
     "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.21.0",
     "@commitlint/cz-commitlint": "^17.4.4",
     "@dxsixpc/configs": "^0.4.6",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@types/jest": "^29.4.0",
     "@types/lodash": "^4.14.191",
+    "@types/node": "^18.14.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "antd": "^5.2.2",
+    "babel-jest": "^29.4.3",
     "clipboard": "^2.0.11",
     "commitizen": "^4.0.3",
     "dumi": "^2.1.13",
@@ -76,6 +82,8 @@
     "gh-pages": "^5.0.0",
     "husky": "^8.0.3",
     "inquirer": "^8.0.0",
+    "jest": "^29.4.3",
+    "jest-environment-jsdom": "^29.4.3",
     "lint-staged": "^13.1.2",
     "path": "^0.12.7",
     "postcss": ">=8.4.6 <9.0.0",
@@ -85,6 +93,7 @@
     "react-is": ">= 16.8.0",
     "styled-components": ">= 2",
     "stylelint": "^15.2.0",
+    "ts-node": "^10.9.1",
     "typescript": ">=4.7.0 <5.0.0",
     "webpack": ">=5.20.0 <6.0.0"
   },

@@ -9,7 +9,7 @@
       "@dxsixpc/utils": ["src"],
       "@dxsixpc/utils/*": ["src/*"]
     },
-    "types": ["@emotion/react", "react"]
+    "types": ["jest", "react"]
   },
   "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "docs/**/*"]
 }
