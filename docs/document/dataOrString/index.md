@@ -2,7 +2,6 @@
 nav:
   title: 文档
 title: data-string
-group: 数据转换
 ---
 
 # 数据转字符串

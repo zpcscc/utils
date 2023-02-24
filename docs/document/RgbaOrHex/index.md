@@ -2,7 +2,6 @@
 nav:
   title: 文档
 title: rgba-hex
-group: 颜色转换
 ---
 
 # rgba 转 16 进制
