@@ -1,6 +1,7 @@
 node_modules
 dist
 docs-dist
+coverage
 .git
 .dumi/tmp
 .dumi/tmp-test
