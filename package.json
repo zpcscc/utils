@@ -27,7 +27,7 @@
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
-    "prepublishOnly": "father doctor && pnpm run build",
+    "prepublishOnly": "father doctor && pnpm run test && pnpm run build",
     "start": "pnpm run dev",
     "test": "jest"
   },
@@ -46,6 +46,9 @@
     "*.{ts,tsx}": [
       "eslint --fix",
       "prettier --parser=typescript --write"
+    ],
+    "*.{test.ts}": [
+      "jest"
     ]
   },
   "config": {

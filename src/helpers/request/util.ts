@@ -1,5 +1,5 @@
-import { dataToString } from '@dxsixpc/utils';
 import type { AxiosError } from 'axios';
+import { dataToString } from '../../utils';
 import type { ErrorMessageType } from './type';
 
 interface CodeMessageType {

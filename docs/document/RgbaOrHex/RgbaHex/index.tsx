@@ -40,18 +40,26 @@ const RgbaHex: React.FC<RgbaHexProps> = (props) => {
     <Space>
       <Input.Group compact>
         <Input
-          style={{ width: '250px' }}
+          style={{ width: '300px' }}
           addonBefore={inputType}
           defaultValue={input}
           onChange={onChange}
           suffix={<Color color={input} btn={btn} />}
         />
       </Input.Group>
-      <Button type='primary' onClick={onClick}>
+      <Button
+        type='primary'
+        onClick={onClick}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            onClick();
+          }
+        }}
+      >
         转换
       </Button>
       <Input
-        style={{ width: '250px' }}
+        style={{ width: '300px' }}
         addonBefore={resultType}
         value={result}
         suffix={<Color color={result} btn={btn} />}
