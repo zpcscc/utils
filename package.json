@@ -47,7 +47,7 @@
       "eslint --fix",
       "prettier --parser=typescript --write"
     ],
-    "*.{test.ts}": [
+    "*.test.ts": [
       "jest"
     ]
   },
