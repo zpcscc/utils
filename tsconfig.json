@@ -11,5 +11,5 @@
     },
     "types": ["jest", "react"]
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "docs/**/*", "../../../demo/test3/__tests__"]
+  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "docs/**/*"]
 }
