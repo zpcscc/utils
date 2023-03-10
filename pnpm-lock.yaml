@@ -8,7 +8,7 @@ specifiers:
   '@babel/runtime': ^7.21.0
   '@commitlint/cz-commitlint': ^17.4.4
   '@dxsixpc/components': ^0.1.0
-  '@dxsixpc/configs': ^0.4.17
+  '@dxsixpc/configs': ^0.4.18
   '@emotion/react': ^11.10.6
   '@emotion/styled': ^11.10.6
   '@types/jest': ^29.4.0
@@ -55,7 +55,7 @@ devDependencies:
   '@babel/preset-typescript': 7.21.0_@babel+core@7.21.0
   '@commitlint/cz-commitlint': 17.4.4_i4x6owxztfhigiiqlxwntt4k24
   '@dxsixpc/components': 0.1.0_zula6vjvt3wdocc4mwcxqa6nzi
-  '@dxsixpc/configs': 0.4.17_typescript@4.9.5
+  '@dxsixpc/configs': 0.4.18_typescript@4.9.5
   '@emotion/react': 11.10.6_pmekkgnqduwlme35zpnqhenc34
   '@emotion/styled': 11.10.6_oouaibmszuch5k64ms7uxp2aia
   '@types/jest': 29.4.0
@@ -308,7 +308,7 @@ packages:
     resolution: {integrity: sha512-eyAYAsQmB80jNfg4baAtLeWAQHfHFiR483rzFK+BhETlGZaQC9bsfrugfXDCbRHLQbIA7U5NxhhOxN7p/dWIcg==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/types': 7.21.0
+      '@babel/types': 7.21.2
     dev: true
 
   /@babel/helper-function-name/7.21.0:
@@ -330,7 +330,7 @@ packages:
     resolution: {integrity: sha512-Muu8cdZwNN6mRRNG6lAYErJ5X3bRevgYR2O8wN0yn7jJSnGDu6eG59RfT29JHxGUovyfrh6Pj0XzmR7drNVL3Q==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/types': 7.21.0
+      '@babel/types': 7.21.2
     dev: true
 
   /@babel/helper-module-imports/7.18.6:
@@ -461,7 +461,7 @@ packages:
       '@babel/helper-function-name': 7.21.0
       '@babel/template': 7.20.7
       '@babel/traverse': 7.21.0
-      '@babel/types': 7.21.0
+      '@babel/types': 7.21.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1216,7 +1216,7 @@ packages:
       '@babel/helper-module-imports': 7.18.6
       '@babel/helper-plugin-utils': 7.20.2
       '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.21.0
-      '@babel/types': 7.21.0
+      '@babel/types': 7.21.2
     dev: true
 
   /@babel/plugin-transform-regenerator/7.20.5_@babel+core@7.21.0:
@@ -1975,8 +1975,8 @@ packages:
       - react-native
     dev: true
 
-  /@dxsixpc/configs/0.4.17_typescript@4.9.5:
-    resolution: {integrity: sha512-a5F4DaAULbFPWi1G9BT8fbhogODyZ86hkIa1CrwpwluQlqQuLUfJgEW/05bEK9ljWbXZ25zzqFudlO0Fzs0Ulg==}
+  /@dxsixpc/configs/0.4.18_typescript@4.9.5:
+    resolution: {integrity: sha512-A20d8msO0du9UZImzWmi4qpBHIxu/xO6irO2K3KJQO2/vpasykHsItxxTo9rW5gLbgNAyRZQKONqsubWnPIejw==}
     dependencies:
       '@babel/core': 7.21.0
       '@babel/plugin-syntax-flow': 7.18.6_@babel+core@7.21.0
@@ -3374,7 +3374,7 @@ packages:
     resolution: {integrity: sha512-1hnUxxjd83EAxbL4a0JDJoD3Dao3hmjvyvyEV8PzWmLK3B9m9NPlW7GKjFyoWE8nM7HnXzPcmmSyOW8yOddSXw==}
     engines: {node: '>=10'}
     dependencies:
-      '@babel/types': 7.21.0
+      '@babel/types': 7.21.2
       entities: 4.4.0
     dev: true
 
@@ -10172,7 +10172,7 @@ packages:
       '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.21.0
       '@babel/plugin-syntax-typescript': 7.20.0_@babel+core@7.21.0
       '@babel/traverse': 7.21.0
-      '@babel/types': 7.21.0
+      '@babel/types': 7.21.2
       '@jest/expect-utils': 29.5.0
       '@jest/transform': 29.5.0
       '@jest/types': 29.5.0

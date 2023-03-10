@@ -54,7 +54,7 @@
     "@babel/preset-typescript": "^7.21.0",
     "@commitlint/cz-commitlint": "^17.4.4",
     "@dxsixpc/components": "^0.1.0",
-    "@dxsixpc/configs": "^0.4.17",
+    "@dxsixpc/configs": "^0.4.18",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@types/jest": "^29.4.0",
