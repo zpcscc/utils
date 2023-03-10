@@ -2,9 +2,7 @@ import type { AxiosError } from 'axios';
 import { dataToString } from '../../utils';
 import type { ErrorMessageType } from './type';
 
-interface CodeMessageType {
-  [code: number]: string;
-}
+type CodeMessageType = Record<number, string>;
 
 // 自定义状态码提示
 export const codeMessage: CodeMessageType = {

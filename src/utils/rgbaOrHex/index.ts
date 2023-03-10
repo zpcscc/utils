@@ -1,3 +1,5 @@
+/* eslint-disable no-bitwise */
+/* eslint-disable @typescript-eslint/no-throw-literal */
 import { isNil } from 'lodash';
 import type { ColorObjType } from './type';
 

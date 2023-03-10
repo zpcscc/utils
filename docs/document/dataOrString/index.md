@@ -4,6 +4,10 @@ nav:
 title: data-string
 ---
 
+# 数据与字符串转换
+
+<code src="./DataOrString.tsx">数据与字符串转换</code>
+
 # 数据转字符串
 
 ```js

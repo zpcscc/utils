@@ -4,12 +4,13 @@
     "baseUrl": ".",
     "outDir": "dist",
     "paths": {
-      "docs/*": ["docs/*"],
       "@@/*": [".dumi/tmp/*"],
+      "docs/": ["docs"],
+      "docs/*": ["docs/*"],
       "@dxsixpc/utils": ["src"],
       "@dxsixpc/utils/*": ["src/*"]
     },
     "types": ["jest", "react"]
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "docs/**/*"]
+  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "docs/**/*", ".eslintrc.js"]
 }
