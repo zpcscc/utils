@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/promise-function-async */
 import type { AxiosError } from 'axios';
 import axios from 'axios';
 import { getErrorMsg } from './util';

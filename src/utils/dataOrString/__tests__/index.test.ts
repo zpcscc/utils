@@ -17,7 +17,7 @@ const formatString = `{
   ]
 }`;
 // 为格式化的默认字符串
-const string = `{"obj":{"name":"测试"},"array":["测试"]}`;
+const string = '{"obj":{"name":"测试"},"array":["测试"]}';
 
 describe('dataToString', () => {
   test('对象数据', () => {
