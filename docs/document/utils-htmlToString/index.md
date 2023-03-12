@@ -1,7 +1,9 @@
 ---
+title: html-string
 nav:
   title: 文档
-title: html-string
+group:
+  title: 数据转换
 ---
 
 # html 转成 string

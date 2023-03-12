@@ -30,10 +30,8 @@ const StyledToString: React.FC = () => {
   };
 
   const simpleCodeEditorStyled = `
-    & > div {
-      width: 400px;
-      height: 300px;
-    }
+    width: 400px;
+    height: 300px;
   `;
 
   return (
