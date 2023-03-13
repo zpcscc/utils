@@ -1,4 +1,5 @@
-import { dataToString, stringToData } from '../index';
+import dataToString from '../dataToString';
+import stringToData from '../stringToData';
 
 const data = {
   obj: {

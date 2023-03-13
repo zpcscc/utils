@@ -7,10 +7,12 @@
       "@@/*": [".dumi/tmp/*"],
       "docs/": ["docs"],
       "docs/*": ["docs/*"],
+      "src": ["src"],
+      "src/*": ["src/*"],
       "@dxsixpc/utils": ["src"],
       "@dxsixpc/utils/*": ["src/*"]
     },
     "types": ["jest", "react"]
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "docs/**/*", ".eslintrc.js"]
+  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "docs/**/*", ".eslintrc.js", "jest.config.ts"]
 }

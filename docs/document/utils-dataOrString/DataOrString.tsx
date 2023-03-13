@@ -13,20 +13,13 @@ const DataOrString: React.FC = () => {
     setValue(stringToData(value));
   };
 
-  const simpleCodeEditorStyled = `
-    & > div {
-      width: 400px;
-      height: 300px;
-    }
-  `;
-
   return (
     <Space align='end'>
       <SimpleCodeEditor
         value={dataToString(value, null, 2)}
         language='javascript'
         onChange={onChange}
-        styled={simpleCodeEditorStyled}
+        styled={{ width: '400px', height: '300px' }}
       />
       <Space direction='vertical'>
         <Text>onChange返回的结果</Text>

@@ -1,4 +1,4 @@
-import request from '../index';
+import request from '../request';
 
 test('request:success', async () => {
   await request.get('https://www.baidu.com/').then((res) => {
