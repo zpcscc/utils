@@ -1,5 +1,5 @@
-import type { StyledType } from '../index';
-import { styledToString } from '../index';
+import styledToString from '../styledToString';
+import type { StyledType } from '../type';
 
 const styled: StyledType = {
   width: '100px',

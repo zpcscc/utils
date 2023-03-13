@@ -1,3 +1,4 @@
+// AES加密配置
 export interface AESConfigType {
   // 密钥偏移量，16位16进制字符串
   iv: string;

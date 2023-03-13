@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import { htmlToString } from '../index';
+import htmlToString from '../htmlToString';
 
 describe('htmlToString', () => {
   test('html字符串代码', () => {

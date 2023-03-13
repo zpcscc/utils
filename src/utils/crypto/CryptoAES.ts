@@ -1,5 +1,5 @@
 import { AES, enc, mode, pad } from 'crypto-js';
-import { dataToString, stringToData } from 'src/utils';
+import { dataToString, stringToData } from '../dataOrString';
 import type { AESConfigType } from './type';
 
 const { Base64, Hex, Utf8 } = enc;
@@ -43,4 +43,5 @@ const decrypt = (data: string, key: string, AEScfg?: AESConfigType): any => {
   return stringToData(decryptedStr);
 };
 
-export const CryptoAES = { encrypt, decrypt };
+const CryptoAES = { encrypt, decrypt };
+export default CryptoAES;

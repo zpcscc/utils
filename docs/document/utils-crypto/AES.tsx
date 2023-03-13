@@ -1,6 +1,6 @@
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import type { AESConfigType } from '@dxsixpc/utils';
-import { CryptoAES } from '@dxsixpc/utils';
+import { CryptoAES, dataToString } from '@dxsixpc/utils';
 import { Button, Input, Radio, Space } from 'antd';
 import { useState } from 'react';
 
@@ -87,7 +87,7 @@ const AES: React.FC = () => {
       <Space>
         <Input.TextArea
           style={{ width: '300px', height: '200px' }}
-          value={encryptValue}
+          value={dataToString(encryptValue)}
           onChange={({ target: { value } }) => setEncryptValue(value)}
         />
         <Space direction='vertical'>
@@ -100,7 +100,7 @@ const AES: React.FC = () => {
         </Space>
         <Input.TextArea
           style={{ width: '300px', height: '200px' }}
-          value={decryptValue}
+          value={dataToString(decryptValue)}
           onChange={({ target: { value } }) => setDecryptValue(value)}
         />
       </Space>

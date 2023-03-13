@@ -1,6 +1,6 @@
 import Base64 from 'crypto-js/enc-base64';
 import Utf8 from 'crypto-js/enc-utf8';
-import { dataToString, stringToData } from 'src/utils';
+import { dataToString, stringToData } from '../dataOrString';
 
 // 加密
 const encrypt = (data: any): string => {
@@ -14,4 +14,5 @@ const decrypt = (base64: string) => {
   return stringToData(decryptValue);
 };
 
-export const CryptoBase64 = { encrypt, decrypt };
+const CryptoBase64 = { encrypt, decrypt };
+export default CryptoBase64;

@@ -3,14 +3,18 @@ import type { Config } from 'jest';
 // src下需要测试的文件夹名称
 const coverageFileName = ['helpers', 'utils'].join(',');
 // 需要测试的文件目录
-const coverageDir = `./src/{${coverageFileName}}/**/index.ts`;
+const coverageDir = `./src/{${coverageFileName}}/**/*.ts`;
 
 const config: Config = {
   verbose: true,
   // 是否开启测试报告。可以在这里开启，或者使用 jest --coverage
   collectCoverage: true,
   // 指定测试报告需要包含和排除的文件
-  collectCoverageFrom: [coverageDir, `!./src/{${coverageFileName}}/index.ts`],
+  collectCoverageFrom: [
+    coverageDir,
+    `!./src/{${coverageFileName}}/index.ts`,
+    `!./src/{${coverageFileName}}/**/{index,type}.ts`,
+  ],
   coverageThreshold: {
     // 所有文件总的覆盖率要求
     global: {

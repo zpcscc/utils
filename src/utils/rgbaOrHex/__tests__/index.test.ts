@@ -1,4 +1,5 @@
-import { hexToRgba, rgbaToHex } from '../index';
+import hexToRgba from '../hexToRgba';
+import rgbaToHex from '../rgbaToHex';
 
 // 长度为3的hex
 const hex3 = '#66c';
