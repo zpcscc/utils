@@ -1,9 +1,9 @@
-import { htmlToString } from '@dxsixpc/utils';
+import { stringToHtml } from '@dxsixpc/utils';
 import { Button, Input, Space } from 'antd';
 import { useState } from 'react';
 
 const HtmlToString: React.FC = () => {
-  const [input, setInput] = useState<string>('<div>&lt;内容&gt;</div>');
+  const [input, setInput] = useState<string>('<内容>');
   const [result, setResult] = useState<string>('');
 
   const onChange = (rgbaValue: any) => {
@@ -11,7 +11,7 @@ const HtmlToString: React.FC = () => {
   };
 
   const onClick = () => {
-    setResult(htmlToString(input));
+    setResult(stringToHtml(input));
   };
 
   return (
@@ -19,7 +19,7 @@ const HtmlToString: React.FC = () => {
       <Input.Group compact>
         <Input
           style={{ width: '300px' }}
-          addonBefore='html'
+          addonBefore='string'
           defaultValue={input}
           onChange={onChange}
         />
@@ -28,7 +28,7 @@ const HtmlToString: React.FC = () => {
         转换
       </Button>
       <Input.Group compact>
-        <Input style={{ width: '300px' }} addonBefore='string' value={result} />
+        <Input style={{ width: '300px' }} addonBefore='html' value={result} />
       </Input.Group>
     </Space>
   );
