@@ -24,18 +24,18 @@ const RelativeToAbsolute: React.FC = () => {
 
   return (
     <Space>
-      <Input.Group compact>
+      <Space.Compact>
         <Input
           style={{ width: '240px' }}
           addonBefore='相对路径'
           defaultValue={input}
           onChange={onChange}
         />
-      </Input.Group>
+      </Space.Compact>
       <Button type='primary' onClick={onClick}>
         转换
       </Button>
-      <Input.Group compact>
+      <Space.Compact>
         <Input style={{ width: '350px' }} addonBefore='绝对路径' value={result} />
         <Tooltip title='复制'>
           <Button icon={<CopyOutlined />} className='copy-btn' data-clipboard-text={result} />
@@ -45,7 +45,7 @@ const RelativeToAbsolute: React.FC = () => {
             跳转
           </a>
         </Button>
-      </Input.Group>
+      </Space.Compact>
     </Space>
   );
 };

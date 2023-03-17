@@ -1,5 +1,5 @@
 import { hexToRgba, rgbaToHex } from '@dxsixpc/utils';
-import { Button, Input, message, Space } from 'antd';
+import { Button, Input, Space, message } from 'antd';
 import ClipboardJS from 'clipboard';
 import { useEffect, useState } from 'react';
 import Color from './Color';
@@ -38,7 +38,7 @@ const RgbaHex: React.FC<RgbaHexProps> = (props) => {
 
   return (
     <Space>
-      <Input.Group compact>
+      <Space.Compact>
         <Input
           style={{ width: '300px' }}
           addonBefore={inputType}
@@ -46,7 +46,7 @@ const RgbaHex: React.FC<RgbaHexProps> = (props) => {
           onChange={onChange}
           suffix={<Color color={input} btn={btn} />}
         />
-      </Input.Group>
+      </Space.Compact>
       <Button
         type='primary'
         onClick={onClick}

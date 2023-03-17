@@ -16,20 +16,20 @@ const HtmlToString: React.FC = () => {
 
   return (
     <Space>
-      <Input.Group compact>
+      <Space.Compact>
         <Input
           style={{ width: '300px' }}
           addonBefore='string'
           defaultValue={input}
           onChange={onChange}
         />
-      </Input.Group>
+      </Space.Compact>
       <Button type='primary' onClick={onClick}>
         转换
       </Button>
-      <Input.Group compact>
+      <Space.Compact>
         <Input style={{ width: '300px' }} addonBefore='html' value={result} />
-      </Input.Group>
+      </Space.Compact>
     </Space>
   );
 };
