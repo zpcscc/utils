@@ -25,6 +25,9 @@ describe('CryptoBase64', () => {
   test('字符串解密', () => {
     expect(CryptoBase64.decrypt(base64DataStr.decrypt)).toBe(base64DataStr.encrypt);
   });
+  test('错误字符串解密', () => {
+    expect(CryptoBase64.decrypt('1234')).toBe('格式错误');
+  });
   test('json加密', () => {
     expect(CryptoBase64.encrypt(base64DataJson.encrypt)).toBe(base64DataJson.decrypt);
   });

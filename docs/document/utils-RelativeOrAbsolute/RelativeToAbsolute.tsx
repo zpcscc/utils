@@ -24,28 +24,24 @@ const RelativeToAbsolute: React.FC = () => {
 
   return (
     <Space>
-      <Space.Compact>
-        <Input
-          style={{ width: '240px' }}
-          addonBefore='相对路径'
-          defaultValue={input}
-          onChange={onChange}
-        />
-      </Space.Compact>
+      <Input
+        style={{ width: '240px' }}
+        addonBefore='相对路径'
+        defaultValue={input}
+        onChange={onChange}
+      />
       <Button type='primary' onClick={onClick}>
         转换
       </Button>
-      <Space.Compact>
+      <Space>
         <Input style={{ width: '350px' }} addonBefore='绝对路径' value={result} />
         <Tooltip title='复制'>
           <Button icon={<CopyOutlined />} className='copy-btn' data-clipboard-text={result} />
         </Tooltip>
-        <Button type='primary'>
-          <a href={result} target='_blank' rel='noreferrer'>
-            跳转
-          </a>
+        <Button type='primary' href={result} target='_blank'>
+          跳转
         </Button>
-      </Space.Compact>
+      </Space>
     </Space>
   );
 };

@@ -10,7 +10,12 @@ const encrypt = (data: any): string => {
 
 // 解密
 const decrypt = (base64: string) => {
-  const decryptValue = Base64.parse(base64).toString(Utf8);
+  let decryptValue = '';
+  try {
+    decryptValue = Base64.parse(base64).toString(Utf8);
+  } catch {
+    decryptValue = '格式错误';
+  }
   return stringToData(decryptValue);
 };
 
