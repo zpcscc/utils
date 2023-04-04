@@ -12,7 +12,7 @@
       "@dxsixpc/utils": ["src"],
       "@dxsixpc/utils/*": ["src/*"]
     },
-    "types": ["jest", "react"]
+    "types": ["jest"]
   },
   "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "docs/**/*", ".eslintrc.js", "jest.config.ts"]
 }
