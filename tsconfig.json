@@ -14,5 +14,13 @@
     },
     "types": ["jest"]
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "docs/**/*", ".eslintrc.js", "jest.config.ts"]
+  "include": [
+    ".dumi/**/*",
+    ".dumirc.ts",
+    "src/**/*",
+    "docs/**/*",
+    ".eslintrc.js",
+    "jest.config.ts",
+    "babel.config.js"
+  ]
 }
