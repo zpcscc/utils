@@ -1,6 +1,6 @@
 ---
 nav:
-  title: 文档
+  title: 有状态函数
 title: 请求
 ---
 

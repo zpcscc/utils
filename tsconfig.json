@@ -1,5 +1,5 @@
 {
-  "extends": "@dxsixpc/configs/tsconfig",
+  "extends": "@dxsixpc/configs/tsconfig/tsconfig.react.json",
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "dist",
@@ -12,7 +12,15 @@
       "@dxsixpc/utils": ["src"],
       "@dxsixpc/utils/*": ["src/*"]
     },
-    "types": ["jest", "react"]
+    "types": ["jest"]
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "docs/**/*", ".eslintrc.js", "jest.config.ts"]
+  "include": [
+    ".dumi/**/*",
+    ".dumirc.ts",
+    "src/**/*",
+    "docs/**/*",
+    ".eslintrc.js",
+    "jest.config.ts",
+    "babel.config.js"
+  ]
 }

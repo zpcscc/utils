@@ -1,7 +1,5 @@
 ---
 title: rgba-hex
-nav:
-  title: 文档
 group:
   title: 数据转换
 ---

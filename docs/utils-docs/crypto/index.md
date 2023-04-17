@@ -1,7 +1,7 @@
 ---
 title: crypto
 nav:
-  title: 文档
+  title: 无状态函数
 group:
   title: 数据转换
 ---

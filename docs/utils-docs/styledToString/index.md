@@ -1,7 +1,5 @@
 ---
 title: styled-string
-nav:
-  title: 文档
 group:
   title: 数据转换
 ---
