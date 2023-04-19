@@ -5,9 +5,9 @@ hero:
   description: 工具库
   actions:
     - text: 无状态函数
-      link: /utils/crypto
+      link: /utils-docs/get-type
     - text: 有状态函数
-      link: /helpers/request
+      link: /helpers-docs/request
     - text: 博客
       link: https://dxsixpc.github.io/
 ---
