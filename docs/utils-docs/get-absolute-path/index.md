@@ -6,4 +6,24 @@ group:
 
 # 获取绝对路径
 
+## 在线演示
+
 <code src="./getAbsolutePath.tsx">获取绝对路径</code>
+
+
+## API
+
+```typescript
+// 获取类型
+getAbsolutePath(data:string)
+```
+
+### 参数
+
+| 参数   | 说明               | 类型          |
+| ------ | ------------------ | ------------- |
+| data   | 相对路径 | string           |
+
+### 返回
+
+(string):返回绝对路径。
