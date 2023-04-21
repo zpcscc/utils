@@ -26,3 +26,23 @@ function () {
   console.log(getType(arguments));  // 'Arguments';
 }
 ```
+
+## API
+
+```typescript
+// 获取类型
+getType(data:any)
+```
+
+### 参数
+
+| 参数   | 说明               | 类型          |
+| ------ | ------------------ | ------------- |
+| data   | 需要获取类型的数据 | any           |
+
+### 返回
+
+(string):返回数据的类型。
+`Array`、`Boolean`、`Date`、`Error`、`Function`、
+`Map`、`Null`、`Number`、`RegExp`、`Set`、
+`String`、`Undefined`、`Arguments`

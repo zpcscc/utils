@@ -10,7 +10,7 @@ export type ValidateType = 'phone' | 'email' | 'url' | 'IDCard' | 'date';
 /**
  * @name 数据校验
  */
-const validate = (data: string, type: ValidateType) => {
+const validate = (data: any, type: ValidateType) => {
   switch (type) {
     case 'date':
       return validateDate(data);

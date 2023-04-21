@@ -24,3 +24,22 @@ const Demo = () => {
 
 export default Demo;
 ```
+
+
+## API
+
+```typescript
+// 字符串转数据
+stringToData(data:string, reviver?:any);
+```
+
+### 参数
+
+| 参数     | 说明                                                                              | 类型 |
+| -------- | --------------------------------------------------------------------------------- | ---- |
+| data     | 需要转为数据的字符串                                                                | string  |
+| reviver | JSON.parse 的第二个参数，仅在部分可格式化的数据在转化时生效                   | any  |
+
+### 返回
+
+(array | object | JSON):返回将伪数据转换后的真实数据。
