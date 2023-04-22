@@ -2,9 +2,9 @@ import { isString, toString } from 'lodash';
 
 /**
  * @name 将各种格式的数据转为string
- * @param data 需要转换的数据
+ * @param {AnyObject} data 需要转换的数据
  * @param stringifyArgs 其他参数，用于传入stringify
- * @returns
+ * @returns {string} 转换后的字符串数据
  */
 const dataToString = (data: any, ...stringifyArgs: any[]): string => {
   if (isString(data)) return data;

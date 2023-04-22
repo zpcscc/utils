@@ -1,3 +1,4 @@
+export * from './validate';
 export { default as validate } from './validate';
 export type { ValidateType } from './validate';
 export { default as validateEmail } from './validateEmail';

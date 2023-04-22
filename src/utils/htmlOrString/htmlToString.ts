@@ -1,5 +1,7 @@
 /**
  * @name 实体字符转字符串
+ * @param {string} html html的字符串
+ * @return {string} 返回转换完成的字符串
  */
 const htmlToString = (html: string): string => {
   const divDom = document.createElement('div');

@@ -1,7 +1,7 @@
 ---
 nav:
   title: 有状态函数
-title: 请求
+title: request
 ---
 
 # 通用请求库
