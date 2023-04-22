@@ -17,7 +17,6 @@ group:
 interface StyledType {
   [key: string]: React.CSSProperties | StyledType | string | number;
 }
-// 十六进制颜色 转为 rgba颜色
 styledToString(data:StyledType | string);
 ```
 

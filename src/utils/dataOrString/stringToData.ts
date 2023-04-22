@@ -1,12 +1,12 @@
 import { isString } from 'lodash';
 
 /**
- * @name 将string转为json
- * @param str 需要转换的字符串
+ * @name 将string转为json等数据
+ * @param {string} str 需要转换的字符串
  * @param parseArgs 其他参数，用于传入parse
- * @returns
+ * @returns {array,object,string} 返回对应格式的数据
  */
-// 字符串类型的类json数据转成真正的json数据
+// 字符串类型的数据转成真正对应格式的数据
 const stringToData = (str: any, ...parseArgs: any) => {
   if (!isString(str)) return str;
   try {

@@ -23,7 +23,13 @@ const formatCfg = (aesCfg?: AESConfigType) => {
   };
 };
 
-// 加密
+/**
+ * @name AES加密
+ * @param {any} data 需要加密的数据
+ * @param {string} key 密钥
+ * @param {AESConfigType} AEScfg AES配置
+ * @returns {string} 加密后的数据
+ */
 const encrypt = (data: any, key: string, AEScfg?: AESConfigType): string => {
   const dataStr = dataToString(data);
   const utf8Data = Utf8.parse(dataStr);
@@ -33,7 +39,13 @@ const encrypt = (data: any, key: string, AEScfg?: AESConfigType): string => {
   return encryptedDS.ciphertext.toString().toUpperCase();
 };
 
-// 解密
+/**
+ * @name AES解密
+ * @param {any} data 需要解密的数据
+ * @param {string} key 密钥
+ * @param {AESConfigType} AEScfg AES配置
+ * @returns {string} 解密后的数据
+ */
 const decrypt = (data: string, key: string, AEScfg?: AESConfigType): any => {
   const base64Data = Base64.stringify(Hex.parse(data));
   const utf8Key = Utf8.parse(keyHandler(key));

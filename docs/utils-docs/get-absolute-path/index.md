@@ -14,7 +14,6 @@ group:
 ## API
 
 ```typescript
-// 获取类型
 getAbsolutePath(data:string)
 ```
 

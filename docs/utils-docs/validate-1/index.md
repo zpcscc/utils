@@ -7,6 +7,12 @@ group:
 
 # 数据校验
 
+## 在线演示
+
+<code src="./ValidateData.tsx"></code>
+
+## 代码演示
+
 ```js
 import { validate } from '@dxsixpc/utils';
 import type { ValidateType } from '@dxsixpc/utils';

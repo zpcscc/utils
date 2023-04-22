@@ -19,8 +19,8 @@ const toHexString = (colorObj: ColorObjType) => {
 
 /**
  * @name rgba颜色字符串转化为16进制颜色字符串
- * @param rgba rgba颜色字符串
- * @returns 16进制颜色字符串
+ * @param {string} rgba rgba颜色字符串
+ * @returns {string} 16进制颜色字符串
  */
 const rgbaToHex = (rgba: string) => {
   const colorObj = parseColorString(rgba);
