@@ -4,10 +4,8 @@ hero:
   title: utils
   description: 工具库
   actions:
-    - text: 无状态函数
-      link: /utils-docs/get-type
-    - text: 有状态函数
-      link: /helpers-docs/request
+    - text: 工具函数
+      link: /utils
     - text: 博客
       link: https://dxsixpc.github.io/
 ---
