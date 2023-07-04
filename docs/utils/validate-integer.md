@@ -5,7 +5,7 @@ title: validateInteger
 order: 4
 ---
 
-# 校验手机号
+# 校验整数
 
 ```js
 import { validateInteger } from '@dxsixpc/utils';
@@ -16,14 +16,14 @@ console.log(validateInteger(3149786)); // true
 ## API
 
 ```typescript
-validateInteger(data:string);
+validateInteger(data:number);
 ```
 
 ### 参数
 
 | 参数 | 说明           | 类型   |
 | ---- | -------------- | ------ |
-| data | 需要校验的数据 | string |
+| data | 需要校验的数据 | number |
 
 ### 返回
 
