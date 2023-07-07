@@ -2,7 +2,6 @@
 group:
   title: 数据转换
 title: hexToHsl
-order: 1
 ---
 
 # hex 转 hsl

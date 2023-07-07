@@ -1,3 +1,4 @@
+import type { ColorType } from '@dxsixpc/utils';
 import { getRandomColor } from '@dxsixpc/utils';
 import type { RadioChangeEvent } from 'antd';
 import { Button, Input, message, Radio, Space, Tooltip } from 'antd';
@@ -6,7 +7,7 @@ import { useEffect, useState } from 'react';
 
 const RandomColor: React.FC = () => {
   const btn = 'copy-color-btn';
-  const [type, setType] = useState<'hex' | 'rgb'>('hex');
+  const [type, setType] = useState<ColorType>('hex');
   const [result, setResult] = useState<string>('');
 
   const onChange = (radioValue: RadioChangeEvent) => {
@@ -30,6 +31,7 @@ const RandomColor: React.FC = () => {
       <Radio.Group onChange={onChange} value={type}>
         <Radio value={'hex'}>hex</Radio>
         <Radio value={'rgb'}>rgb</Radio>
+        <Radio value={'hsl'}>hsl</Radio>
       </Radio.Group>
       <Button type='primary' onClick={onClick}>
         生成随机颜色

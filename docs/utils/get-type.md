@@ -3,7 +3,6 @@ group:
   title: get函数合集
   order: 1
 title: getType
-order: 0
 ---
 
 # 获取数据类型

@@ -16,7 +16,7 @@ describe('rgbToHex', () => {
     expect(rgbToHex(rgb6)).toBe(hex6);
   });
   test('有透明度的rgb', () => {
-    expect(rgbToHex('rgb(102,204,255,0.6)')).toBe(hex8);
+    expect(rgbToHex('rgb(102,204,255,60)')).toBe(hex8);
   });
   test('小于15的rgb', () => {
     expect(rgbToHex('rgb(12,204,255,1)')).toBe('#0cccff');

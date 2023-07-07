@@ -2,7 +2,6 @@
 group:
   title: 数据转换
 title: stringToHtml
-order: 5
 ---
 
 # 字符串转实体字符

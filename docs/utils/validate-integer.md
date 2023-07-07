@@ -2,7 +2,6 @@
 group:
   title: 数据校验
 title: validateInteger
-order: 4
 ---
 
 # 校验整数

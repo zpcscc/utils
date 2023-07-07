@@ -2,7 +2,6 @@
 group:
   title: 其他
 title: sortVersions
-order: 2
 ---
 
 # 版本号排序

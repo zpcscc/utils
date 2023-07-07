@@ -2,7 +2,6 @@
 group:
   title: 数据转换
 title: stringToData
-order: 3
 ---
 
 # 字符串转数据

@@ -2,7 +2,6 @@
 group:
   title: 数据校验
 title: validateDate
-order: 1
 ---
 
 # 校验日期

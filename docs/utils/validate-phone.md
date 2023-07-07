@@ -2,7 +2,6 @@
 group:
   title: 数据校验
 title: validatePhone
-order: 4
 ---
 
 # 校验手机号

@@ -2,7 +2,6 @@
 group:
   title: 数据校验
 title: validateIDCard
-order: 3
 ---
 
 # 校验身份证

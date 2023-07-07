@@ -2,7 +2,6 @@
 group:
   title: 数据转换
 title: styledToString
-order: 7
 ---
 
 # 将 styled 对象转为 css-in-js 可以运行的字符串

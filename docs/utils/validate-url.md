@@ -2,7 +2,6 @@
 group:
   title: 数据校验
 title: validateUrl
-order: 5
 ---
 
 # 校验 url 链接

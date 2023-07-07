@@ -3,7 +3,6 @@ group:
   title: 其他
   order: 999
 title: request
-order: 0
 ---
 
 # 通用请求库

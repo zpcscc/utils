@@ -3,7 +3,6 @@ group:
   title: 数据加密
   order: 0
 title: cryptoAES
-order: 0
 ---
 
 # cryptoAES
@@ -17,7 +16,7 @@ order: 0
 ```typescript
 // AES加密配置
 interface AESConfigType {
-  // 密钥偏移量，16位16进制字符串
+  // 密钥偏移量，16位hex字符串
   iv: string;
   // 加密模式
   mode: 'CBC' | 'CFB' | 'CTR' | 'CTRGladman' | 'ECB' | 'OFB';
