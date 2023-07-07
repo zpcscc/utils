@@ -2,7 +2,6 @@
 group:
   title: 其他
 title: walkSplit
-order: 1
 ---
 
 # 逐步拆分-生成器

@@ -2,7 +2,6 @@
 group:
   title: 数据转换
 title: dataToString
-order: 2
 ---
 
 # 数据与字符串转换

@@ -2,20 +2,20 @@
 group:
   title: 数据转换
   order: 2
-title: rgbToHex
+title: rgbToHsl
 ---
 
-# rgb 转 hex
+# rgb 转 hsl
 
 ## 在线演示
 
-<code src="./transform/rgbToHex">rgb 转 hex</code>
+<code src="./transform/rgbToHsl">rgb 转 hsl</code>
 
 ## API
 
 ```typescript
-// rgb颜色 转为 hex颜色
-rgbToHex(data:string);
+// rgb颜色 转为 hsl颜色
+rgbToHsl(data:string);
 ```
 
 ### 参数
@@ -26,4 +26,4 @@ rgbToHex(data:string);
 
 ### 返回
 
-(string):返回 hex 的字符串
+(string):返回 hsl 的字符串

@@ -1,7 +1,7 @@
 import type { ColorObjType } from '../type';
 
 /**
- * @name 16进制颜色字符串解析为颜色对象
+ * @name hex颜色字符串解析为颜色对象
  * @param color 颜色字符串
  * @returns ColorObjType
  */

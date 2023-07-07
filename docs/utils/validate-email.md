@@ -2,7 +2,6 @@
 group:
   title: 数据校验
 title: validateEmail
-order: 2
 ---
 
 # 校验邮箱

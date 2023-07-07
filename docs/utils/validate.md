@@ -3,7 +3,6 @@ group:
   title: 数据校验
   order: 3
 title: validate
-order: 0
 ---
 
 # 数据校验

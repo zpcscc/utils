@@ -1,4 +1,5 @@
 import parseHexColor from './parseHexColor';
+import parseHslColor from './parseHslColor';
 import parseRgbColor from './parseRgbColor';
 
 /**
@@ -12,6 +13,9 @@ const parseColorString = (color: string) => {
   }
   if (color?.startsWith('rgb')) {
     return parseRgbColor(color);
+  }
+  if (color?.startsWith('hsl')) {
+    return parseHslColor(color);
   }
   if (color === 'transparent') {
     return parseHexColor('#00000000');

@@ -14,7 +14,9 @@ const parseRgbColor = (color: string) => {
       r: res[0],
       g: res[1],
       b: res[2],
-      a: Number.parseFloat(arr[3] || '1'),
+      a: Number.parseFloat(
+        Number(arr[3]) > 0 ? (Number(arr[3]) > 1 ? `0.${arr[3]}` : arr[3]) : '1',
+      ),
     } as ColorObjType;
   }
   throw new Error('rgb格式错误');
