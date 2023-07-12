@@ -8,4 +8,9 @@ module.exports = {
   parserOptions: {
     project: ['./tsconfig.json'],
   },
+  rules: {
+    curly: ['error', 'multi-line'],
+    'arrow-body-style': 'off',
+    'space-before-function-paren': ['error', 'always'],
+  },
 };

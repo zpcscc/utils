@@ -1,3 +1,5 @@
+import type { CSSProperties } from 'react';
+
 export interface StyledType {
-  [key: string]: React.CSSProperties | StyledType | string | number;
+  [key: string]: CSSProperties | StyledType | string | number;
 }

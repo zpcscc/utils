@@ -1,12 +1,12 @@
 import { SimpleCodeEditor, Space, Text, TextArea } from '@dxsixpc/components';
 import { dataToString, stringToData } from '@dxsixpc/utils';
-import { useState } from 'react';
+import { useState, type FC } from 'react';
 
 const data = {
   width: '100px',
 };
 
-const DataOrString: React.FC = () => {
+const DataOrString: FC = () => {
   const [value, setValue] = useState(data);
 
   const onChange = (value?: string) => {

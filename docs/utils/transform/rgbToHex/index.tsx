@@ -1,9 +1,9 @@
 import { rgbToHex } from '@dxsixpc/utils';
 import { Button, Input, message, Space, Tooltip } from 'antd';
 import ClipboardJS from 'clipboard';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type FC } from 'react';
 
-const RgbToHex: React.FC = () => {
+const RgbToHex: FC = () => {
   const btn = 'copy-hex-btn';
   const [input, setInput] = useState<string>('rgb(102,204,255,1)');
   const [result, setResult] = useState<string>('');

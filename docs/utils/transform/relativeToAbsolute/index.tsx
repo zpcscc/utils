@@ -2,11 +2,11 @@ import { CopyOutlined } from '@ant-design/icons';
 import { relativeToAbsolute } from '@dxsixpc/utils';
 import { Button, Input, message, Space, Tooltip } from 'antd';
 import ClipboardJS from 'clipboard';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type FC } from 'react';
 
 const clipboard = new ClipboardJS('.copy-btn');
 
-const RelativeToAbsolute: React.FC = () => {
+const RelativeToAbsolute: FC = () => {
   const [input, setInput] = useState<string>('/utils/helpers-docs/request');
   const [result, setResult] = useState<string>('');
 

@@ -1,4 +1,4 @@
-import { isNil } from 'lodash';
+import { isNil } from 'src';
 import type { ColorObjType } from '../type';
 
 /**

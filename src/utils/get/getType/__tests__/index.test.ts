@@ -27,6 +27,7 @@ describe('获取数据类型', () => {
       }),
     ).toBe('Function');
     expect(
+      // eslint-disable-next-line prefer-arrow-callback
       getType(function () {
         console.log('hello world');
       }),
@@ -51,6 +52,9 @@ describe('获取数据类型', () => {
   });
   test('String', () => {
     expect(getType('string')).toBe('String');
+  });
+  test('Symbol', () => {
+    expect(getType(Symbol.iterator)).toBe('Symbol');
   });
   test('Undefined', () => {
     expect(getType()).toBe('Undefined');
