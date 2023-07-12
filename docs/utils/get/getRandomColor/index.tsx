@@ -1,11 +1,9 @@
-import type { ColorType } from '@dxsixpc/utils';
-import { getRandomColor } from '@dxsixpc/utils';
-import type { RadioChangeEvent } from 'antd';
-import { Button, Input, message, Radio, Space, Tooltip } from 'antd';
+import { getRandomColor, type ColorType } from '@dxsixpc/utils';
+import { Button, Input, message, Radio, Space, Tooltip, type RadioChangeEvent } from 'antd';
 import ClipboardJS from 'clipboard';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type FC } from 'react';
 
-const RandomColor: React.FC = () => {
+const RandomColor: FC = () => {
   const btn = 'copy-color-btn';
   const [type, setType] = useState<ColorType>('hex');
   const [result, setResult] = useState<string>('');

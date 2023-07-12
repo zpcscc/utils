@@ -1,9 +1,9 @@
 import { rgbToHsl } from '@dxsixpc/utils';
 import { Button, Input, message, Space, Tooltip } from 'antd';
 import ClipboardJS from 'clipboard';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type FC } from 'react';
 
-const RgbToHsl: React.FC = () => {
+const RgbToHsl: FC = () => {
   const btn = 'copy-hsl-btn';
   const [input, setInput] = useState<string>('rgb(102,204,255,1)');
   const [result, setResult] = useState<string>('');

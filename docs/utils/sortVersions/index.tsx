@@ -1,8 +1,8 @@
 import { sortVersions } from '@dxsixpc/utils';
 import { Button, Input, Space } from 'antd';
-import { useState } from 'react';
+import { useState, type FC } from 'react';
 
-const VersionSort: React.FC = () => {
+const VersionSort: FC = () => {
   const [input, setInput] = useState<string>(
     [
       '1.2.1',

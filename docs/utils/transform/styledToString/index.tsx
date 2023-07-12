@@ -1,7 +1,6 @@
 import { SimpleCodeEditor, Space, Text, TextArea } from '@dxsixpc/components';
-import type { StyledType } from '@dxsixpc/utils';
-import { dataToString, stringToData, styledToString } from '@dxsixpc/utils';
-import { useState } from 'react';
+import { dataToString, stringToData, styledToString, type StyledType } from '@dxsixpc/utils';
+import { useState, type FC } from 'react';
 
 const styled: StyledType = {
   width: '100px',
@@ -20,7 +19,7 @@ const styled: StyledType = {
   },
 };
 
-const StyledToString: React.FC = () => {
+const StyledToString: FC = () => {
   const [value, setValue] = useState<string>(dataToString(styled, null, 2));
   const [result, setResult] = useState<string>('');
 

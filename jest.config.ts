@@ -24,7 +24,9 @@ const config: Config = {
   //   '!./src/**/**/type.ts',
   // ],
   // 排除完整的文件夹不进行测试
-  modulePathIgnorePatterns: ['<rootDir>/src/lodash-dev'],
+  modulePathIgnorePatterns: ['<rootDir>/lodash-dev'],
+  rootDir: './',
+  modulePaths: ['<rootDir>'],
   coverageThreshold: {
     // 所有文件总的覆盖率要求
     global: {

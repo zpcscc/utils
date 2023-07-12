@@ -1,4 +1,4 @@
-import { isString, toString } from 'lodash';
+import { isString, toString } from 'src';
 
 /**
  * @name 将各种格式的数据转为string

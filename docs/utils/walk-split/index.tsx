@@ -1,8 +1,8 @@
 import { walkSplit } from '@dxsixpc/utils';
 import { Button, Input, Space } from 'antd';
-import { useState } from 'react';
+import { useState, type FC } from 'react';
 
-const WalkSplitString: React.FC = () => {
+const WalkSplitString: FC = () => {
   const [input, setInput] = useState<string>('1.2.3-alpha.5');
   const [split, setSplit] = useState<string>('.,-');
   const [result, setResult] = useState<string>('');

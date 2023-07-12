@@ -1,4 +1,4 @@
-import { isObject } from 'lodash';
+import { isObject } from 'src';
 import type { StyledType } from '../type';
 import formatStyleToString from './formatStyleToString';
 

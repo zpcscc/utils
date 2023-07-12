@@ -1,9 +1,9 @@
 import { hslToHex } from '@dxsixpc/utils';
 import { Button, Input, message, Space, Tooltip } from 'antd';
 import ClipboardJS from 'clipboard';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type FC } from 'react';
 
-const HslToHex: React.FC = () => {
+const HslToHex: FC = () => {
   const btn = 'copy-hex-btn';
   const [input, setInput] = useState<string>('hsl(200,100%,70%)');
   const [result, setResult] = useState<string>('');

@@ -1,8 +1,8 @@
 import { stringToHtml } from '@dxsixpc/utils';
 import { Button, Input, Space } from 'antd';
-import { useState } from 'react';
+import { useState, type FC } from 'react';
 
-const HtmlToString: React.FC = () => {
+const HtmlToString: FC = () => {
   const [input, setInput] = useState<string>('<内容>');
   const [result, setResult] = useState<string>('');
 

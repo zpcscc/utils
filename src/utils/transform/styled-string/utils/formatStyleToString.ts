@@ -1,10 +1,11 @@
+import type { CSSProperties } from 'react';
 import { dataToString } from '../../data-string';
 import type { StyledType } from '../type';
 
 // 处理一些特殊css属性
 const formatStyleToString = (
   key: string,
-  value: string | number | StyledType | React.CSSProperties,
+  value: string | number | StyledType | CSSProperties,
 ): string => {
   switch (key) {
     case 'content': {
