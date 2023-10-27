@@ -1,20 +1,15 @@
-import * as _ from '@dxsixpc/utils';
-// import * as l from 'lodash';
+import * as utils from '@dxsixpc/utils';
 import { useEffect, type FC } from 'react';
 
-type WindowType = Record<keyof typeof _, () => any> & Window & typeof globalThis;
+type WindowType = Record<keyof typeof utils, () => any> & Window & typeof globalThis;
 
 const Index: FC = () => {
-  // console.log('lodash', l.toInteger(-123.23));
-  // console.log('util', _.toInteger(-123.23));
-
   useEffect(() => {
-    if (!(window as WindowType).chunk) {
+    if (!(window as WindowType).getType) {
       // 将此工具库的所有方法绑定到window上，方便在浏览器控制台运行调试
-      Object.entries(_).forEach(([key, value]) => (window[key] = value));
+      Object.entries(utils).forEach(([key, value]) => (window[key] = value));
     }
   }, []);
-
   return <></>;
 };
 

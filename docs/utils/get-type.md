@@ -1,6 +1,6 @@
 ---
 group:
-  title: get函数合集
+  title: get函数
   order: 1
 title: getType
 ---

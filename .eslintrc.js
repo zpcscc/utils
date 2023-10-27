@@ -9,8 +9,7 @@ module.exports = {
     project: ['./tsconfig.json'],
   },
   rules: {
-    curly: ['error', 'multi-line'],
-    'arrow-body-style': 'off',
-    'space-before-function-paren': ['error', 'always'],
+    // 禁止将函数直接传给方法。这里关闭。
+    'unicorn/no-array-callback-reference': 'off',
   },
 };
