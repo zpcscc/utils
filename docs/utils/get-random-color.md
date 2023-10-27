@@ -1,6 +1,6 @@
 ---
 group:
-  title: get函数合集
+  title: get函数
 title: getRandomColor
 ---
 
@@ -8,7 +8,7 @@ title: getRandomColor
 
 ## 在线演示
 
-<code src="./get/getRandomColor"></code>
+<code src="./getRandomColor"></code>
 
 ## 代码演示
 

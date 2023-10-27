@@ -2,7 +2,7 @@ import { sortVersions } from '@dxsixpc/utils';
 import { Button, Input, Space } from 'antd';
 import { useState, type FC } from 'react';
 
-const VersionSort: FC = () => {
+const SortVersion: FC = () => {
   const [input, setInput] = useState<string>(
     [
       '1.2.1',
@@ -42,4 +42,4 @@ const VersionSort: FC = () => {
   );
 };
 
-export default VersionSort;
+export default SortVersion;

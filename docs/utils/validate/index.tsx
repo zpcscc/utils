@@ -1,4 +1,4 @@
-import { validate, ValidateTypeList, type ValidateType } from '@dxsixpc/utils';
+import { validate, validateTypeList, type ValidateType } from '@dxsixpc/utils';
 import { Input, Select, Space } from 'antd';
 import { useState, type FC } from 'react';
 
@@ -26,7 +26,7 @@ const ValidateData: FC = () => {
         onChange={onChange}
         addonAfter={
           <Select defaultValue={type} onChange={onTypeChange} style={{ width: '100px' }}>
-            {Object.keys(ValidateTypeList).map((item) => (
+            {Object.keys(validateTypeList).map((item) => (
               <Select.Option key={item} value={item}>
                 {item}
               </Select.Option>
