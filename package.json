@@ -26,7 +26,7 @@
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
-    "prepublishOnly": "pnpm run test && pnpm run build",
+    "prepublishOnly": "pnpm run test:all && pnpm run build",
     "start": "pnpm run dev",
     "test": "jest --coverage -o",
     "test:all": "jest --coverage"
