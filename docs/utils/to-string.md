@@ -6,10 +6,6 @@ title: toString
 
 # 任意数据转为字符串
 
-## 在线演示
-
-<code src="./toString"></code>
-
 ## 使用
 
 ```js
@@ -17,11 +13,21 @@ import { toString } from '@dxsixpc/utils';
 
 console.log(toString(true)); // 'true'
 console.log(toString(null)); // 'null'
-console.log(toString(undefined)); // 'undefined'
+console.log(toString()); // ''
+console.log(toString(undefined)); // ''
+console.log(toString(0)); // '0'
+console.log(toString(-0)); // '-0'
+console.log(toString(123)); // '123'
+console.log(toString(() => {})); // '()=>{}'
 console.log(toString([])); // '[]'
 console.log(toString({})); // '{}'
 console.log(toString(Symbol(1))); // 'Symbol(1)'
-console.log(toString(123)); // '123'
+
+// 部分数据因为赋值给函数时，已被浏览器自动调整，故无法完整原样转为字符串。
+console.log(toString(Symbol.iterator)); // 'Symbol(Symbol.iterator)'
+console.log(toString(Number.POSITIVE_INFINITY)); // 'Infinity'
+console.log(toString(Number.NEGATIVE_INFINITY)); // '-Infinity'
+console.log(toString(Number.MIN_VALUE)); // '5e-324'
 ```
 
 ## API

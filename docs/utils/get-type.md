@@ -1,7 +1,6 @@
 ---
 group:
   title: get函数
-  order: 1
 title: getType
 ---
 

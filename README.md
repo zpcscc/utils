@@ -3,7 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/@dxsixpc/utils.svg?style=flat)](https://npmjs.org/package/@dxsixpc/utils)
 [![NPM downloads](http://img.shields.io/npm/dm/@dxsixpc/utils.svg?style=flat)](https://npmjs.org/package/@dxsixpc/utils)
 
-0第三方依赖的静态函数工具库
+零依赖的静态函数工具库
 
 ## 使用
 

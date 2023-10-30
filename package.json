@@ -28,7 +28,8 @@
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "pnpm run test && pnpm run build",
     "start": "pnpm run dev",
-    "test": "jest"
+    "test": "jest --coverage -o",
+    "test:all": "jest --coverage"
   },
   "devDependencies": {
     "@ant-design/icons": "^5.2.6",
