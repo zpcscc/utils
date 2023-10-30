@@ -3,7 +3,7 @@ import type { Config } from 'jest';
 const config: Config = {
   verbose: true,
   // 是否开启测试报告。可以在这里开启，或者使用 jest --coverage
-  collectCoverage: true,
+  collectCoverage: false,
   // 指定测试报告需要包含和排除的文件
   collectCoverageFrom: [
     './src/**/*.ts',

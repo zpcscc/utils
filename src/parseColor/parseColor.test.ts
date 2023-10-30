@@ -4,7 +4,7 @@ export const hex1 = '#6666cc';
 export const hex1_1 = '#66c';
 export const rgb1 = 'rgb(102,102,204)';
 export const hsl1 = 'hsl(240,50%,60%)';
-export const colorObj1 = { a: 1, b: 204, g: 102, r: 102 };
+export const colorObj1 = { r: 102, g: 102, b: 204, a: 1 };
 
 export const hex2 = '#6666cccc';
 export const hex2_1 = '#66cc';

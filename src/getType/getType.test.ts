@@ -21,16 +21,10 @@ describe('获取数据类型', () => {
     expect(getType(new Error('error'))).toBe('Error');
   });
   test('Function', () => {
-    expect(
-      getType(() => {
-        console.log('hello world');
-      }),
-    ).toBe('Function');
+    expect(getType(() => {})).toBe('Function');
     expect(
       // eslint-disable-next-line prefer-arrow-callback
-      getType(function () {
-        console.log('hello world');
-      }),
+      getType(function () {}),
     ).toBe('Function');
   });
   test('Map', () => {
