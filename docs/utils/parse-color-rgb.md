@@ -9,7 +9,7 @@ title: parseColorRgb
 将包含rgba的数据对象转为rgb格式的颜色
 
 ```js
-import { parseColorRgb } from '@dxsixpc/utils';
+import { parseColorRgb } from '@zpcscc/utils';
 
 console.log(parseColorRgb({ r: 102, g: 204, b: 255, a: 1 })); // rgb(102,204,255);
 console.log(parseColorRgb({ r: 255, g: 102, b: 204, a: 1 })); // rgb(255,102,204);

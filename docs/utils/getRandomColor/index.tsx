@@ -1,4 +1,4 @@
-import { getRandomColor, type ColorType } from '@dxsixpc/utils';
+import { getRandomColor, type ColorType } from '@zpcscc/utils';
 import { Button, Input, Radio, Space, Tooltip, message, type RadioChangeEvent } from 'antd';
 import ClipboardJS from 'clipboard';
 import { useEffect, useState, type FC } from 'react';

@@ -14,7 +14,7 @@ title: 简介
  * inline: true
  */
 import React from 'react';
-import * as utils from '@dxsixpc/utils';
+import * as utils from '@zpcscc/utils';
 
 export default () => {
   return <h1>当前已有 {Object.keys(utils || {}).length - 1} 个函数</h1>;

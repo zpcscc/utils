@@ -13,7 +13,7 @@ title: getRandomColor
 ## 代码演示
 
 ```js
-import { getRandomColor } from '@dxsixpc/utils';
+import { getRandomColor } from '@zpcscc/utils';
 
 console.log(getRandomColor()); //  #6ffccf;
 console.log(getRandomColor('hex')); //  #8d3eca;

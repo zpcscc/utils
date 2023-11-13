@@ -9,7 +9,7 @@ title: isNumber
 检查"value"是否为常规数字。
 
 ```js
-import { isNumber } from '@dxsixpc/utils';
+import { isNumber } from '@zpcscc/utils';
 
 console.log(isNumber()); // false
 console.log(isNumber('')); // false

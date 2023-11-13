@@ -9,7 +9,7 @@ title: parseColor
 分析hex、rgb、hsl颜色数据，返回包含rgba的数据对象
 
 ```js
-import { parseColor } from '@dxsixpc/utils';
+import { parseColor } from '@zpcscc/utils';
 
 console.log(parseColor('#6666cc')); // { r: 102, g: 102, b: 204, a: 1 };
 console.log(parseColor('rgb(102,204,255)')); // { r: 102, g: 204, b: 255, a: 1 }

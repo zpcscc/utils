@@ -9,7 +9,7 @@ title: isEmpty
 检查"value"是否为空。
 
 ```js
-import { isEmpty } from '@dxsixpc/utils';
+import { isEmpty } from '@zpcscc/utils';
 
 console.log(isEmpty()); // true
 console.log(isEmpty('')); // true

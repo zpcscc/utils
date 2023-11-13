@@ -1,9 +1,9 @@
-import { validate, validateTypeList, type ValidateType } from '@dxsixpc/utils';
+import { validate, validateTypeList, type ValidateType } from '@zpcscc/utils';
 import { Input, Select, Space } from 'antd';
 import { useState, type FC } from 'react';
 
 const ValidateData: FC = () => {
-  const [input, setInput] = useState<string>('dxsixpc@email.com');
+  const [input, setInput] = useState<string>('zpcscc@email.com');
   const [type, setType] = useState<ValidateType>('email');
   const [result, setResult] = useState<boolean>(true);
 

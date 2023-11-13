@@ -9,7 +9,7 @@ title: parseColorHsl
 将包含rgba的数据对象转为hsl格式的颜色
 
 ```js
-import { parseColorHsl } from '@dxsixpc/utils';
+import { parseColorHsl } from '@zpcscc/utils';
 
 console.log(parseColorHsl({ r: 102, g: 204, b: 255, a: 1 })); // hsl(200,100%,70%);
 console.log(parseColorHsl({ r: 255, g: 102, b: 204, a: 1 })); // hsl(320,100%,70%);

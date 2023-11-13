@@ -14,13 +14,13 @@ title: validate
 ## 代码演示
 
 ```js
-import { validate } from '@dxsixpc/utils';
-import type { ValidateType } from '@dxsixpc/utils';
+import { validate } from '@zpcscc/utils';
+import type { ValidateType } from '@zpcscc/utils';
 
 console.log(validate('17773827673', 'phone')); // true
 console.log(validate('110101199003072412', 'IDCard')); // true
 console.log(validate('2023-04-01', 'date')); // true
-console.log(validate('dxsixpc@gmail.com', 'email')); // true
+console.log(validate('zpcscc@gmail.com', 'email')); // true
 console.log(validate('https://zpcscc.top', 'url')); // true
 ```
 

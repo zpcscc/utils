@@ -1,4 +1,4 @@
-import { sortVersions } from '@dxsixpc/utils';
+import { sortVersions } from '@zpcscc/utils';
 import { Button, Input, Space } from 'antd';
 import { useState, type FC } from 'react';
 
@@ -14,8 +14,8 @@ const SortVersion: FC = () => {
       '1.1.1-experimental.1',
       '1.1.1-rc.1',
       '1.1.1-rc.1',
-      '1.1.2-alpha.1',
-    ].join('\n'),
+      '1.1.2-alpha.1'
+    ].join('\n')
   );
   const [result, setResult] = useState<string[]>([]);
 

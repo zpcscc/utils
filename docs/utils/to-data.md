@@ -7,7 +7,7 @@ title: toData
 # 字符串转数据
 
 ```js
-import { toData } from '@dxsixpc/utils';
+import { toData } from '@zpcscc/utils';
 
 console.log(toData('1')); // 1
 console.log(toData('true')); // true

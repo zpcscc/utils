@@ -9,7 +9,7 @@ title: isSymbol
 检查"value"的类型是否为“Symbol”。
 
 ```js
-import { isSymbol } from '@dxsixpc/utils';
+import { isSymbol } from '@zpcscc/utils';
 
 console.log(isSymbol(Symbol.iterator)); // true
 console.log(isSymbol(Symbol(1))); // true

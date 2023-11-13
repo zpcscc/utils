@@ -1,4 +1,4 @@
-import { walkSplit } from '@dxsixpc/utils';
+import { walkSplit } from '@zpcscc/utils';
 import { Button, Input, Space } from 'antd';
 import { useState, type FC } from 'react';
 

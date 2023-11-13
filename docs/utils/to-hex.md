@@ -9,7 +9,7 @@ title: toHex
 将十进制转为十六进制
 
 ```js
-import { toHex } from '@dxsixpc/utils';
+import { toHex } from '@zpcscc/utils';
 
 console.log(toHex(123)); // 7b
 ```

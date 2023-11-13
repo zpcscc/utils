@@ -7,7 +7,7 @@ title: validateDate
 # 校验日期
 
 ```js
-import { validateDate } from '@dxsixpc/utils';
+import { validateDate } from '@zpcscc/utils';
 
 console.log(validateDate('Thu Apr 20 2023 19:37:20 GMT+0800 (中国标准时间)')); // true
 console.log(validateDate('2023-2-28')); // true

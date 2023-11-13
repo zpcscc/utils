@@ -7,7 +7,7 @@ hero:
     - text: 工具函数
       link: /utils
     - text: 博客
-      link: https://dxsixpc.github.io/
+      link: https://zpcscc.top
 ---
 
 <code src="./index.tsx" compact inline></code>

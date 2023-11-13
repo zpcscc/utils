@@ -7,7 +7,7 @@ title: getType
 # 获取数据类型
 
 ```js
-import { getType } from '@dxsixpc/utils';
+import { getType } from '@zpcscc/utils';
 
 console.log(getType([]));               // 'Array';
 console.log(getType(true));             // 'Boolean';

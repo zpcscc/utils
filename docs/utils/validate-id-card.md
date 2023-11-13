@@ -7,7 +7,7 @@ title: validateIDCard
 # 校验身份证
 
 ```js
-import { validateIDCard } from '@dxsixpc/utils';
+import { validateIDCard } from '@zpcscc/utils';
 
 console.log(validateIDCard('110101199003072412')); // true
 ```

@@ -1,13 +1,13 @@
-# @dxsixpc/utils
+# @zpcscc/utils
 
-[![NPM version](https://img.shields.io/npm/v/@dxsixpc/utils.svg?style=flat)](https://npmjs.org/package/@dxsixpc/utils)
-[![NPM downloads](http://img.shields.io/npm/dm/@dxsixpc/utils.svg?style=flat)](https://npmjs.org/package/@dxsixpc/utils)
+[![NPM version](https://img.shields.io/npm/v/@zpcscc/utils.svg?style=flat)](https://npmjs.org/package/@zpcscc/utils)
+[![NPM downloads](http://img.shields.io/npm/dm/@zpcscc/utils.svg?style=flat)](https://npmjs.org/package/@zpcscc/utils)
 
 零依赖的静态函数工具库
 
 ## 使用
 
-https://dxsixpc.github.io/utils
+https://zpcscc.github.io/utils
 
 ## 开发
 

@@ -7,7 +7,7 @@ title: validateInteger
 # 校验整数
 
 ```js
-import { validateInteger } from '@dxsixpc/utils';
+import { validateInteger } from '@zpcscc/utils';
 
 console.log(validateInteger(3149786)); // true
 ```

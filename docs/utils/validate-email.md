@@ -7,9 +7,9 @@ title: validateEmail
 # 校验邮箱
 
 ```js
-import { validateEmail } from '@dxsixpc/utils';
+import { validateEmail } from '@zpcscc/utils';
 
-console.log(validateEmail('dxsixpc@gmail.com')); // true
+console.log(validateEmail('zpcscc@gmail.com')); // true
 ```
 
 ## API
