@@ -7,7 +7,7 @@
 
 ## 使用
 
-https://zpcscc.github.io/utils
+https://zpcscc.top/utils
 
 ## 开发
 
@@ -26,9 +26,6 @@ pnpm run build:watch
 
 # 打包文档
 pnpm run docs:build
-
-# 检查项目是否有问题
-pnpm run doctor
 ```
 
 ## LICENSE
