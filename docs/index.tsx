@@ -1,4 +1,4 @@
-import * as utils from '@dxsixpc/utils';
+import * as utils from '@zpcscc/utils';
 import { useEffect, type FC } from 'react';
 
 type WindowType = Record<keyof typeof utils, () => any> & Window & typeof globalThis;

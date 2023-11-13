@@ -7,7 +7,7 @@ title: validateUrl
 # 校验 url 链接
 
 ```js
-import { validateUrl } from '@dxsixpc/utils';
+import { validateUrl } from '@zpcscc/utils';
 
 console.log(validateUrl('https://zpcscc.top')); // true
 ```

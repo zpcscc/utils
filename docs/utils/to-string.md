@@ -9,7 +9,7 @@ title: toString
 ## 使用
 
 ```js
-import { toString } from '@dxsixpc/utils';
+import { toString } from '@zpcscc/utils';
 
 console.log(toString(true)); // 'true'
 console.log(toString(null)); // 'null'

@@ -5,7 +5,7 @@ describe('数据校验', () => {
     expect(validate('Wed Apr 19 2023 21:35:27 GMT+0800 (中国标准时间)', 'date')).toBe(true);
   });
   test('email', () => {
-    expect(validate('dxsixpc@gmail.com', 'email')).toBe(true);
+    expect(validate('zpcscc@gmail.com', 'email')).toBe(true);
   });
   test('IDCard', () => {
     expect(validate('110101199003072412', 'IDCard')).toBe(true);

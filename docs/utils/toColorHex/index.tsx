@@ -1,4 +1,4 @@
-import { toColorHex } from '@dxsixpc/utils';
+import { toColorHex } from '@zpcscc/utils';
 import { Button, Input, message, Space, Tooltip } from 'antd';
 import ClipboardJS from 'clipboard';
 import { useEffect, useState, type FC } from 'react';

@@ -9,7 +9,7 @@ title: isNil
 检查"value"是否为“null”或“undefined”。
 
 ```js
-import { isNil } from '@dxsixpc/utils';
+import { isNil } from '@zpcscc/utils';
 
 console.log(isNil()); // true
 console.log(isNil(null)); // true

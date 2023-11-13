@@ -9,7 +9,7 @@ title: toInteger
 转换“value”为一个整数。
 
 ```js
-import { toInteger } from '@dxsixpc/utils';
+import { toInteger } from '@zpcscc/utils';
 
 console.log(toInteger(3.2)); // 3
 console.log(toInteger('3.2')); // 3

@@ -1,4 +1,4 @@
-import { toColorRgb } from '@dxsixpc/utils';
+import { toColorRgb } from '@zpcscc/utils';
 import { Button, Input, message, Space, Tooltip } from 'antd';
 import ClipboardJS from 'clipboard';
 import { useEffect, useState, type FC } from 'react';

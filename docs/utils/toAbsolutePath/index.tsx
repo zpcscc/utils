@@ -1,5 +1,5 @@
 import { CopyOutlined } from '@ant-design/icons';
-import { toAbsolutePath } from '@dxsixpc/utils';
+import { toAbsolutePath } from '@zpcscc/utils';
 import { Button, Input, message, Space, Tooltip } from 'antd';
 import ClipboardJS from 'clipboard';
 import { useEffect, useState, type FC } from 'react';

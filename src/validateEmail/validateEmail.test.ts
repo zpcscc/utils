@@ -1,5 +1,5 @@
 import validateEmail from '.';
 
 test('邮箱校验', () => {
-  expect(validateEmail('dxsixpc@gmail.com')).toBe(true);
+  expect(validateEmail('zpcscc@gmail.com')).toBe(true);
 });

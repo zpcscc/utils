@@ -7,7 +7,7 @@ title: validatePhone
 # 校验手机号
 
 ```js
-import { validatePhone } from '@dxsixpc/utils';
+import { validatePhone } from '@zpcscc/utils';
 
 console.log(validatePhone('17776723849')); // true
 ```

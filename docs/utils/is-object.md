@@ -9,7 +9,7 @@ title: isObject
 检查“value”是否为“Object”。
 
 ```js
-import { isObject } from '@dxsixpc/utils';
+import { isObject } from '@zpcscc/utils';
 
 console.log(isObject({})); // true
 console.log(isObject([1, 2, 3])); // false

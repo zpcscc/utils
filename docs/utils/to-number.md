@@ -9,7 +9,7 @@ title: toNumber
 转换"value"转为一个有限数字。
 
 ```js
-import { toNumber } from '@dxsixpc/utils';
+import { toNumber } from '@zpcscc/utils';
 
 console.log(toNumber(3.2)); // 3.2
 console.log(toNumber('3.2')); // 3.2

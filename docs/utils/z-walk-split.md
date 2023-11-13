@@ -16,7 +16,7 @@ title: walkSplit
 ## 代码演示
 
 ```typescript
-import { walkSplit } from '@dxsixpc/utils';
+import { walkSplit } from '@zpcscc/utils';
 
 // 生成一个拆分版本号的迭代器
 const iterator = walkSplit('1.2.3-alpha.5', ['.', '-']);

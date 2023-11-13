@@ -1,5 +1,5 @@
 {
-  "extends": "@dxsixpc/configs/tsconfig/tsconfig.react.json",
+  "extends": "@zpcscc/configs/tsconfig/tsconfig.react.json",
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "dist",
@@ -9,8 +9,8 @@
       "docs/*": ["docs/*"],
       "src": ["src"],
       "src/*": ["src/*"],
-      "@dxsixpc/utils": ["src"],
-      "@dxsixpc/utils/*": ["src/*"]
+      "@zpcscc/utils": ["src"],
+      "@zpcscc/utils/*": ["src/*"]
     },
     "types": ["jest"]
   },
