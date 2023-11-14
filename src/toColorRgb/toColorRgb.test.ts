@@ -10,7 +10,7 @@ import {
   rgb10,
   rgb7,
   rgb8,
-  rgb9,
+  rgb9
 } from 'src/parseColor/parseColor.test';
 import toColorRgb from '.';
 

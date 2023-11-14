@@ -16,7 +16,7 @@ const parseColorHsl = (color: string) => {
   let g = 0;
   let b = 0;
   const a = Number.parseFloat(
-    Number(arr[3]) > 0 ? (Number(arr[3]) > 1 ? `0.${arr[3]}` : arr[3]) : '1',
+    Number(arr[3]) > 0 ? (Number(arr[3]) > 1 ? `0.${arr[3]}` : arr[3]) : '1'
   );
 
   if (res.length === 3 || res.length === 4) {

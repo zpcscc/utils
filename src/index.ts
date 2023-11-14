@@ -1,5 +1,7 @@
+export { default as getDayOfDate } from './getDayOfDate';
 export { default as getRandomColor, type ColorType } from './getRandomColor';
 export { default as getType, type DataType } from './getType';
+export { default as getUniqueId } from './getUniqueId';
 export { default as isEmpty } from './isEmpty';
 export { default as isNil } from './isNil';
 export { default as isNumber } from './isNumber';
@@ -9,6 +11,8 @@ export { default as parseColor, type ColorObjType } from './parseColor';
 export { default as parseColorHex } from './parseColorHex';
 export { default as parseColorHsl } from './parseColorHsl';
 export { default as parseColorRgb } from './parseColorRgb';
+export { default as parseQuery } from './parseQuery';
+export { default as removeTag } from './removeTag';
 export { default as toAbsolutePath } from './toAbsolutePath';
 export { default as toColorHex } from './toColorHex';
 export { default as toColorHsl } from './toColorHsl';

@@ -24,7 +24,7 @@ describe('获取数据类型', () => {
     expect(getType(() => {})).toBe('Function');
     expect(
       // eslint-disable-next-line prefer-arrow-callback
-      getType(function () {}),
+      getType(function () {})
     ).toBe('Function');
   });
   test('Map', () => {

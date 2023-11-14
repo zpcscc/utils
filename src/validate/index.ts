@@ -11,7 +11,7 @@ export const validateTypeList = {
   IDCard: '身份证',
   integer: '整数',
   phone: '电话',
-  url: '链接',
+  url: '链接'
 };
 
 // 可校验的数据类型

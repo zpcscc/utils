@@ -5,7 +5,7 @@ import {
   rgb4,
   rgb4_1,
   rgb5,
-  rgb6,
+  rgb6
 } from 'src/parseColor/parseColor.test';
 import parseColorRgb from '.';
 

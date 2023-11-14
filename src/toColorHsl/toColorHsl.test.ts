@@ -13,7 +13,7 @@ import {
   rgb5,
   rgb6,
   rgb7,
-  rgb8,
+  rgb8
 } from 'src/parseColor/parseColor.test';
 import toColorHsl from '.';
 

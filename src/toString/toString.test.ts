@@ -3,9 +3,9 @@ import toString from '.';
 
 const data = {
   obj: {
-    name: '测试',
+    name: '测试'
   },
-  array: ['测试'],
+  array: ['测试']
 };
 
 // 格式化，空2格缩紧的字符串
