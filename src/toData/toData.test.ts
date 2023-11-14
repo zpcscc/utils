@@ -2,9 +2,9 @@ import toData from '.';
 
 const data = {
   obj: {
-    name: '测试',
+    name: '测试'
   },
-  array: ['测试'],
+  array: ['测试']
 };
 // 为格式化的默认字符串
 const string = '{"obj":{"name":"测试"},"array":["测试"]}';

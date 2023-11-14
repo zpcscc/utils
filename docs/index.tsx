@@ -9,7 +9,7 @@ const Index: FC = () => {
       // 将此工具库的所有方法绑定到window上，方便在浏览器控制台运行调试
       Object.entries(utils).forEach(([key, value]) => (window[key] = value));
     }
-  }, []);
+  });
   return <></>;
 };
 

@@ -10,7 +10,7 @@ const beforeSort = [
   '1.1.1-experimental.1',
   '1.1.1-rc.1',
   '1.1.1-rc.1',
-  '1.1.2-alpha.1',
+  '1.1.2-alpha.1'
 ];
 
 const afterSort = [
@@ -23,7 +23,7 @@ const afterSort = [
   '1.1.1-release.2',
   '1.1.1',
   '1.1.2-alpha.1',
-  '1.2.1',
+  '1.2.1'
 ];
 
 describe('版本号排序', () => {

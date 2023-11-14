@@ -37,7 +37,7 @@ const parseColorHex = (color: string) => {
     g: (bigint >> 8) & 255,
     // eslint-disable-next-line no-bitwise
     b: bigint & 255,
-    a,
+    a
   } as ColorObjType;
 };
 

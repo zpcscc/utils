@@ -9,7 +9,7 @@ const typeMap = {
   alpha: 2,
   beta: 3,
   rc: 4,
-  release: 5,
+  release: 5
 };
 
 /**
@@ -35,7 +35,7 @@ const sortVersions = (data: string[]): string[] => {
       if (aNum === bNum) {
         return compare(
           getVersionNum(aIterator.next().value),
-          getVersionNum(bIterator.next().value),
+          getVersionNum(bIterator.next().value)
         );
       } else if (aNum > bNum) return 1;
       return -1;
