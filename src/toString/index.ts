@@ -2,7 +2,7 @@ import { isObject, isSymbol } from 'src';
 
 /**
  * @name 将各种格式的数据转为string
- * @param {AnyObject} data 需要转换的数据
+ * @param {any} data 需要转换的数据
  * @param stringifyArgs 其他参数，用于传入stringify
  * @returns {string} 转换后的字符串数据
  */
