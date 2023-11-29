@@ -7,7 +7,7 @@ import { isObject, isSymbol } from 'src';
  * @returns {string} 转换后的字符串数据
  */
 const toString = (data: any, ...stringifyArgs: any[]): string => {
-  if (data === null) return 'null';
+  if (data === null) return '';
   if (data === undefined) return '';
   if (typeof data === 'string') return data;
   let str = '';

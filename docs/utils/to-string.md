@@ -12,7 +12,7 @@ title: toString
 import { toString } from '@zpcscc/utils';
 
 console.log(toString(true)); // 'true'
-console.log(toString(null)); // 'null'
+console.log(toString(null)); // ''
 console.log(toString()); // ''
 console.log(toString(undefined)); // ''
 console.log(toString(0)); // '0'
