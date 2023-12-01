@@ -59,6 +59,6 @@ describe('toString', () => {
     expect(toString('')).toBe('');
     // eslint-disable-next-line unicorn/no-useless-undefined
     expect(toString(undefined)).toBe('');
-    expect(toString(null)).toBe('null');
+    expect(toString(null)).toBe('');
   });
 });
