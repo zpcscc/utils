@@ -1,4 +1,4 @@
-import validateUrl from 'src/validateUrl';
+import validateUrl from 'src/validate/validateUrl';
 
 /**
  * @name 解析Url中的参数

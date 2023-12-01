@@ -1,64 +1,48 @@
 import toString from 'src/toString';
+import desensitizeName from './desensitizeName';
 
-export type DesensitizeType = 'name' | 'phone' | 'IdCard';
-
-// 获取对应数量的星号
-const getAsterisk = (num: number) => {
-  return new Array(num).fill('*').join('');
-};
+export type DesensitizeType = 'name' | 'phone' | 'IdCard' | 'telephone' | 'backCard';
 
 /**
- * 将字符串按指定的数量分割成数组
- * @param str 待分割的字符串
- * @param num 分割数量
- * @returns 分割后的数组
+ * @name 将指定字符串复制指定次数并拼接在一起
+ * @param {string} str 待复制的字符串
+ * @param {number} num 复制的次数
+ * @returns {string} 复制拼接后的字符串
  */
-const splitStringByCount = (str: string, num: number): string[] => {
-  const arr: string[] = [];
-  const len = str.length;
-  const size = Math.ceil(len / num);
-  for (let i = 0; i < len; i += size) {
-    arr.push(str.slice(i, i + size));
-  }
-  return arr;
+const copyStrByNum = (str: string, num: number = 1): string => {
+  return new Array(num).fill(toString(str)).join('');
 };
 
 /**
  * @name 对数据进行脱敏处理
  * @param {string} value
+ * @param {DesensitizeType} type
+ * @returns {string}
  */
 const desensitize = (value?: string, type?: DesensitizeType): string => {
-  const strValue = toString(value);
+  // 将传入的值转为字符串，并去除前后空格，确保后续都是对字符串进行操作
+  const strValue = toString(value).trim();
   if (!strValue) return '';
   const strLength = strValue.length;
-  // 两个字符，只显示第一个字符，其他用星号代替
+  // 只有一个字符，原样返回
+  if (strLength === 1) return strValue;
+  // 两个字符，只显示第一个字符，其他用*代替
   if (strLength === 2) return `${strValue[0]}*`;
 
-  // 对姓名字符的处理
-  if (type === 'name') {
-    console.log(value);
-    // 名称，小于4个字符，只显示第一位，其他用星号代替;
-    if (strLength < 4) {
-      return `${strValue.slice(0, 1)}${getAsterisk(strLength - 1)}`;
-    } else if (strLength >= 4) {
-      // 将字符串按数量分割成数组
-      const strArr = splitStringByCount(strValue, 4);
-      console.log('strArr:', strArr);
-      return `${strValue.slice(0, 1)}${getAsterisk(strLength - 3)}${strValue.slice(-1)}`;
+  switch (type) {
+    // 姓名的脱敏处理
+    case 'name': {
+      return desensitizeName(strValue);
     }
   }
 
   // 默认脱敏规则
-  // 长度  2 < str < 5， 则只显示第一位与最后一位，其他用星号代替;
+  // 长度  2 < str < 5， 则只显示第一位与最后一位，其他用*代替;
   if (strLength > 2 && strLength < 5) {
-    return `${strValue.slice(0, 1)}${getAsterisk(strLength - 2)}${strValue.slice(-1)}`;
+    return `${strValue.slice(0, 1)}${copyStrByNum('*', strLength - 2)}${strValue.slice(-1)}`;
   }
-  // 长度大于5的，显示前两位与后两位，中间用星号代替;
-  if (strLength >= 5) {
-    return `${strValue.slice(0, 2)}${getAsterisk(strLength - 4)}${strValue.slice(-2)}`;
-  }
-  // 其他情况（也就是字符串长度为1的情况）不进行脱敏处理，直接返回
-  return strValue;
+  // 其他情况，长度大于等于5的，显示前两位与后两位，中间用*代替;
+  return `${strValue.slice(0, 2)}${copyStrByNum('*', strLength - 4)}${strValue.slice(-2)}`;
 };
 
 export default desensitize;

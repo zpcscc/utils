@@ -1,12 +1,12 @@
 import isNil from 'src/isNil';
-import type { ColorObjType } from 'src/parseColor';
+import type { ColorObjType } from 'src/z-transformColor/parseColor';
 
 /**
  * @name rgb颜色字符串解析为颜色对象
  * @param color 颜色字符串
  * @returns IColorObj
  */
-const parseColorRgb = (color: string) => {
+const parseRgb = (color: string) => {
   const arr = color?.match(/(\d(\.\d+)?)+/g) || [];
   const res = arr.map((s: string) => Number.parseInt(s, 10)).filter((n: number) => !isNil(n));
   if (res.length === 3 || res.length === 4) {
@@ -20,4 +20,4 @@ const parseColorRgb = (color: string) => {
   throw new Error('rgb格式错误');
 };
 
-export default parseColorRgb;
+export default parseRgb;

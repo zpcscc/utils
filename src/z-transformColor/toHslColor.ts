@@ -5,7 +5,7 @@ import parseColor from 'src/parseColor';
  * @param {string} string “rgb”、“hex”格式的字符串
  * @returns {string} hsl颜色字符串
  */
-const toColorHsl = (string: string): string => {
+const toHslColor = (string: string): string => {
   const colorObj = parseColor(string);
   const r = colorObj.r / 255;
   const g = colorObj.g / 255;
@@ -43,4 +43,4 @@ const toColorHsl = (string: string): string => {
   return `hsl(${h},${s}%,${l}%${a === 1 ? '' : `,${a}`})`;
 };
 
-export default toColorHsl;
+export default toHslColor;

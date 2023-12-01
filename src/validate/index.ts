@@ -1,9 +1,9 @@
-import validateDate from '../validateDate';
-import validateEmail from '../validateEmail';
-import validateIDCard from '../validateIDCard';
-import validateInteger from '../validateInteger';
-import validatePhone from '../validatePhone';
-import validateUrl from '../validateUrl';
+import validateDate from './validateDate';
+import validateEmail from './validateEmail';
+import validateIDCard from './validateIDCard';
+import validateInteger from './validateInteger';
+import validatePhone from './validatePhone';
+import validateUrl from './validateUrl';
 
 export const validateTypeList = {
   date: '日期',
@@ -21,9 +21,9 @@ export type ValidateType = keyof typeof validateTypeList;
  * @name 数据校验
  * @param {any} data 需要校验的数据
  * @param {ValidateType} type 需要校验的类型
- * @return {boolean} 返回校验的结果
+ * @return {boolean} 返回校验的结果, 默认返回 false
  */
-const validate = (data: any, type: ValidateType): boolean => {
+const validate = (data: any, type?: ValidateType): boolean => {
   switch (type) {
     case 'date': {
       return validateDate(data);

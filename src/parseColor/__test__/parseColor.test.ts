@@ -1,4 +1,4 @@
-import parseColor from '.';
+import parseColor from '..';
 
 export const hex1 = '#6666cc';
 export const hex1_1 = '#66c';
@@ -65,6 +65,10 @@ describe('parseColor', () => {
     expect(parseColor(rgb2)).toStrictEqual(colorObj2);
     expect(parseColor(rgb3)).toStrictEqual(colorObj3);
     expect(parseColor(rgb3_1)).toStrictEqual(colorObj3);
+    expect(parseColor(rgb4)).toStrictEqual(colorObj4);
+    expect(parseColor(rgb4_1)).toStrictEqual(colorObj4);
+    expect(parseColor(rgb5)).toStrictEqual(colorObj5);
+    expect(parseColor(rgb6)).toStrictEqual(colorObj6);
   });
   test('parseHex', () => {
     expect(parseColor(hex1)).toStrictEqual(colorObj1);
@@ -72,11 +76,17 @@ describe('parseColor', () => {
     expect(parseColor(hex2)).toStrictEqual(colorObj2);
     expect(parseColor(hex2_1)).toStrictEqual(colorObj2);
     expect(parseColor(hex3)).toStrictEqual(colorObj3);
+    expect(parseColor(hex4)).toStrictEqual(colorObj4);
+    expect(parseColor(hex5)).toStrictEqual(colorObj5);
+    expect(parseColor(hex6)).toStrictEqual(colorObj6);
   });
   test('parseHsl', () => {
     expect(parseColor(hsl1)).toStrictEqual(colorObj1);
     expect(parseColor(hsl2)).toStrictEqual(colorObj2);
     expect(parseColor(hsl3)).toStrictEqual(colorObj3);
+    expect(parseColor(hsl4)).toStrictEqual(colorObj4);
+    expect(parseColor(hsl5)).toStrictEqual(colorObj5);
+    expect(parseColor(hsl6)).toStrictEqual(colorObj6);
   });
   test('特殊值', () => {
     expect(parseColor('transparent')).toStrictEqual(colorObj);

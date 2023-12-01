@@ -1,13 +1,13 @@
-import parseColorHex from 'src/parseColorHex';
-import parseColorHsl from 'src/parseColorHsl';
-import parseColorRgb from 'src/parseColorRgb';
+import parseColorHex from './parseHex';
+import parseColorHsl from './parseHsl';
+import parseColorRgb from './parseRgb';
 
-export interface ColorObjType {
+export type ColorObjType = {
   r: number;
   g: number;
   b: number;
   a: number;
-}
+};
 
 /**
  * @name 颜色字符串解析为颜色对象

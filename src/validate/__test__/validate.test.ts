@@ -1,4 +1,4 @@
-import validate from '.';
+import validate from '../index';
 
 describe('数据校验', () => {
   test('date', () => {

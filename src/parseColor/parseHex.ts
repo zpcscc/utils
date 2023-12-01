@@ -1,11 +1,11 @@
-import type { ColorObjType } from 'src/parseColor';
+import type { ColorObjType } from 'src/z-transformColor/parseColor';
 
 /**
  * @name hex颜色字符串解析为颜色对象
  * @param color 颜色字符串
  * @returns ColorObjType
  */
-const parseColorHex = (color: string) => {
+const parseHex = (color: string) => {
   let hex = color?.slice(1);
   let a = 1;
   switch (hex.length) {
@@ -41,4 +41,4 @@ const parseColorHex = (color: string) => {
   } as ColorObjType;
 };
 
-export default parseColorHex;
+export default parseHex;

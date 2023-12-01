@@ -1,12 +1,12 @@
 import isNil from 'src/isNil';
-import type { ColorObjType } from 'src/parseColor';
+import type { ColorObjType } from 'src/z-transformColor/parseColor';
 
 /**
  * @name hsl颜色字符串解析为颜色对象
  * @param color 颜色字符串
  * @returns IColorObj
  */
-const parseColorHsl = (color: string) => {
+const parseHsl = (color: string) => {
   const arr = color?.match(/(\d(\.\d+)?)+/g) || [];
   const res = arr.map((s: string) => Number.parseInt(s, 10)).filter((n: number) => !isNil(n));
   const h = res[0] / 360;
@@ -52,4 +52,4 @@ const parseColorHsl = (color: string) => {
   throw new Error('hsl格式错误');
 };
 
-export default parseColorHsl;
+export default parseHsl;
