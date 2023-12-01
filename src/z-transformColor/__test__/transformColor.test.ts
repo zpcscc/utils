@@ -1,5 +1,7 @@
 import {
   hex10,
+  hex5,
+  hex6,
   hex7,
   hex8,
   hex9,
@@ -27,16 +29,16 @@ describe('transformColor', () => {
     expect(transformColor(hsl8, 'hex')).toBe(hex8);
     expect(transformColor(hsl9, 'hex')).toBe(hex9);
     expect(transformColor(hsl10, 'hex')).toBe(hex10);
-    expect(transformColor(rgb5, 'hex')).toBe(hsl5);
-    expect(transformColor(rgb6, 'hex')).toBe(hsl6);
+    expect(transformColor(rgb5, 'hex')).toBe(hex5);
+    expect(transformColor(rgb6, 'hex')).toBe(hex6);
     expect(transformColor(rgb7, 'hex')).toBe(hex7);
     expect(transformColor(rgb8, 'hex')).toBe(hex8);
     expect(transformColor(rgb9, 'hex')).toBe(hex9);
     expect(transformColor(rgb10, 'hex')).toBe(hex10);
-    expect(transformColor(hex7, 'hex')).toBe(hsl7);
-    expect(transformColor(hex8, 'hex')).toBe(hsl8);
-    expect(transformColor(hex9, 'hex')).toBe(hsl9);
-    expect(transformColor(hex10, 'hex')).toBe(hsl10);
+    expect(transformColor(hex7, 'hex')).toBe(hex7);
+    expect(transformColor(hex8, 'hex')).toBe(hex8);
+    expect(transformColor(hex9, 'hex')).toBe(hex9);
+    expect(transformColor(hex10, 'hex')).toBe(hex10);
   });
 
   test('to-rgb', () => {
@@ -50,15 +52,15 @@ describe('transformColor', () => {
     expect(transformColor(hsl10, 'rgb')).toBe(rgb10);
   });
   test('to-hsl', () => {
-    expect(transformColor(hex7, 'rgb')).toBe(hsl7);
-    expect(transformColor(hex8, 'rgb')).toBe(hsl8);
-    expect(transformColor(hex9, 'rgb')).toBe(hsl9);
-    expect(transformColor(hex10, 'rgb')).toBe(hsl10);
-    expect(transformColor(rgb5, 'rgb')).toBe(hsl5);
-    expect(transformColor(rgb6, 'rgb')).toBe(hsl6);
-    expect(transformColor(rgb7, 'rgb')).toBe(hsl7);
-    expect(transformColor(rgb8, 'rgb')).toBe(hsl8);
-    expect(transformColor(rgb10, 'rgb')).toBe(hsl10);
+    expect(transformColor(hex7, 'hsl')).toBe(hsl7);
+    expect(transformColor(hex8, 'hsl')).toBe(hsl8);
+    expect(transformColor(hex9, 'hsl')).toBe(hsl9);
+    expect(transformColor(hex10, 'hsl')).toBe(hsl10);
+    expect(transformColor(rgb5, 'hsl')).toBe(hsl5);
+    expect(transformColor(rgb6, 'hsl')).toBe(hsl6);
+    expect(transformColor(rgb7, 'hsl')).toBe(hsl7);
+    expect(transformColor(rgb8, 'hsl')).toBe(hsl8);
+    expect(transformColor(rgb10, 'hsl')).toBe(hsl10);
   });
   test('透明色', () => {
     expect(transformColor('transparent', 'rgb')).toBe('rgb(0,0,0,0)');
@@ -70,5 +72,9 @@ describe('transformColor', () => {
     expect(() => transformColor('rgb', 'rgb')).toThrow('rgb格式错误');
     expect(() => transformColor('hsl(', 'hsl')).toThrow('hsl格式错误');
     expect(() => transformColor('#', 'hex')).toThrow('hex格式错误');
+  });
+  test('空类型', () => {
+    // @ts-expect-error 测试空类型
+    expect(transformColor(rgb10)).toBe(rgb10);
   });
 });

@@ -10,7 +10,7 @@ export type ColorObjType = {
 };
 
 /**
- * @name 颜色字符串解析为颜色对象
+ * @name 将‘rgb’、‘hex’、‘hsl’颜色字符串解析为颜色对象
  * @param color 颜色字符串
  * @returns ColorObjType
  */

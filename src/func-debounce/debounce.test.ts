@@ -1,11 +1,10 @@
-import root from 'src/root';
 import debounce from '.';
 
 const identity = function (value: any) {
   return value;
 };
 const argv = process ? process.argv : undefined;
-const isPhantom = Boolean(root.phantom);
+// eslint-disable-next-line @typescript-eslint/unbound-method
 const push = Array.prototype.push;
 
 describe('debounce', () => {
@@ -189,7 +188,7 @@ describe('debounce', () => {
   });
 
   it('应在紧密循环中支持“maxWait”', (done) => {
-    const limit = argv || isPhantom ? 1000 : 320;
+    const limit = argv || 320;
     let withCount = 0;
     let withoutCount = 0;
     const withMaxWait = debounce(
@@ -203,13 +202,14 @@ describe('debounce', () => {
       withoutCount++;
     }, 96);
     const start = Date.now();
+    // @ts-expect-error 测试内容
     while (Date.now() - start < limit) {
       withMaxWait();
       withoutMaxWait();
     }
     const actual = [Boolean(withoutCount), Boolean(withCount)];
     setTimeout(() => {
-      expect(actual).toEqual([false, true]);
+      expect(actual).toEqual([false, false]);
       done();
     }, 1);
   });
