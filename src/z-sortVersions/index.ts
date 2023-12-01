@@ -1,7 +1,7 @@
 import { walkSplit } from 'src';
 
 // 支持的语义化版本号英文
-export type VersionType = 'experimental' | 'alpha' | 'beta' | 'rc' | 'release';
+type VersionType = 'experimental' | 'alpha' | 'beta' | 'rc' | 'release';
 
 // 不是数字，则返回类型对应的权重
 const typeMap = {

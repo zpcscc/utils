@@ -31,7 +31,7 @@ export { default as validateIDCard } from './validateIDCard';
 export { default as validateInteger } from './validateInteger';
 export { default as validatePhone } from './validatePhone';
 export { default as validateUrl } from './validateUrl';
-export { default as desensitize } from './z-desensitize';
+export { default as desensitize, type DesensitizeType } from './z-desensitize';
 export { default as removeTag } from './z-removeTag';
 export { default as sortVersions } from './z-sortVersions';
 export { default as walkSplit } from './z-walkSplit';
