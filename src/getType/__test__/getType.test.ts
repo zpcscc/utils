@@ -1,4 +1,4 @@
-import getType from '.';
+import getType from '..';
 
 describe('获取数据类型', () => {
   test('Array', () => {

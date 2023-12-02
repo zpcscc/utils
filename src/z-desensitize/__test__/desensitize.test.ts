@@ -1,4 +1,4 @@
-import desensitize from '.';
+import desensitize from '..';
 
 describe('desensitize-脱敏测试', () => {
   test('正常输入测试', () => {

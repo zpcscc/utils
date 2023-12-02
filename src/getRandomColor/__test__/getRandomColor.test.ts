@@ -1,4 +1,4 @@
-import getRandomColor from '.';
+import getRandomColor from '..';
 
 describe('获取随机颜色', () => {
   test('rgb', () => {

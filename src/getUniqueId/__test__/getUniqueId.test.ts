@@ -1,4 +1,4 @@
-import getUniqueId from '.';
+import getUniqueId from '..';
 
 describe('getUniqueId', () => {
   test('正常生成唯一id', () => {

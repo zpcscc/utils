@@ -1,4 +1,4 @@
-import parseQuery from '.';
+import parseQuery from '..';
 
 describe('parseQuery 单元测试', () => {
   test('正常输入', () => {

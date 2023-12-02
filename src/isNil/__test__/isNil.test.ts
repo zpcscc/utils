@@ -1,4 +1,4 @@
-import isNil from '.';
+import isNil from '..';
 
 describe('isNil', () => {
   test('null或undefined', () => {

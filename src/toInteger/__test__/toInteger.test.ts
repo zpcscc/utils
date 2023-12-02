@@ -1,4 +1,4 @@
-import toInteger from '.';
+import toInteger from '..';
 
 describe('toInteger', () => {
   test('数字', () => {

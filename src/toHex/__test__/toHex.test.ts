@@ -1,4 +1,4 @@
-import toHex from '.';
+import toHex from '..';
 
 describe('toHex', () => {
   test('数字', () => {

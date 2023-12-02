@@ -1,5 +1,5 @@
-import throttle from '.';
-import type { AnyFunction } from '../types';
+import type { AnyFunction } from 'src/types';
+import throttle from '..';
 
 const identity = function (value: any) {
   return value;

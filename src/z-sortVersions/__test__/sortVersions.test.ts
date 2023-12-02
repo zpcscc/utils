@@ -1,4 +1,4 @@
-import sortVersions from '.';
+import sortVersions from '..';
 
 const beforeSort = [
   '1.2.1',

@@ -1,4 +1,4 @@
-import getDayOfDate from '.';
+import getDayOfDate from '..';
 
 describe('getDayOfDate', () => {
   test('正常传值-距今多少天', () => {

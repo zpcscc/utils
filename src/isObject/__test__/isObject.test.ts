@@ -1,4 +1,4 @@
-import isObject from '.';
+import isObject from '..';
 
 describe('isObject', () => {
   test('对象，数组', () => {

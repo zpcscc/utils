@@ -1,4 +1,4 @@
-import debounce from '.';
+import debounce from '..';
 
 const identity = function (value: any) {
   return value;

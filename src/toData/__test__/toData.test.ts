@@ -1,4 +1,4 @@
-import toData from '.';
+import toData from '..';
 
 const data = {
   obj: {

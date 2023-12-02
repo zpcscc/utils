@@ -1,4 +1,4 @@
-import walkSplit from '.';
+import walkSplit from '..';
 
 describe('逐步拆分生成器', () => {
   test('拆分版本号', async () => {

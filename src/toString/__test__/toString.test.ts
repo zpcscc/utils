@@ -1,5 +1,5 @@
 /* eslint-disable prefer-arrow-callback */
-import toString from '.';
+import toString from '..';
 
 const data = {
   obj: {

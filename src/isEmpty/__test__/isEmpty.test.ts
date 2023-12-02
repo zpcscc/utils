@@ -1,7 +1,7 @@
 /* eslint-disable prefer-rest-params */
 /* eslint-disable func-names */
 /* eslint-disable func-style */
-import isEmpty from '.';
+import isEmpty from '..';
 
 describe('isEmpty', () => {
   test('null或undefined', () => {

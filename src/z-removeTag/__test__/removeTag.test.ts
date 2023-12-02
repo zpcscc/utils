@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import removeTag from '.';
+import removeTag from '..';
 
 describe('removeTag函数测试', () => {
   test('正常输入测试', () => {

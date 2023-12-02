@@ -1,8 +1,5 @@
 import { walkSplit } from 'src';
 
-// 支持的语义化版本号英文
-type VersionType = 'experimental' | 'alpha' | 'beta' | 'rc' | 'release';
-
 // 不是数字，则返回类型对应的权重
 const typeMap = {
   experimental: 1,
@@ -11,6 +8,9 @@ const typeMap = {
   rc: 4,
   release: 5
 };
+
+// 支持的语义化版本号英文
+type VersionType = keyof typeof typeMap;
 
 /**
  * @name 版本号排序
