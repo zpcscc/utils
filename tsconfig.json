@@ -20,6 +20,8 @@
     "docs/**/*",
     ".eslintrc.js",
     "jest.config.ts",
-    "babel.config.js"
-  ]
+    "babel.config.js",
+    "scripts/**/*"
+  ],
+  "exclude": ["node_modules"]
 }
