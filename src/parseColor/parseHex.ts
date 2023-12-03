@@ -1,4 +1,4 @@
-import type { ColorObjType } from 'src/z-transformColor/parseColor';
+import { type ColorObjType } from 'src/types';
 
 /**
  * @name hex颜色字符串解析为颜色对象
@@ -26,7 +26,8 @@ const parseHex = (color: string) => {
       break;
     }
     default: {
-      throw new Error('hex格式错误');
+      console.error('hex格式错误');
+      return { r: 0, g: 0, b: 0, a: 0 };
     }
   }
   const bigint = Number.parseInt(hex, 16);

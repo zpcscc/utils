@@ -14,12 +14,19 @@ import type { AnyFunction } from '../types';
  * @param {boolean} options.trailing=true 指定在超时的后沿调用
  * @returns {Function} 返回新的防抖函数
  * @typescript
- * @example
-// ts类型
-debounce(func: Function, wait?: number, options?: { leading?: boolean, maxWait?: number, trailing?: boolean });
-// demo
+ * @example <caption>ts类型</caption>
+debounce(
+  func: Function,
+  wait?: number,
+  options?: {
+    leading?: boolean,
+    maxWait?: number,
+    trailing?: boolean
+  }
+);
+ * @example <caption>demo</caption>
 import { debounce } from '@zpcscc/utils';
-const debouncedFunc = debounce(function () {
+const debouncedFunc = debounce(() => {
   console.log(1);
 }, 100);
 debouncedFunc();

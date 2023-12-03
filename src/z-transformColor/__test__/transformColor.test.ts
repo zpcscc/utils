@@ -20,9 +20,6 @@ import {
 } from 'src/parseColor/__test__/parseColor.test';
 import transformColor from '..';
 
-// 透明色
-export const colorObj = { a: 0, b: 0, g: 0, r: 0 };
-
 describe('transformColor', () => {
   test('to-hex', () => {
     expect(transformColor(hsl7, 'hex')).toBe(hex7);
@@ -66,12 +63,6 @@ describe('transformColor', () => {
     expect(transformColor('transparent', 'rgb')).toBe('rgb(0,0,0,0)');
     expect(transformColor('transparent', 'hsl')).toBe('hsl(0,0%,0%,0)');
     expect(transformColor('transparent', 'hex')).toBe('#00000000');
-  });
-  test('报错提示', () => {
-    expect.assertions(3);
-    expect(() => transformColor('rgb', 'rgb')).toThrow('rgb格式错误');
-    expect(() => transformColor('hsl(', 'hsl')).toThrow('hsl格式错误');
-    expect(() => transformColor('#', 'hex')).toThrow('hex格式错误');
   });
   test('空类型', () => {
     // @ts-expect-error 测试空类型

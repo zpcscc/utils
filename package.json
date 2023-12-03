@@ -29,7 +29,7 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "pnpm run test:all && pnpm run build",
-    "start": "pnpm run dev",
+    "start": "pnpm run dev & node scripts/jsdoc2md/watch.mjs",
     "test": "jest --coverage -o",
     "test:all": "jest --coverage"
   },

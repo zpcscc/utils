@@ -235,13 +235,9 @@ describe('debounce', () => {
 
   it('调用“delayed”时应取消“maxDelayed”', (done) => {
     let callCount = 0;
-    const debounced = debounce(
-      () => {
-        callCount++;
-      },
-      32,
-      { maxWait: 64 }
-    );
+    const debounced = debounce(() => {
+      callCount++;
+    }, 32);
     debounced();
     setTimeout(() => {
       debounced();

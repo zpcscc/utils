@@ -92,10 +92,9 @@ describe('parseColor', () => {
     expect(parseColor('transparent')).toStrictEqual(colorObj);
   });
   test('报错提示', () => {
-    expect.assertions(4);
-    expect(() => parseColor('')).toThrow('颜色格式错误');
-    expect(() => parseColor('#66')).toThrow('hex格式错误');
-    expect(() => parseColor('hsl(')).toThrow('hsl格式错误');
-    expect(() => parseColor('rgb')).toThrow('rgb格式错误');
+    expect(parseColor('')).toStrictEqual(colorObj);
+    expect(parseColor('#66')).toStrictEqual(colorObj);
+    expect(parseColor('hsl(')).toStrictEqual(colorObj);
+    expect(parseColor('rgb')).toStrictEqual(colorObj);
   });
 });

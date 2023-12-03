@@ -1,5 +1,5 @@
 import isNil from 'src/isNil';
-import type { ColorObjType } from 'src/z-transformColor/parseColor';
+import { type ColorObjType } from 'src/types';
 
 /**
  * @name hsl颜色字符串解析为颜色对象
@@ -49,7 +49,8 @@ const parseHsl = (color: string) => {
     b = Math.round(rgb[2]);
     return { r, g, b, a } as ColorObjType;
   }
-  throw new Error('hsl格式错误');
+  console.error('hsl格式错误');
+  return { r: 0, g: 0, b: 0, a: 0 };
 };
 
 export default parseHsl;

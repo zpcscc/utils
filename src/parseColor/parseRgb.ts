@@ -1,5 +1,5 @@
 import isNil from 'src/isNil';
-import type { ColorObjType } from 'src/z-transformColor/parseColor';
+import { type ColorObjType } from 'src/types';
 
 /**
  * @name rgb颜色字符串解析为颜色对象
@@ -17,7 +17,8 @@ const parseRgb = (color: string) => {
       a: Number.parseFloat(Number(arr[3]) > 0 ? (Number(arr[3]) > 1 ? `0.${arr[3]}` : arr[3]) : '1')
     } as ColorObjType;
   }
-  throw new Error('rgb格式错误');
+  console.error('rgb格式错误');
+  return { r: 0, g: 0, b: 0, a: 0 };
 };
 
 export default parseRgb;

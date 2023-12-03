@@ -16,6 +16,38 @@ type VersionType = keyof typeof typeMap;
  * @name 版本号排序
  * @param {string[]} data 需要排序的版本号数组
  * @return {string[]} 从小到大排序过后的数组
+ * @example <caption>ts类型</caption>
+sortVersions(data:string[])
+ * @example <caption>demo</caption>
+import { sortVersions } from '@zpcscc/utils';
+
+const beforeSort = [
+  '1.2.1',
+  '1.1.1',
+  '1.1.1-release.2',
+  '1.1.1-alpha.10',
+  '1.1.1-release.1',
+  '1.1.1-beta.1',
+  '1.1.1-experimental.1',
+  '1.1.1-rc.1',
+  '1.1.1-rc.1',
+  '1.1.2-alpha.1'
+];
+
+console.log(removeTag('<p>Hello World!</p>')); // afterSort
+
+const afterSort = [
+  '1.1.1-experimental.1',
+  '1.1.1-alpha.10',
+  '1.1.1-beta.1',
+  '1.1.1-rc.1',
+  '1.1.1-rc.1',
+  '1.1.1-release.1',
+  '1.1.1-release.2',
+  '1.1.1',
+  '1.1.2-alpha.1',
+  '1.2.1'
+];
  */
 const sortVersions = (data: string[]): string[] => {
   return data.sort((a, b) => {

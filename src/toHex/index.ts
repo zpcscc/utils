@@ -1,8 +1,14 @@
 /**
  * @name 十进制转十六进制
- * @param {number} n 十进制的值
- * @returns {string} 十六进制的字符串
+ * @param {number} number 十进制的数字
+ * @returns {string} 返回转换后的十六进制数据
+ * @example <caption>ts类型</caption>
+toHex(value: number);
+ * @example <caption>demo</caption>
+import { toHex } from '@zpcscc/utils';
+
+console.log(toHex(123)); // 7b
  */
-const toHex = (n: number): string => `${n > 15 ? '' : 0}${n.toString(16)}`;
+const toHex = (number: number): string => `${number > 15 ? '' : 0}${number.toString(16)}`;
 
 export default toHex;
