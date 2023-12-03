@@ -16,7 +16,7 @@
 ### ts类型
 
 ```typescript
-toString(data:any, replacer?:any, space?:number);
+toString(data:any, stringifyArgs?:any);
 ```
 
 ### demo
@@ -35,6 +35,14 @@ console.log(toString(() => {})); // '()=>{}'
 console.log(toString([])); // '[]'
 console.log(toString({})); // '{}'
 console.log(toString(Symbol(1))); // 'Symbol(1)'
+
+// stringifyArgs参数, 相当于，JSON.stringify([1,2,3], null, 2));
+console.log(toString([1, 2, 3], null, 2));
+// `[
+//   1,
+//   2,
+//   3
+// ]`
 
 // 部分数据因为赋值给函数时，已被浏览器自动调整，故无法完整原样转为字符串。
 console.log(toString(Symbol.iterator)); // 'Symbol(Symbol.iterator)'

@@ -4,7 +4,7 @@
  * @param {Object} parseArgs 其他参数，用于传入JSON.parse
  * @returns {any} 返回对应格式的数据
  * @example <caption>ts类型</caption>
-toData(data:string, reviver?:any);
+toData(str:string, parseArgs?:any);
  * @example <caption>demo</caption>
 import { toData } from '@zpcscc/utils';
 

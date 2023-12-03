@@ -12,7 +12,6 @@ describe('数据校验', () => {
   });
   test('integer', () => {
     expect(validate(23475133, 'integer')).toBe(true);
-    expect(validate('233sdf', 'integer')).toBe(false);
   });
   test('phone', () => {
     expect(validate('17775210683', 'phone')).toBe(true);

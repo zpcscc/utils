@@ -16,7 +16,7 @@
 ### ts类型
 
 ```typescript
-toData(data:string, reviver?:any);
+toData(str:string, parseArgs?:any);
 ```
 
 ### demo

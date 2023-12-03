@@ -17,7 +17,7 @@ import {
   rgb7,
   rgb8,
   rgb9
-} from 'src/parseColor/__test__/parseColor.test';
+} from 'src/parseColor/__test__/index.test';
 import transformColor from '..';
 
 describe('transformColor', () => {

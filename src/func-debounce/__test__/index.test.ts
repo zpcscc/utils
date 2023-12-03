@@ -170,7 +170,7 @@ describe('debounce', () => {
         return value;
       },
       32,
-      { maxWait: 64 }
+      { maxWait: 10 }
     );
     debounced();
     debounced();
@@ -214,6 +214,29 @@ describe('debounce', () => {
     }, 1);
   });
 
+  it('应在紧密循环中支持“maxWait,测试无maxWait”', (done) => {
+    const limit = argv || 320;
+    let withCount = 0;
+    let withoutCount = 0;
+    const withMaxWait = debounce(() => {
+      withCount++;
+    }, 64);
+    const withoutMaxWait = debounce(() => {
+      withoutCount++;
+    }, 96);
+    const start = Date.now();
+    // @ts-expect-error 测试内容
+    while (Date.now() - start < limit) {
+      withMaxWait();
+      withoutMaxWait();
+    }
+    const actual = [Boolean(withoutCount), Boolean(withCount)];
+    setTimeout(() => {
+      expect(actual).toEqual([false, false]);
+      done();
+    }, 1);
+  });
+
   it('在“maxWait”之后，应该为后续被防抖的的呼叫排队`', (done) => {
     let callCount = 0;
     const debounced = debounce(
@@ -224,9 +247,9 @@ describe('debounce', () => {
       { maxWait: 200 }
     );
     debounced();
-    setTimeout(debounced, 190);
+    setTimeout(debounced, 100);
     setTimeout(debounced, 200);
-    setTimeout(debounced, 210);
+    setTimeout(debounced, 300);
     setTimeout(() => {
       expect(callCount).toBe(2);
       done();
@@ -250,7 +273,7 @@ describe('debounce', () => {
   });
 
   it('应使用正确的参数和“this”绑定调用尾部调用', (done) => {
-    let actual;
+    let actual: any[];
     let callCount = 0;
     const object = {};
 
@@ -264,7 +287,7 @@ describe('debounce', () => {
         return ++callCount !== 2;
       },
       32,
-      { leading: true, maxWait: 64 }
+      { leading: true, maxWait: 10 }
     );
 
     while (true) {

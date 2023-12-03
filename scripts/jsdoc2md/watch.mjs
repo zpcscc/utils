@@ -9,9 +9,9 @@ const delay = 200; // 延迟执行的时间，单位为毫秒
 // 监听文件改变，重新生成文档
 export const watcher = fs.watch(srcDirPath, { recursive: true }, (_eventType, filename) => {
   const filenameArr = filename.split('/');
-  console.log(filename, '文件改变了，正在更新文档...');
   // 只对函数的index.ts文件进行监听；
   if (filenameArr.length > 1 && filenameArr.at(-1) === 'index.ts') {
+    console.log(filename, '文件改变了，正在更新文档...');
     if (timer) clearTimeout(timer);
     timer = setTimeout(async () => {
       await generateMarkdownDocs(

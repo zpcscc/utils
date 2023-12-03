@@ -1,38 +1,6 @@
-import toString from 'src/toString';
-
-export type DesensitizeType = 'name' | 'phone' | 'IdCard' | 'telephone' | 'backCard';
-
-/**
- * @name 判断一个字符串中是否含有中文
- * @param {string} str 待判断的字符串
- * @returns {boolean} 返回布尔值
- */
-const isIncludeChinese = (str: string): boolean => /[\u4E00-\u9FFF]+/g.test(toString(str));
-
-/**
- * @name 将指定字符串复制指定次数并拼接在一起
- * @param {string} str 待复制的字符串
- * @param {number} num 复制的次数
- * @returns {string} 复制拼接后的字符串
- */
-const copyStrByNum = (str: string, num: number = 1): string => {
-  return new Array(num).fill(toString(str)).join('');
-};
-
-/**
- * @name 按指定长度拆分字符串
- * @param {string} str 待分割的字符串
- * @param {number} len 分割的数组每项的字符串长度
- * @returns {string[]} 分割后的数组
- */
-const splitStrByLen = (str: string, len: number | undefined = 1): string[] => {
-  const arr: string[] = [];
-  const strLen = str.length;
-  for (let i = 0; i <= strLen; i += len) {
-    arr.push(str.slice(i, i + len));
-  }
-  return arr;
-};
+import isIncludeChinese from 'src/isIncludeChinese';
+import copyStrByNum from 'src/str-copyStrByNum';
+import splitStrByLen from 'src/str-splitStrByLen';
 
 /**
  * @name 对姓名进行脱敏处理

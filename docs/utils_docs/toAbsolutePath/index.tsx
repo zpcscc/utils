@@ -7,7 +7,7 @@ import { useEffect, useState, type FC } from 'react';
 const clipboard = new ClipboardJS('.copy-btn');
 
 const ToAbsolutePath: FC = () => {
-  const [input, setInput] = useState<string>('/utils/utils/get-random-color');
+  const [input, setInput] = useState<string>('/utils/utils_docs/get-random-color');
   const [result, setResult] = useState<string>('');
 
   const onChange = (rgbValue: any) => {

@@ -1,7 +1,7 @@
 import fs from 'fs-extra';
-import path from 'node:path';
 import ora from 'ora';
-import { MD_DIR, __dirname } from './config.mjs';
+import { mdDirPath } from './config.mjs';
+import deleteDir from './deleteDir.mjs';
 import generateMarkdownDocs from './generateMarkdownDocs.mjs';
 import getEntries from './getEntries.mjs';
 
@@ -23,14 +23,7 @@ const generateMarkdown = async () => {
   const loading = ora('开始生成Markdown');
   try {
     // 生成前，删除之前的旧文件
-    const dirPath = path.join(__dirname, '../docs', MD_DIR);
-    try {
-      await fs.remove(dirPath);
-      console.log(`目录 ${dirPath} 删除成功.`);
-    } catch (error) {
-      console.error(`删除目录时出错 ${dirPath}: ${error}`);
-    }
-
+    await deleteDir(mdDirPath);
     // 获取需要生成文档的入口与出口
     const markdownDirs = getEntries();
     await Promise.all(
