@@ -19,10 +19,6 @@ const ValidateData: FC = () => {
     setResult(transformColor(input, typeValue));
   };
 
-  // const onClick = () => {
-  //   setResult(transformColor(input, type));
-  // };
-
   useEffect(() => {
     const clipboard = new ClipboardJS(`.${btn}`);
     clipboard.on('success', () => message.success('复制成功'));
@@ -47,15 +43,6 @@ const ValidateData: FC = () => {
           </Tooltip>
         }
       />
-      {/* <Button
-        type='primary'
-        onClick={onClick}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter') onClick();
-        }}
-      >
-        转换
-      </Button> */}
       <Input
         style={{ width: '300px' }}
         value={String(result)}

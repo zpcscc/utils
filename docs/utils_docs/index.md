@@ -1,7 +1,7 @@
 ---
 nav:
   title: 工具函数
-  order: 0
+  order: 1
 title: 简介
 ---
 

@@ -95,9 +95,10 @@ const debounce = (
 
   const remainingWait = (time: number) => {
     const timeSinceLastCall = time - (lastCallTime as number);
-    const timeSinceLastInvoke = time - lastInvokeTime;
+    // const timeSinceLastInvoke = time - lastInvokeTime;
     const timeWaiting = (wait as number) - timeSinceLastCall;
-    return maxing ? Math.min(timeWaiting, maxWait - timeSinceLastInvoke) : timeWaiting;
+    return timeWaiting;
+    // return maxing ? Math.min(timeWaiting, maxWait - timeSinceLastInvoke) : timeWaiting;
   };
 
   const shouldInvoke = (time: number) => {

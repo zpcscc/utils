@@ -13,7 +13,7 @@ export { default as isSymbol } from './isSymbol';
 export { default as parseColor } from './parseColor';
 export { default as parseQuery } from './parseQuery';
 export { default as copyStrByNum } from './str-copyStrByNum';
-export { default as desensitize, type DesensitizeType } from './str-desensitize';
+export { DesensitizeList, default as desensitize, type DesensitizeType } from './str-desensitize';
 export { default as splitStrByLen } from './str-splitStrByLen';
 export { default as toAbsolutePath } from './toAbsolutePath';
 export { default as toData } from './toData';

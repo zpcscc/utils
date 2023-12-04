@@ -26,6 +26,12 @@ pnpm run build:watch
 
 # 打包文档
 pnpm run docs:build
+
+# 生成文档
+pnpm run jsdoc2dom
+
+# 发布文档
+pnpm run deploy
 ```
 
 ## LICENSE

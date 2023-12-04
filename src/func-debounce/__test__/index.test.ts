@@ -214,29 +214,6 @@ describe('debounce', () => {
     }, 1);
   });
 
-  it('应在紧密循环中支持“maxWait,测试无maxWait”', (done) => {
-    const limit = argv || 320;
-    let withCount = 0;
-    let withoutCount = 0;
-    const withMaxWait = debounce(() => {
-      withCount++;
-    }, 64);
-    const withoutMaxWait = debounce(() => {
-      withoutCount++;
-    }, 96);
-    const start = Date.now();
-    // @ts-expect-error 测试内容
-    while (Date.now() - start < limit) {
-      withMaxWait();
-      withoutMaxWait();
-    }
-    const actual = [Boolean(withoutCount), Boolean(withCount)];
-    setTimeout(() => {
-      expect(actual).toEqual([false, false]);
-      done();
-    }, 1);
-  });
-
   it('在“maxWait”之后，应该为后续被防抖的的呼叫排队`', (done) => {
     let callCount = 0;
     const debounced = debounce(

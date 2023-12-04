@@ -18,7 +18,7 @@ const splitStrByLen = (value: string, len: number | undefined = 1): string[] => 
   const str = toString(value);
   const arr: string[] = [];
   const strLen = str.length;
-  for (let i = 0; i <= strLen; i += len) {
+  for (let i = 0; i < strLen; i += len) {
     arr.push(str.slice(i, i + len));
   }
   return arr;
