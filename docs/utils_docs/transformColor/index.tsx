@@ -3,7 +3,7 @@ import { Button, Input, Select, Space, Tooltip, message } from 'antd';
 import ClipboardJS from 'clipboard';
 import { useEffect, useState, type FC } from 'react';
 
-const ValidateData: FC = () => {
+const TransformColor: FC = () => {
   const btn = 'copy-color-btn';
   const [input, setInput] = useState<string>('');
   const [type, setType] = useState<ColorType>('rgb');
@@ -69,4 +69,4 @@ const ValidateData: FC = () => {
   );
 };
 
-export default ValidateData;
+export default TransformColor;

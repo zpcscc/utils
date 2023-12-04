@@ -2,7 +2,7 @@ import { desensitize, DesensitizeList, type DesensitizeType } from '@zpcscc/util
 import { Input, Select, Space } from 'antd';
 import { useState, type FC } from 'react';
 
-const ValidateData: FC = () => {
+const Desensitize: FC = () => {
   const [input, setInput] = useState<string>('');
   const [type, setType] = useState<DesensitizeType>();
   const [result, setResult] = useState<string>('');
@@ -42,4 +42,4 @@ const ValidateData: FC = () => {
   );
 };
 
-export default ValidateData;
+export default Desensitize;
