@@ -1,6 +1,16 @@
 /**
- * @name 获取某个日期距今多少天,或还差多少天到某个日期
+ * @name 获取日期距今的天数或倒计时的天数
  * @param {Date | string} value 需要计算的日期，不传的话，默认是当前日期,返回0天
+ * @returns {number} 天数
+ * @example <caption>ts类型</caption>
+getDayOfDate(value: Date | string);
+ * @example <caption>demo</caption>
+import { getDayOfDate } from '@zpcscc/utils';
+
+const pastDate = new Date(Date.now() - 1000 * 60 * 60 * 24 * 3);
+console.log(getDayOfDate(pastDate)); //  3;
+console.log(getDayOfDate('2023-01-01')); //  返回对应日期距今的天数;
+console.log(getDayOfDate('2099-12-31')); //  返回对应日期倒计时的天数;
  */
 const getDayOfDate = (value?: Date | string): number => {
   let result = 0;

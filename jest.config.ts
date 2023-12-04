@@ -8,8 +8,7 @@ const config: Config = {
   collectCoverageFrom: [
     './src/**/*.ts',
     '!./src/**/{type}.ts',
-    '!./src/{index,types,typings.d}.ts',
-    '!./src/z-z-dev/**/*.ts'
+    '!./src/{index,types,typings.d}.ts'
   ],
   // 排除完整的某个文件夹不进行测试
   // modulePathIgnorePatterns: ['<rootDir>/lodash-dev'],

@@ -1,0 +1,50 @@
+{{#orphans ~}}
+# {{anchorName}}
+
+{{#if description~}}
+## 描述
+{{>description~}}
+{{~/if}}
+
+## 参数
+{{#if (optionEquals "param-list-format" "list")}}{{>params-list~}}{{/if~}}
+  {{#if (optionEquals "param-list-format" "table")~}}
+    {{#if (optionEquals "no-gfm" true)}}
+    {{>params-table-html~}}
+    {{else}} {{#if params}}
+
+  {{tableHead params "name|参数名" "type|类型" "defaultvalue|默认值" "description|描述" ~}}
+  {{#tableRow params "name" "type" "defaultvalue" "description" ~}}
+   {{#if @col1}}{{>param-table-name}} | {{/if~}}
+    {{#if @col2}}{{>linked-type-list types=type.names delimiter=" \| " }} | {{/if~}}
+    {{#if @col3}}{{>defaultvalue}} | {{/if~}}
+    {{#if @col4}}{{{stripNewlines (inlineLinks description)}}} |{{/if}}
+  {{/tableRow}}
+
+    {{/if}}
+  {{/if~}}
+{{/if~}}
+
+
+{{#if returns}}
+  {{#if returns.[0].description~}}
+    ## 返回 
+    {{#each returns~}}
+      {{#if type~}}
+      {{#if type.names}}({{>linked-type-list types=type.names delimiter=" \| " ~}})：{{/if~}} 
+        {{#if description}}{{{inlineLinks description}}}{{/if~}}
+      {{else~}}
+        {{{inlineLinks description}}}
+      {{/if~}}
+    {{~/each}}
+  {{/if}}
+{{/if}}
+
+## 示例
+
+{{#examples}}
+{{#if caption}} ### {{caption}} {{else}}{{/if}}
+{{{inlineLinks example}}}
+{{/examples}}
+
+{{/orphans~}}
