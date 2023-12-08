@@ -15,7 +15,7 @@
 
   {{tableHead params "name|参数名" "type|类型" "defaultvalue|默认值" "description|描述" ~}}
   {{#tableRow params "name" "type" "defaultvalue" "description" ~}}
-   {{#if @col1}}{{>param-table-name}} | {{/if~}}
+    {{#if @col1}}{{>param-table-name}} | {{/if~}}
     {{#if @col2}}{{>linked-type-list types=type.names delimiter=" \| " }} | {{/if~}}
     {{#if @col3}}{{>defaultvalue}} | {{/if~}}
     {{#if @col4}}{{{stripNewlines (inlineLinks description)}}} |{{/if}}
@@ -27,23 +27,21 @@
 
 
 {{#if returns}}
-  {{#if returns.[0].description~}}
-    ## 返回 
-    {{#each returns~}}
-      {{#if type~}}
-      {{#if type.names}}({{>linked-type-list types=type.names delimiter=" \| " ~}})：{{/if~}} 
-        {{#if description}}{{{inlineLinks description}}}{{/if~}}
-      {{else~}}
-        {{{inlineLinks description}}}
-      {{/if~}}
-    {{~/each}}
-  {{/if}}
-{{/if}}
-
-## 示例
+{{#if returns.[0].description~}}
+## 返回 
+  {{#each returns~}}
+  {{#if type~}}
+  {{#if type.names}}{{>linked-type-list types=type.names delimiter=" \| " ~}}{{/if}}
+  {{~#if description}} - {{{inlineLinks description}}}{{/if~}}
+  {{else~}}
+  {{{inlineLinks description}~}}
+  {{/if~}}
+{{~/each}}
+  
+{{/if}}{{/if}}
 
 {{#examples}}
-{{#if caption}} ### {{caption}} {{else}}{{/if}}
+## 示例{{#if caption}} *({{caption}})*  {{else}}  {{/if}}
 {{{inlineLinks example}}}
 {{/examples}}
 

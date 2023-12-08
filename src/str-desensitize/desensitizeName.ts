@@ -27,7 +27,7 @@ const desensitizeName = (strValue: string): string => {
 
   // 英文字符串
   // 将字符串按空格分割成数组
-  const strArr = strValue.split(' ');
+  const strArr = strValue.split(/\s+/);
   //  若没有空格，则隐藏后三分之二的字符串，用*代替;
   if (strArr.length === 1) {
     // 需要隐藏的字符串长度

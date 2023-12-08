@@ -9,17 +9,15 @@
 
 ## 返回
 
-(<code>any</code>)：<p>返回对应格式的数据</p>
+<code>any</code> - <p>返回对应格式的数据</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 toData(str:string, parseArgs?:any);
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { toData } from '@zpcscc/utils';

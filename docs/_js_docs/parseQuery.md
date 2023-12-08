@@ -8,17 +8,15 @@
 
 ## 返回
 
-(<code>Record.&lt;string, any&gt;</code>)：<p>返回分析完成的url地址的对象；例：{ name: 'test', id: '123' }</p>
+<code>Record.&lt;string, any&gt;</code> - <p>返回分析完成的url地址的对象；例：{ name: 'test', id: '123' }</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 parseQuery(value: string);
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { parseQuery } from '@zpcscc/utils';

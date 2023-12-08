@@ -10,13 +10,13 @@ const desensitizeBankCard = (strValue: string): string => {
   const numLength = strValue.replaceAll(/[ -]/g, '').length;
   return strArr
     .map((item, index) => {
+      // 空格与-统一显示为空格
+      if (item === ' ' || item === '-') return ' ';
       const shieldNum = numLength < 16 ? 1 : 3;
       if (index <= shieldNum || index >= strLength - shieldNum - 1) {
         // 前几位与后几位正常显示
         return item;
       }
-      // 空格与-统一显示为空格
-      if (item === ' ' || item === '-') return ' ';
       // 其他字段全部屏蔽
       return '*';
     })

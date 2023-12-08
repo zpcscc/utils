@@ -8,17 +8,15 @@
 
 ## 返回
 
-(<code>string</code>)：<p>返回转换后的十六进制数据</p>
+<code>string</code> - <p>返回转换后的十六进制数据</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 toHex(value: number);
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { toHex } from '@zpcscc/utils';

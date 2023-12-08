@@ -8,17 +8,15 @@
 
 ## 返回
 
-(<code>string</code>)：<p>返回没有tag的字符串</p>
+<code>string</code> - <p>返回没有tag的字符串</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 removeTag(html:string);
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { removeTag } from '@zpcscc/utils';

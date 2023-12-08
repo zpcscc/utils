@@ -14,17 +14,15 @@
 
 ## 返回
 
-(<code>string</code>)：<p>复制拼接后的字符串</p>
+<code>string</code> - <p>复制拼接后的字符串</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 copyStrByNum(data:string, num?:number)
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { copyStrByNum } from '@zpcscc/utils';

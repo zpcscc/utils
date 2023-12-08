@@ -8,17 +8,15 @@
 
 ## 返回
 
-(<code>Array.&lt;string&gt;</code>)：<p>从小到大排序过后的数组</p>
+<code>Array.&lt;string&gt;</code> - <p>从小到大排序过后的数组</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 sortVersions(data:string[])
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { sortVersions } from '@zpcscc/utils';

@@ -8,17 +8,15 @@
 
 ## 返回
 
-(<code>string</code>)：<p>返回对应的类型 <code>Array</code>、<code>Boolean</code>、<code>Date</code>、<code>Error</code>、<code>Function</code>、<code>Map</code>、<code>Null</code>、<code>Number</code>、<code>RegExp</code>、<code>Set</code>、<code>String</code>、<code>Symbol</code>、<code>Undefined</code>、<code>Arguments</code></p>
+<code>string</code> - <p>返回对应的类型 <code>Array</code>、<code>Boolean</code>、<code>Date</code>、<code>Error</code>、<code>Function</code>、<code>Map</code>、<code>Null</code>、<code>Number</code>、<code>RegExp</code>、<code>Set</code>、<code>String</code>、<code>Symbol</code>、<code>Undefined</code>、<code>Arguments</code></p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 getType(value:any)
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { getType } from '@zpcscc/utils';

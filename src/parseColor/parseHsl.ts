@@ -1,4 +1,3 @@
-import isNil from 'src/isNil';
 import { type ColorObjType } from 'src/types';
 
 /**
@@ -8,7 +7,7 @@ import { type ColorObjType } from 'src/types';
  */
 const parseHsl = (color: string) => {
   const arr = color?.match(/(\d(\.\d+)?)+/g) || [];
-  const res = arr.map((s: string) => Number.parseInt(s, 10)).filter((n: number) => !isNil(n));
+  const res = arr.map((s: string) => Number.parseInt(s, 10)).filter((n: number) => n != null);
   const h = res[0] / 360;
   const s = res[1] / 100;
   const l = res[2] / 100;

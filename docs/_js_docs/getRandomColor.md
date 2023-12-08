@@ -8,17 +8,15 @@
 
 ## 返回
 
-(<code>string</code>)：<p>返回生成的随机颜色字符串</p>
+<code>string</code> - <p>返回生成的随机颜色字符串</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 getRandomColor(type:'rgb' | 'hex' | 'hsl');
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { getRandomColor } from '@zpcscc/utils';

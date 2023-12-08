@@ -9,17 +9,15 @@
 
 ## 返回
 
-(<code>string</code>)：<p>转换后的字符串数据</p>
+<code>string</code> - <p>转换后的字符串数据</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 toString(data:any, stringifyArgs?:any);
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { toString } from '@zpcscc/utils';
