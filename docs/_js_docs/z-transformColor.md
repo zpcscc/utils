@@ -9,17 +9,15 @@
 
 ## 返回
 
-(<code>string</code>)：<p>返回转换为对应格式的颜色字符串</p>
+<code>string</code> - <p>返回转换为对应格式的颜色字符串</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 transformColor(data:string, type: 'rgb' | 'hsl' | 'hex');
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { transformColor } from '@zpcscc/utils';

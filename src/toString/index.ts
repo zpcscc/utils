@@ -1,4 +1,4 @@
-import { isObject, isSymbol } from 'src';
+import getType from 'src/getType';
 
 /**
  * @name 将各种格式的数据转为string
@@ -44,9 +44,9 @@ const toString = (data: any, ...stringifyArgs: any[]): string => {
   // 将对应的数据格式处理为初步的字符串
   if (typeof data === 'number' || typeof data === 'boolean') {
     str = `${data}`;
-  } else if (isSymbol(data)) {
+  } else if (getType(data) === 'Symbol') {
     str = data.toString();
-  } else if (Array.isArray(data) || isObject(data)) {
+  } else if (Array.isArray(data) || getType(data) === 'Object') {
     str = JSON.stringify(data, ...stringifyArgs);
   } else {
     str = String(data);

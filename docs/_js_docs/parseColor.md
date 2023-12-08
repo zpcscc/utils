@@ -8,17 +8,15 @@
 
 ## 返回
 
-(<code>ColorObjType</code>)：<p>rgba颜色对象; 例：{ r: 102, g: 204, b: 255, a: 1 }</p>
+<code>ColorObjType</code> - <p>rgba颜色对象; 例：{ r: 102, g: 204, b: 255, a: 1 }</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 parseColor(value: string);
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { parseColor } from '@zpcscc/utils';

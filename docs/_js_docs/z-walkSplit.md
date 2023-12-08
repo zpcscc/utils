@@ -13,17 +13,15 @@
 
 ## 返回
 
-(<code>iterator</code>)：<p>返回一个迭代器。可使用.next()，获取下一步的数据</p>
+<code>iterator</code> - <p>返回一个迭代器。可使用.next()，获取下一步的数据</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 walkSplit(data:string,terminals:string[]);
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { walkSplit } from '@zpcscc/utils';

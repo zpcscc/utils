@@ -9,17 +9,15 @@
 
 ## 返回
 
-(<code>Array.&lt;string&gt;</code>)：<p>分割后的数组</p>
+<code>Array.&lt;string&gt;</code> - <p>分割后的数组</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 splitStrByLen(value:string, len?:number)
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { splitStrByLen } from '@zpcscc/utils';

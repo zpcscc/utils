@@ -1,4 +1,3 @@
-import isNil from 'src/isNil';
 import { type ColorObjType } from 'src/types';
 
 /**
@@ -8,7 +7,7 @@ import { type ColorObjType } from 'src/types';
  */
 const parseRgb = (color: string) => {
   const arr = color?.match(/(\d(\.\d+)?)+/g) || [];
-  const res = arr.map((s: string) => Number.parseInt(s, 10)).filter((n: number) => !isNil(n));
+  const res = arr.map((s: string) => Number.parseInt(s, 10)).filter((n: number) => n != null);
   if (res.length === 3 || res.length === 4) {
     return {
       r: res[0],

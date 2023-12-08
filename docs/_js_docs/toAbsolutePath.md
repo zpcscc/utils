@@ -8,17 +8,15 @@
 
 ## 返回
 
-(<code>string</code>)：<p>返回绝对路径url</p>
+<code>string</code> - <p>返回绝对路径url</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 toAbsolutePath(data:string)
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { toAbsolutePath } from '@zpcscc/utils';

@@ -8,17 +8,15 @@
 
 ## 返回
 
-(<code>boolean</code>)：<p>返回布尔值</p>
+<code>boolean</code> - <p>返回布尔值</p>
 
-## 示例
-
-### ts类型
+## 示例 _(ts类型)_
 
 ```typescript
 isIncludeChinese(str:string)
 ```
 
-### demo
+## 示例 _(demo)_
 
 ```typescript
 import { isIncludeChinese } from '@zpcscc/utils';
