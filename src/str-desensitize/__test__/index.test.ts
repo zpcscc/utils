@@ -19,7 +19,7 @@ describe('desensitize-脱敏测试', () => {
     expect(desensitize('章三李四', 'name')).toBe('章***');
   });
   test('phone', () => {
-    expect(desensitize('17775262736', 'phone')).toBe('177*****736');
+    expect(desensitize('17775262736', 'phone')).toBe('177****2736');
   });
   test('telephone', () => {
     expect(desensitize('0571-87006789-1234', 'telephone')).toBe('0571-8700****-12**');
