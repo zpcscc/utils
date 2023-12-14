@@ -1,4 +1,5 @@
 import isIncludeChinese from 'src/isIncludeChinese';
+import { trimRegExp } from 'src/regular';
 import copyStrByNum from 'src/str-copyStrByNum';
 import splitStrByLen from 'src/str-splitStrByLen';
 
@@ -27,7 +28,7 @@ const desensitizeName = (strValue: string): string => {
 
   // 英文字符串
   // 将字符串按空格分割成数组
-  const strArr = strValue.split(/\s+/);
+  const strArr = strValue.split(trimRegExp);
   //  若没有空格，则隐藏后三分之二的字符串，用*代替;
   if (strArr.length === 1) {
     // 需要隐藏的字符串长度

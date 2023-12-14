@@ -16,7 +16,6 @@ const parseRgb = (color: string) => {
       a: Number.parseFloat(Number(arr[3]) > 0 ? (Number(arr[3]) > 1 ? `0.${arr[3]}` : arr[3]) : '1')
     } as ColorObjType;
   }
-  console.error('rgb格式错误');
   return { r: 0, g: 0, b: 0, a: 0 };
 };
 

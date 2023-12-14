@@ -26,7 +26,6 @@ const parseHex = (color: string) => {
       break;
     }
     default: {
-      console.error('hex格式错误');
       return { r: 0, g: 0, b: 0, a: 0 };
     }
   }

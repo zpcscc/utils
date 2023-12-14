@@ -1,3 +1,4 @@
+import { integerStrictRegExp } from 'src/regular';
 import toString from 'src/toString';
 
 /**
@@ -6,7 +7,7 @@ import toString from 'src/toString';
  * @return {boolean} 返回校验的结果
  */
 const validateInteger = (data: number): boolean => {
-  return /(^-?[1-9](\d*)$|^-?\d$)/.test(toString(data));
+  return integerStrictRegExp.test(toString(data));
 };
 
 export default validateInteger;

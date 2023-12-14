@@ -24,8 +24,8 @@ export type DesensitizeType = (typeof DesensitizeList)[number];
   &nbsp;&nbsp;1、号码长度为 15位的：号码的第7位到12位和最后1位屏蔽，其他不屏;<br/>
   &nbsp;&nbsp;2、号码长度为 18位的：号码的第7位到14位和最后2位屏蔽，其他不屏; <br/>
 三、手机号码： <br/>
-  &nbsp;&nbsp;1、只展示前3位、末3位，中间均屏蔽 <br/>
-  &nbsp;&nbsp;2、支持格式 带-或者空格 例如会将 178-7777-8888 或178 7777 8888統一输出为178*****888 <br/>
+  &nbsp;&nbsp;1、只展示前3位、末4位，中间均屏蔽 <br/>
+  &nbsp;&nbsp;2、支持格式 带-或者空格 例如会将 178-7777-8888 或178 7777 8888統一输出为178****8888 <br/>
 四、固定电话： <br/>
   &nbsp;&nbsp;1、区号不屏蔽；电话号码屏蔽末4位：分机号码屏蔽末2位 <br/>
   &nbsp;&nbsp;2、注意：仅支持2段或3段，如 0571-87006789-1234 <br/>
@@ -44,7 +44,7 @@ import type { DesensitizeType } from '@zpcscc/utils';
 
 console.log(desensitize('')); // ''
 console.log(desensitize('张3粒死王五')); // 张3**王五
-console.log(desensitize('17775262736', 'phone')); // 177*****736
+console.log(desensitize('17775262736', 'phone')); // 177****2736
  */
 const desensitize = (value?: string, type?: DesensitizeType): string => {
   // 将传入的值转为字符串，并去除前后空格，确保后续都是对字符串进行操作

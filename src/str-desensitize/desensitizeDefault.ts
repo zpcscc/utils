@@ -7,7 +7,6 @@ import copyStrByNum from 'src/str-copyStrByNum';
  */
 const desensitizeDefault = (strValue: string): string => {
   const strLength = strValue.length;
-
   // 长度  2 < str < 5， 则只显示第一位与最后一位，其他用*代替;
   if (strLength > 2 && strLength < 5) {
     return `${strValue.slice(0, 1)}${copyStrByNum('*', strLength - 2)}${strValue.slice(-1)}`;
