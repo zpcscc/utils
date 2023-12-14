@@ -29,7 +29,6 @@ const parseColor = (value: string): ColorObjType => {
   if (value === 'transparent') {
     return parseColorHex('#00000000');
   }
-  console.error('颜色格式错误');
   return { r: 0, g: 0, b: 0, a: 0 };
 };
 

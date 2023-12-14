@@ -7,7 +7,7 @@ const desensitizeBankCard = (strValue: string): string => {
   const strLength = strValue.length;
   const strArr = [...strValue];
   // 去除空格和-的，纯数字的长度；
-  const numLength = strValue.replaceAll(/[\s+-]/g, '').length;
+  const numLength = strValue.replaceAll(/[\s-]/g, '').length;
   return strArr
     .map((item, index) => {
       // 空格与-统一显示为空格

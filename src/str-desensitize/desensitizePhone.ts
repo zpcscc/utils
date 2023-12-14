@@ -1,3 +1,4 @@
+import pickNumber from 'src/pickNumber';
 import copyStrByNum from 'src/str-copyStrByNum';
 
 /**
@@ -6,7 +7,7 @@ import copyStrByNum from 'src/str-copyStrByNum';
  * @returns {string} 脱敏后的字符串
  */
 const desensitizePhone = (strValue: string): string => {
-  const newStrValue = strValue.replaceAll(/[\s+-]/g, '');
+  const newStrValue = pickNumber(strValue, 'integerPlus').join('');
   // 手机号，统一只显示前后三位，中间显示5个*号；
   return `${newStrValue.slice(0, 3)}${copyStrByNum('*', 4)}${newStrValue.slice(-4)}`;
 };

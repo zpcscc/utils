@@ -48,7 +48,6 @@ const parseHsl = (color: string) => {
     b = Math.round(rgb[2]);
     return { r, g, b, a } as ColorObjType;
   }
-  console.error('hsl格式错误');
   return { r: 0, g: 0, b: 0, a: 0 };
 };
 
