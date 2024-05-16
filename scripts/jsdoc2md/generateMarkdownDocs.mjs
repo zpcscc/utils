@@ -16,6 +16,7 @@ const generateMarkdownDocs = async (sourcePath, outputPath) => {
   try {
     const mdStr = await jsdoc2md.render({
       // 传入需要解析的文件路径
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
       files: path.resolve(process.cwd(), sourcePath),
       // 最终需要渲染的模板
       template,

@@ -2,7 +2,7 @@ import { CopyOutlined } from '@ant-design/icons';
 import { toAbsolutePath } from '@zpcscc/utils';
 import { Button, Input, message, Space, Tooltip } from 'antd';
 import ClipboardJS from 'clipboard';
-import { useEffect, useState, type FC } from 'react';
+import { useEffect, useState, type ChangeEvent, type FC } from 'react';
 
 const clipboard = new ClipboardJS('.copy-btn');
 
@@ -10,8 +10,8 @@ const ToAbsolutePath: FC = () => {
   const [input, setInput] = useState<string>('/utils/utils_docs/get-random-color');
   const [result, setResult] = useState<string>('');
 
-  const onChange = (rgbValue: any) => {
-    setInput(rgbValue.target.value);
+  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setInput(e.target.value);
   };
 
   const onClick = () => {

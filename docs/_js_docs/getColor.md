@@ -13,16 +13,16 @@
 ## 示例 _(ts类型)_
 
 ```typescript
-getRandomColor(type:'rgb' | 'hex' | 'hsl');
+getColor(type:'rgb' | 'hex' | 'hsl');
 ```
 
 ## 示例 _(demo)_
 
 ```typescript
-import { getRandomColor } from '@zpcscc/utils';
+import { getColor } from '@zpcscc/utils';
 
-console.log(getRandomColor()); //  #6ffccf;
-console.log(getRandomColor('hex')); //  #8d3eca;
-console.log(getRandomColor('rgb')); //  rgb(12,45,145,0.4);
-console.log(getRandomColor('hsl')); //  hsl(200,100%,70%);
+console.log(getColor()); //  #6ffccf;
+console.log(getColor('hex')); //  #8d3eca;
+console.log(getColor('rgb')); //  rgb(12,45,145,0.4);
+console.log(getColor('hsl')); //  hsl(200,100%,70%);
 ```

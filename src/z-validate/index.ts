@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import validateDate from './validateDate';
 import validateEmail from './validateEmail';
 import validateIDCard from './validateIDCard';

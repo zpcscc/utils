@@ -1,4 +1,4 @@
-# 将“rgb”、“hsl”、“hex”的颜色格式互相转换，转换为指定的格式123
+# 将“rgb”、“hsl”、“hex”的颜色格式互相转换，转换为指定的格式
 
 ## 参数
 
@@ -14,15 +14,15 @@
 ## 示例 _(ts类型)_
 
 ```typescript
-transformColor(data:string, type: 'rgb' | 'hsl' | 'hex');
+toColor(data:string, type: 'rgb' | 'hsl' | 'hex');
 ```
 
 ## 示例 _(demo)_
 
 ```typescript
-import { transformColor } from '@zpcscc/utils';
+import { toColor } from '@zpcscc/utils';
 
-console.log(transformColor('#6666cc', 'rgb')); // rgb(102,102,204);
-console.log(transformColor('rgb(102,102,204)', 'hex')); // #6666cc;
-console.log(transformColor('#6666cc', 'hsl')); // hsl(240,50%,60%);
+console.log(toColor('#6666cc', 'rgb')); // rgb(102,102,204);
+console.log(toColor('rgb(102,102,204)', 'hex')); // #6666cc;
+console.log(toColor('#6666cc', 'hsl')); // hsl(240,50%,60%);
 ```

@@ -1,15 +1,16 @@
 import { validate, validateTypeList, type ValidateType } from '@zpcscc/utils';
 import { Input, Select, Space } from 'antd';
-import { useState, type FC } from 'react';
+import { useState, type ChangeEvent, type FC } from 'react';
 
 const ValidateData: FC = () => {
   const [input, setInput] = useState<string>('zpcscc@email.com');
   const [type, setType] = useState<ValidateType>('email');
   const [result, setResult] = useState<boolean>(true);
 
-  const onChange = (e: any) => {
-    setInput(e?.target?.value);
-    setResult(validate(e?.target?.value, type));
+  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const value = e?.target?.value;
+    setInput(value);
+    setResult(validate(value, type));
   };
 
   const onTypeChange = (typeValue: ValidateType) => {
