@@ -1,22 +1,23 @@
-import { transformColor, type ColorType } from '@zpcscc/utils';
+import { toColor, type ColorType } from '@zpcscc/utils';
 import { Button, Input, Select, Space, Tooltip, message } from 'antd';
 import ClipboardJS from 'clipboard';
-import { useEffect, useState, type FC } from 'react';
+import { useEffect, useState, type ChangeEvent, type FC } from 'react';
 
-const TransformColor: FC = () => {
+const ToColor: FC = () => {
   const btn = 'copy-color-btn';
   const [input, setInput] = useState<string>('');
   const [type, setType] = useState<ColorType>('rgb');
   const [result, setResult] = useState<string>('');
 
-  const onChange = (e: any) => {
-    setInput(e?.target?.value);
-    setResult(transformColor(e?.target?.value, type));
+  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const value = e?.target?.value || '';
+    setInput(value);
+    setResult(toColor(value, type));
   };
 
   const onTypeChange = (typeValue: ColorType) => {
     setType(typeValue);
-    setResult(transformColor(input, typeValue));
+    setResult(toColor(input, typeValue));
   };
 
   useEffect(() => {
@@ -69,4 +70,4 @@ const TransformColor: FC = () => {
   );
 };
 
-export default TransformColor;
+export default ToColor;

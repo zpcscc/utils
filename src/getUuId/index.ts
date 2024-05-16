@@ -13,17 +13,17 @@ const s4 = () => {
  * @param {string} prefix='' 指定id的前缀
  * @returns {string} 返回一个唯一ID
  * @example <caption>ts类型</caption>
-getUniqueId(prefix?:string);
+getUuid(prefix?:string);
  * @example <caption>demo</caption>
-import { getUniqueId } from '@zpcscc/utils';
+import { getUuid } from '@zpcscc/utils';
 
-console.log(getUniqueId()); //  '32f4';
-console.log(getUniqueId(2)); //  'b0';
-console.log(getUniqueId(6)); //  '3e964a';
-console.log(getUniqueId(2,'test_')); //  'test_db';
-console.log(getUniqueId(5,'test_')); //  'test_7ad22';
+console.log(getUuid()); //  '32f4';
+console.log(getUuid(2)); //  'b0';
+console.log(getUuid(6)); //  '3e964a';
+console.log(getUuid(2,'test_')); //  'test_db';
+console.log(getUuid(5,'test_')); //  'test_7ad22';
  */
-const getUniqueId = (length?: number, prefix: string = ''): string => {
+const getUuid = (length?: number, prefix: string = ''): string => {
   let len = length || 4;
   if (!(getType(length) === 'Number')) len = 4;
   let count = Math.ceil(len / 4);
@@ -35,4 +35,4 @@ const getUniqueId = (length?: number, prefix: string = ''): string => {
   return `${prefix}${id.slice(0, len)}`;
 };
 
-export default getUniqueId;
+export default getUuid;

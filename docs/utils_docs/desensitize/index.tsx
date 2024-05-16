@@ -1,13 +1,13 @@
 import { desensitize, DesensitizeList, type DesensitizeType } from '@zpcscc/utils';
 import { Input, Select, Space } from 'antd';
-import { useState, type FC } from 'react';
+import { useState, type ChangeEvent, type FC } from 'react';
 
 const Desensitize: FC = () => {
   const [input, setInput] = useState<string>('');
   const [type, setType] = useState<DesensitizeType>();
   const [result, setResult] = useState<string>('');
 
-  const onChange = (e: any) => {
+  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInput(e?.target?.value);
     setResult(desensitize(e?.target?.value, type));
   };

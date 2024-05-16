@@ -1,20 +1,20 @@
-export type ColorType = 'rgb' | 'hex' | 'hsl';
+import type { ColorType } from 'src/types';
 
 /**
  * @name 获取随机颜色
  * @param {'rgb' | 'hex'| 'hsl'} type 返回颜色的格式
  * @return {string} 返回生成的随机颜色字符串
  * @example <caption>ts类型</caption>
-getRandomColor(type:'rgb' | 'hex' | 'hsl');
+getColor(type:'rgb' | 'hex' | 'hsl');
  * @example <caption>demo</caption>
-import { getRandomColor } from '@zpcscc/utils';
+import { getColor } from '@zpcscc/utils';
 
-console.log(getRandomColor()); //  #6ffccf;
-console.log(getRandomColor('hex')); //  #8d3eca;
-console.log(getRandomColor('rgb')); //  rgb(12,45,145,0.4);
-console.log(getRandomColor('hsl')); //  hsl(200,100%,70%);
+console.log(getColor()); //  #6ffccf;
+console.log(getColor('hex')); //  #8d3eca;
+console.log(getColor('rgb')); //  rgb(12,45,145,0.4);
+console.log(getColor('hsl')); //  hsl(200,100%,70%);
  */
-const getRandomColor = (type?: ColorType): string => {
+const getColor = (type?: ColorType): string => {
   const a = Math.floor(Math.random() * 101);
   if (type === 'rgb') {
     const r = Math.floor(Math.random() * 256);
@@ -30,4 +30,4 @@ const getRandomColor = (type?: ColorType): string => {
   return `#${Math.random().toString(16).padEnd(6, '0').slice(2, 8)}`;
 };
 
-export default getRandomColor;
+export default getColor;

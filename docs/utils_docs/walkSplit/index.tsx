@@ -1,6 +1,6 @@
 import { walkSplit } from '@zpcscc/utils';
 import { Button, Input, Space } from 'antd';
-import { useState, type FC } from 'react';
+import { useState, type ChangeEvent, type FC } from 'react';
 
 const WalkSplit: FC = () => {
   const [input, setInput] = useState<string>('1.2.3-alpha.5');
@@ -8,12 +8,12 @@ const WalkSplit: FC = () => {
   const [result, setResult] = useState<string>('');
   const [iterator, setIterator] = useState<Generator<string, any, string>>();
 
-  const onInputChange = (inputValue: any) => {
-    setInput(inputValue.target.value);
+  const onInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setInput(e.target.value);
   };
 
-  const onSplitChange = (splitValue: any) => {
-    setSplit(splitValue.target.value);
+  const onSplitChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setSplit(e.target.value);
   };
 
   const onInitGenerator = () => {
@@ -21,7 +21,7 @@ const WalkSplit: FC = () => {
   };
 
   const onClick = () => {
-    setResult(iterator?.next().value);
+    setResult(iterator?.next().value as string);
   };
 
   return (

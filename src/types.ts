@@ -13,3 +13,5 @@ export type ColorObjType = {
   b: number;
   a: number;
 };
+
+export type ColorType = 'rgb' | 'hex' | 'hsl';

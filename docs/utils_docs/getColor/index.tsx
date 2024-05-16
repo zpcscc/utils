@@ -1,4 +1,4 @@
-import { getRandomColor, type ColorType } from '@zpcscc/utils';
+import { getColor, type ColorType } from '@zpcscc/utils';
 import { Button, Input, Radio, Space, Tooltip, message, type RadioChangeEvent } from 'antd';
 import ClipboardJS from 'clipboard';
 import { useEffect, useState, type FC } from 'react';
@@ -8,13 +8,14 @@ const GetRandomColor: FC = () => {
   const [type, setType] = useState<ColorType>('hex');
   const [result, setResult] = useState<string>('');
 
-  const onChange = (radioValue: RadioChangeEvent) => {
-    setType(radioValue?.target?.value);
-    setResult(getRandomColor(radioValue?.target?.value));
+  const onChange = (e: RadioChangeEvent) => {
+    const value = e.target.value as ColorType;
+    setType(value);
+    setResult(getColor(value));
   };
 
   const onClick = () => {
-    setResult(getRandomColor(type));
+    setResult(getColor(type));
   };
 
   useEffect(() => {

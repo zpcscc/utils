@@ -12,6 +12,7 @@ export const watcher = fs.watch(srcDirPath, { recursive: true }, (_eventType, fi
   // 只对函数的index.ts文件进行监听；
   if (filenameArr.length > 1 && filenameArr.at(-1) === 'index.ts') {
     console.log(filename, '文件改变了，正在更新文档...');
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
     if (timer) clearTimeout(timer);
     timer = setTimeout(async () => {
       await generateMarkdownDocs(
