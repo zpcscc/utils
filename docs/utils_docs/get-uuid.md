@@ -4,4 +4,4 @@ group:
 title: getUuid
 ---
 
-<embed src="../_js_docs/getUuid.md"></embed>
+<embed src="../_js_docs/getUuId.md"></embed>
