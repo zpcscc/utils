@@ -1,4 +1,5 @@
 export { default as getColor } from './getColor';
+export { default as getQuery } from './getQuery';
 export { default as getType, type DataType } from './getType';
 export { default as getUuid } from './getUuId';
 export { default as isEmpty } from './isEmpty';
