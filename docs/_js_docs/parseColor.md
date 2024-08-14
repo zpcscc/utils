@@ -1,4 +1,4 @@
-# 将‘rgb’、‘hex’、‘hsl’颜色字符串解析为颜色对象
+# parseColor-将‘rgb’、‘hex’、‘hsl’颜色字符串解析为颜色对象
 
 ## 参数
 

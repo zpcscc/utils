@@ -1,7 +1,7 @@
 import toString from 'src/toString';
 
 /**
- * @name 获取url携带的参数
+ * @name getQuery-获取url携带的参数
  * @param {string} url 需要解析的url链接或字符串
  * @return {object} 返回解析后的query参数
  * @example <caption>ts类型</caption>

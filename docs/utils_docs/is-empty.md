@@ -1,7 +1,5 @@
 ---
-group:
-  title: is函数
-title: isEmpty
+title: 是否为空
 ---
 
 <embed src="../_js_docs/isEmpty.md"></embed>

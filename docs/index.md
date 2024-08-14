@@ -7,7 +7,7 @@ hero:
     - text: 指南
       link: /guide
     - text: 工具函数
-      link: /utils
+      link: /utils_docs
     - text: 博客
       link: https://zpcscc.top
 ---

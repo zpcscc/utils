@@ -1,7 +1,5 @@
 ---
-group:
-  title: parse函数
-title: parseColor
+title: 解析颜色
 ---
 
 <embed src="../_js_docs/parseColor.md"></embed>

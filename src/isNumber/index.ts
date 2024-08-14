@@ -1,7 +1,7 @@
 import getType from 'src/getType';
 
 /**
- * @name 检查“value”是否是有效“Number“
+ * @name isNumber-检查“value”是否是有效“Number“
  * @description 排除 Infinity、-Infinity、MAX_VALUE、MIN_VALUE、NaN、
  * @param {any} value 要判断的值
  * @returns {boolean} 返回布尔值

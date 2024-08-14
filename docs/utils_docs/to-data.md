@@ -1,7 +1,5 @@
 ---
-group:
-  title: to函数
-title: toData
+title: 转为对应数据格式
 ---
 
 <embed src="../_js_docs/toData.md"></embed>

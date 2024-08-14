@@ -1,4 +1,4 @@
-# 检查“value”是否是有效“Number“
+# isNumber-检查“value”是否是有效“Number“
 
 ## 描述
 

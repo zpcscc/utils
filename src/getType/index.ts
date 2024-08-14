@@ -17,7 +17,7 @@ export type DataType =
   | 'Undefined';
 
 /**
- * @name 获取数据类型
+ * @name getType-获取数据类型
  * @param {any} data 需要判断类型的数据
  * @return {string} 返回对应的类型 `Array`、`Boolean`、`Date`、`Error`、`Function`、`Map`、`Null`、`Number`、`RegExp`、`Set`、`String`、`Symbol`、`Undefined`、`Arguments`
  * @example <caption>ts类型</caption>

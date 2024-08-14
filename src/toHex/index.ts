@@ -1,5 +1,5 @@
 /**
- * @name 十进制转十六进制
+ * @name toHex-十进制转十六进制
  * @param {number} number 十进制的数字
  * @returns {string} 返回转换后的十六进制数据
  * @example <caption>ts类型</caption>
