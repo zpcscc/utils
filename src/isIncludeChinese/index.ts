@@ -1,7 +1,7 @@
 import toString from 'src/toString';
 
 /**
- * @name 判断一个字符串中是否含有中文
+ * @name isIncludeChinese-判断一个字符串中是否含有中文
  * @param {string} str 待判断的字符串
  * @returns {boolean} 返回布尔值
  * @example <caption>ts类型</caption>

@@ -1,7 +1,5 @@
 ---
-group:
-  title: parse函数
-title: pickNumber
+title: 挑选出字符串中的数字
 ---
 
 <embed src="../_js_docs/pickNumber.md"></embed>

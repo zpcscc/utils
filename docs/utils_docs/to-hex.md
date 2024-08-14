@@ -1,7 +1,5 @@
 ---
-group:
-  title: to函数
-title: toHex
+title: 转为十六进制
 ---
 
 <embed src="../_js_docs/toHex.md"></embed>

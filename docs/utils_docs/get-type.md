@@ -1,7 +1,5 @@
 ---
-group:
-  title: get函数
-title: getType
+title: 获取数据类型
 ---
 
 <embed src="../_js_docs/getType.md"></embed>

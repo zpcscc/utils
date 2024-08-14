@@ -1,7 +1,5 @@
 ---
-group:
-  title: to函数
-title: toAbsolutePath
+title: 转为绝对路径
 ---
 
 <code src="./toAbsolutePath" title="在线演示"></code>

@@ -8,7 +8,7 @@ const s4 = () => {
 };
 
 /**
- * @name 生成全局唯一ID
+ * @name getUuid-生成全局唯一ID
  * @param {number} length=4 随机id的长度，不包含自定义前缀
  * @param {string} prefix='' 指定id的前缀
  * @returns {string} 返回一个唯一ID

@@ -7,5 +7,8 @@ module.exports = {
   extends: require.resolve('@zpcscc/configs/eslint-config/react'),
   parserOptions: {
     project: ['./tsconfig.json']
+  },
+  globals: {
+    NodeJS: true
   }
 };

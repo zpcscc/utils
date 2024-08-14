@@ -2,7 +2,7 @@ import getType from 'src/getType';
 import isNumber from 'src/isNumber';
 
 /**
- * @name 判断数据是否为空
+ * @name isEmpty-判断数据是否为空
  * @param {any} value 需要检查的数据
  * @returns {boolean} 返回布尔值
  * @example <caption>ts类型</caption>
