@@ -1,4 +1,6 @@
+export { default as cloneDeep } from './cloneDeep';
 export { default as copyStrByNum } from './copyStrByNum';
+export { default as debounce } from './debounce';
 export { DesensitizeList, default as desensitize, type DesensitizeType } from './desensitize';
 export { default as getColor } from './getColor';
 export { default as getQuery } from './getQuery';
@@ -9,16 +11,33 @@ export { default as isIncludeChinese } from './isIncludeChinese';
 export { default as isNumber } from './isNumber';
 export { default as parseColor } from './parseColor';
 export { default as pickNumber, type NumberType } from './pickNumber';
-export * from './regular';
+export {
+  IDCardStrictRegExp,
+  binaryStrictRegExp,
+  decimalMinusRegExp,
+  decimalPlusRegExp,
+  decimalRegExp,
+  digitRegExp,
+  emailStrictRegExp,
+  integerMinusRegExp,
+  integerPlusRegExp,
+  integerRegExp,
+  integerStrictRegExp,
+  octalStrictRegExp,
+  phoneNumberStrictRegExp,
+  trimRegExp,
+  urlStrictRegExp
+} from './regular';
 export { default as removeTag } from './removeTag';
 export { default as sortVersions } from './sortVersions';
 export { default as splitStrByLen } from './splitStrByLen';
+export { default as throttle } from './throttle';
 export { default as toAbsolutePath } from './toAbsolutePath';
 export { default as toColor } from './toColor';
 export { default as toData } from './toData';
 export { default as toHex } from './toHex';
 export { default as toNumber } from './toNumber';
 export { default as toString } from './toString';
-export * from './types';
+export type { ColorObjType, ColorType } from './types';
 export { default as validate, validateTypeList, type ValidateType } from './validate';
 export { default as walkSplit } from './walkSplit';
