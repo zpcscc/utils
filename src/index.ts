@@ -9,7 +9,9 @@ export { default as getUuid } from './getUuId';
 export { default as isEmpty } from './isEmpty';
 export { default as isIncludeChinese } from './isIncludeChinese';
 export { default as isNumber } from './isNumber';
+export { default as omit } from './omit';
 export { default as parseColor } from './parseColor';
+export { default as pick } from './pick';
 export { default as pickNumber, type NumberType } from './pickNumber';
 export {
   IDCardStrictRegExp,

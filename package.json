@@ -1,9 +1,12 @@
 {
   "name": "@zpcscc/utils",
-  "version": "7.2.1",
+  "version": "7.3.0",
   "description": "工具函数库",
   "homepage": "https://zpcscc.github.io/utils",
-  "repository": "https://github.com/zpcscc/utils",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zpcscc/utils.git"
+  },
   "license": "MIT",
   "author": {
     "name": "zpcscc",
@@ -25,7 +28,6 @@
     "jsdoc2md": "node scripts/jsdoc2md/index.mjs",
     "lint": "pnpm run lint:es",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
-    "prepare": "husky install && dumi setup",
     "prepublishOnly": "pnpm run test:all && pnpm run build",
     "start": "pnpm run dev & node scripts/jsdoc2md/watch.mjs",
     "test": "jest --coverage -o",
@@ -65,6 +67,14 @@
     "ts-node": "10.9.2",
     "typescript": "5.5.4",
     "webpack": "5.93.0"
+  },
+  "engines": {
+    "cnpm": "请使用pnpm",
+    "node": ">=18",
+    "npm": "请使用pnpm",
+    "pnpm": ">=9",
+    "tyarn": "请使用pnpm",
+    "yarn": "请使用pnpm"
   },
   "publishConfig": {
     "access": "public"

@@ -15,7 +15,7 @@ const cloneDeep = (data: any): any => {
   try {
     return structuredClone(data);
   } catch {
-    return data; // 拷贝失败的返回原数据
+    return data;
   }
 };
 

@@ -19,7 +19,7 @@
 ## 示例 _(ts类型)_
 
 ```typescript
-copyStrByNum(data:string, num?:number)
+copyStrByNum(data:string, num?:number,interval?:string)
 ```
 
 ## 示例 _(demo)_
