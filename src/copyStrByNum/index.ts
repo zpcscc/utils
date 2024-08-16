@@ -8,7 +8,7 @@ import toString from 'src/toString';
  * @param {number} interval 用于拼接字符串的符号
  * @returns {string} 复制拼接后的字符串
  * @example <caption>ts类型</caption>
-copyStrByNum(data:string, num?:number)
+copyStrByNum(data:string, num?:number,interval?:string)
  * @example <caption>demo</caption>
 import { copyStrByNum } from '@zpcscc/utils';
 
