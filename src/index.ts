@@ -2,6 +2,7 @@ export { default as cloneDeep } from './cloneDeep';
 export { default as copyStrByNum } from './copyStrByNum';
 export { default as debounce } from './debounce';
 export { DesensitizeList, default as desensitize, type DesensitizeType } from './desensitize';
+export { default as fetchAll } from './fetchAll';
 export { default as getColor } from './getColor';
 export { default as getQuery } from './getQuery';
 export { default as getType, type DataType } from './getType';
