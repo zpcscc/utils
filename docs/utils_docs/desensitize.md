@@ -1,5 +1,6 @@
 ---
-title: 数据脱敏
+group: 字符串
+title: desensitize
 ---
 
 <code src="./desensitize" title="在线演示"></code>

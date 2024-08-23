@@ -1,8 +1,8 @@
 import isNumber from 'src/isNumber';
 
 /**
- * @name toNumber-将“value”转换为有效数字
- * @description 排除了 Infinity、-Infinity、NaN，这类非正常数字，全部返回 0
+ * @name toNumber
+ * @description 将“value”转换为有效数字;排除了 Infinity、-Infinity、NaN，这类非正常数字，全部返回 0
  * @param {any} data 要转换的值
  * @returns {number} 返回转换后的有限数字
  * @example <caption>ts类型</caption>

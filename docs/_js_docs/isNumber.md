@@ -1,8 +1,8 @@
-# isNumber-检查“value”是否是有效“Number“
+# isNumber
 
 ## 描述
 
-<p>排除 Infinity、-Infinity、MAX_VALUE、MIN_VALUE、NaN、</p>
+<p>检查“value”是否是有效“Number“;排除 Infinity、-Infinity、MAX_VALUE、MIN_VALUE、NaN、</p>
 
 ## 参数
 

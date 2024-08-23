@@ -1,5 +1,6 @@
 ---
-title: 转换颜色格式
+group: 转换
+title: toColor
 ---
 
 <code src="./toColor" title="在线演示"></code>

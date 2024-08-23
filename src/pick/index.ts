@@ -2,7 +2,7 @@ import getType from 'src/getType';
 import isEmpty from 'src/isEmpty';
 
 /**
- * @name pick-提取字段
+ * @name pick
  * @description 从一个对象中，提取出指定字段组成一个新对象并返回
  * @param {object} obj 待提取的对象
  * @param {array} keysToPick 需要提取的字段名称数组

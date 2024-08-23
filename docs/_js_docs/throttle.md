@@ -1,4 +1,4 @@
-# throttle-节流
+# throttle
 
 ## 描述
 

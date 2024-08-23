@@ -1,7 +1,8 @@
 import toString from 'src/toString';
 
 /**
- * @name splitStrByLen-按指定长度拆分字符串
+ * @name splitStrByLen
+ * @description 按指定长度拆分字符串
  * @param {string} value 待分割的字符串
  * @param {number} len 分割的数组每项的字符串长度
  * @returns {string[]} 分割后的数组

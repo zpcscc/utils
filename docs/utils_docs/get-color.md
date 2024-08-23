@@ -1,5 +1,6 @@
 ---
-title: 获取随机颜色
+group: Get
+title: getColor
 ---
 
 <code src="./getColor" title="在线演示"></code>

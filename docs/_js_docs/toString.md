@@ -1,4 +1,8 @@
-# toString-将各种格式的数据转为string
+# toString
+
+## 描述
+
+<p>将各种格式的数据转为string</p>
 
 ## 参数
 

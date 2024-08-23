@@ -1,4 +1,8 @@
-# splitStrByLen-按指定长度拆分字符串
+# splitStrByLen
+
+## 描述
+
+<p>按指定长度拆分字符串</p>
 
 ## 参数
 

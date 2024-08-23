@@ -1,5 +1,6 @@
 ---
-title: 数据校验
+group: 校验
+title: validate
 ---
 
 <code src="./validate" title="在线演示"></code>

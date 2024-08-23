@@ -1,8 +1,8 @@
 import getType from 'src/getType';
 
 /**
- * @name isNumber-检查“value”是否是有效“Number“
- * @description 排除 Infinity、-Infinity、MAX_VALUE、MIN_VALUE、NaN、
+ * @name isNumber
+ * @description 检查“value”是否是有效“Number“;排除 Infinity、-Infinity、MAX_VALUE、MIN_VALUE、NaN、
  * @param {any} value 要判断的值
  * @returns {boolean} 返回布尔值
  * @example <caption>ts类型</caption>

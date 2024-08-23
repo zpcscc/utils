@@ -1,4 +1,4 @@
-# copyStrByNum-复制字符串
+# copyStrByNum
 
 ## 描述
 

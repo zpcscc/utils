@@ -1,4 +1,4 @@
-# debounce-防抖
+# debounce
 
 ## 描述
 

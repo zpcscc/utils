@@ -1,5 +1,6 @@
 ---
-title: 排序版本号
+group: 其他
+title: sortVersions
 ---
 
 <code src="./sortVersions" title="在线演示"></code>

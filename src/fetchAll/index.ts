@@ -2,8 +2,8 @@ import getType from 'src/getType';
 import Semaphore from './semaphore';
 
 /**
- * @name fetchAll-并发请求接口
- * @description 传入所有需要请求的接口数据，通过此函数进行并发控制；此函数只做并发控制，请求函数与参数，由外部传入；
+ * @name fetchAll
+ * @description 并发请求控制：传入所有需要请求的接口数据，通过此函数进行并发控制；此函数只做并发控制，请求函数与参数，由外部传入；
  * @param {any[]} tasks 待请求的接口相关任务列表
  * @param {number} maxConcurrency=5 最大并发数
  * @param {function} requestFn 自定义的请求函数

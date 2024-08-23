@@ -1,5 +1,6 @@
 /**
- * @name removeTag-去除字符串中的元素标记
+ * @name removeTag
+ * @description 去除字符串中的元素标记
  * @param {string} value 需要删除tag的字符串
  * @return {string} 返回没有tag的字符串
  * @example <caption>ts类型</caption>

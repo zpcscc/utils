@@ -1,4 +1,8 @@
-# isIncludeChinese-判断一个字符串中是否含有中文
+# isIncludeChinese
+
+## 描述
+
+<p>判断一个字符串中是否含有中文</p>
 
 ## 参数
 

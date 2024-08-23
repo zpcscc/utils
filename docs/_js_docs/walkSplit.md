@@ -1,4 +1,4 @@
-# walkSplit-逐步拆分，生成器；
+# walkSplit
 
 ## 描述
 

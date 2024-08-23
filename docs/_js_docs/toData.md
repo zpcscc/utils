@@ -1,4 +1,8 @@
-# toData-将string转为json等数据
+# toData
+
+## 描述
+
+<p>将string转为json等数据</p>
 
 ## 参数
 

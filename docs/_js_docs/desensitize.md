@@ -1,8 +1,9 @@
-# desensitize-对数据进行脱敏处理
+# desensitize
 
 ## 描述
 
-<p>一、姓名脱敏：<br/>
+<p>对数据进行脱敏处理 <br/>
+一、姓名脱敏：<br/>
   1、中文姓名：<br/>
     1）每4个汉字展示前1位，末3位屏蔽; <br/>
     2）少于4 个汉字的只展示第1位，其他屏蔽。（数字字母均视同汉字处理）<br/>
@@ -47,6 +48,6 @@ import { desensitize } from '@zpcscc/utils';
 import type { DesensitizeType } from '@zpcscc/utils';
 
 console.log(desensitize('')); // ''
-console.log(desensitize('张3粒死王五')); // 张3**王五
+console.log(desensitize('张3李四王五')); // 张3**王五
 console.log(desensitize('17775262736', 'phone')); // 177****2736
 ```

@@ -1,5 +1,6 @@
 ---
-title: 转为绝对路径
+group: url
+title: toAbsolutePath
 ---
 
 <code src="./toAbsolutePath" title="在线演示"></code>
