@@ -13,7 +13,7 @@ describe('countdown', () => {
     const startTime = Date.now(); // 当前时间戳
     const endTime = new Date(startTime + 10000).toISOString(); // 10秒后的时间戳
 
-    const expectedComponents = { days: 0, hours: 0, minutes: 0, seconds: 10, milliseconds: 0 };
+    const expectedComponents = { days: 0, hours: 0, minutes: 0, seconds: 10 };
 
     countdown({
       endTime,
@@ -49,7 +49,7 @@ describe('countdown', () => {
       endTime,
       onTick: (components) => {
         // 当倒计时时间已经过期，应立即返回0
-        expect(components).toEqual({ days: 0, hours: 0, minutes: 0, seconds: 0, milliseconds: 0 });
+        expect(components).toEqual({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       },
       onEnd: () => {
         done(); // 立即触发 done
@@ -62,12 +62,12 @@ describe('countdown', () => {
     const endTime = new Date(startTime + 5000).toISOString(); // 5秒后的时间戳
 
     const expectedValues = [
-      { days: 0, hours: 0, minutes: 0, seconds: 5, milliseconds: 0 },
-      { days: 0, hours: 0, minutes: 0, seconds: 4, milliseconds: 0 },
-      { days: 0, hours: 0, minutes: 0, seconds: 3, milliseconds: 0 },
-      { days: 0, hours: 0, minutes: 0, seconds: 2, milliseconds: 0 },
-      { days: 0, hours: 0, minutes: 0, seconds: 1, milliseconds: 0 },
-      { days: 0, hours: 0, minutes: 0, seconds: 0, milliseconds: 0 }
+      { days: 0, hours: 0, minutes: 0, seconds: 5 },
+      { days: 0, hours: 0, minutes: 0, seconds: 4 },
+      { days: 0, hours: 0, minutes: 0, seconds: 3 },
+      { days: 0, hours: 0, minutes: 0, seconds: 2 },
+      { days: 0, hours: 0, minutes: 0, seconds: 1 },
+      { days: 0, hours: 0, minutes: 0, seconds: 0 }
     ];
 
     let tickCount = 0;
@@ -110,7 +110,7 @@ describe('countdown', () => {
     countdown({
       endTime,
       onTick: (components) => {
-        expect(components).toEqual({ days: 0, hours: 0, minutes: 0, seconds: 1, milliseconds: 0 });
+        expect(components).toEqual({ days: 0, hours: 0, minutes: 0, seconds: 1 });
       }
     });
     done();

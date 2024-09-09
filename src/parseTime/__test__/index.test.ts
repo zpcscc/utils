@@ -11,8 +11,7 @@ describe('parseTime', () => {
       days: Math.floor(timestamp / (24 * 60 * 60 * 1000)),
       hours: new Date(timestamp).getUTCHours(),
       minutes: new Date(timestamp).getUTCMinutes(),
-      seconds: new Date(timestamp).getUTCSeconds(),
-      milliseconds: new Date(timestamp).getUTCMilliseconds()
+      seconds: new Date(timestamp).getUTCSeconds()
     };
 
     expect(parseTime(input)).toEqual(expected);
@@ -26,8 +25,7 @@ describe('parseTime', () => {
       days: Math.floor(timestamp / (24 * 60 * 60 * 1000)),
       hours: new Date(timestamp).getUTCHours(),
       minutes: new Date(timestamp).getUTCMinutes(),
-      seconds: new Date(timestamp).getUTCSeconds(),
-      milliseconds: new Date(timestamp).getUTCMilliseconds()
+      seconds: new Date(timestamp).getUTCSeconds()
     };
 
     expect(parseTime(input)).toEqual(expected);
@@ -41,8 +39,7 @@ describe('parseTime', () => {
       days: Math.floor(timestamp / (24 * 60 * 60 * 1000)),
       hours: new Date(timestamp).getUTCHours(),
       minutes: new Date(timestamp).getUTCMinutes(),
-      seconds: new Date(timestamp).getUTCSeconds(),
-      milliseconds: new Date(timestamp).getUTCMilliseconds()
+      seconds: new Date(timestamp).getUTCSeconds()
     };
 
     expect(parseTime(input)).toEqual(expected);
@@ -56,8 +53,7 @@ describe('parseTime', () => {
       days: Math.floor(timestamp / (24 * 60 * 60 * 1000)),
       hours: new Date(timestamp).getUTCHours(),
       minutes: new Date(timestamp).getUTCMinutes(),
-      seconds: new Date(timestamp).getUTCSeconds(),
-      milliseconds: new Date(timestamp).getUTCMilliseconds()
+      seconds: new Date(timestamp).getUTCSeconds()
     };
 
     expect(parseTime(input)).toEqual(expected);
@@ -71,8 +67,7 @@ describe('parseTime', () => {
       days: Math.floor(timestamp / (24 * 60 * 60 * 1000)),
       hours: new Date(timestamp).getUTCHours(),
       minutes: new Date(timestamp).getUTCMinutes(),
-      seconds: new Date(timestamp).getUTCSeconds(),
-      milliseconds: new Date(timestamp).getUTCMilliseconds()
+      seconds: new Date(timestamp).getUTCSeconds()
     };
 
     expect(parseTime(input)).toEqual(expected);
@@ -86,8 +81,7 @@ describe('parseTime', () => {
       days: Math.floor(currentTimestamp / (24 * 60 * 60 * 1000)),
       hours: new Date(currentTimestamp).getUTCHours(),
       minutes: new Date(currentTimestamp).getUTCMinutes(),
-      seconds: new Date(currentTimestamp).getUTCSeconds(),
-      milliseconds: new Date(currentTimestamp).getUTCMilliseconds()
+      seconds: new Date(currentTimestamp).getUTCSeconds()
     };
 
     expect(parseTime(invalidTimestamp)).toEqual(expected);

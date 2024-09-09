@@ -25,5 +25,5 @@ parseTime(inputTime:any)
 ```typescript
 import { parseTime } from '@zpcscc/utils';
 
-console.log(parseTime('2024-08-23 12:34:56')); // 输出: { days: 18941, hours: 12, minutes: 34, seconds: 56, milliseconds: 789 };
+console.log(parseTime('2024-08-23 12:34:56')); // 输出: { days: 18941, hours: 12, minutes: 34, seconds: 56 };
 ```

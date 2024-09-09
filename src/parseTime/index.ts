@@ -11,7 +11,7 @@ parseTime(inputTime:any)
  * @example <caption>demo</caption>
 import { parseTime } from '@zpcscc/utils';
 
-console.log(parseTime('2024-08-23 12:34:56')); // 输出: { days: 18941, hours: 12, minutes: 34, seconds: 56, milliseconds: 789 };
+console.log(parseTime('2024-08-23 12:34:56')); // 输出: { days: 18941, hours: 12, minutes: 34, seconds: 56 };
  */
 const parseTime = (inputTime: any): TimesType => {
   const timestamp = toTimestamp(inputTime);
@@ -25,14 +25,12 @@ const parseTime = (inputTime: any): TimesType => {
   const hours = date.getUTCHours();
   const minutes = date.getUTCMinutes();
   const seconds = date.getUTCSeconds();
-  const milliseconds = date.getUTCMilliseconds();
 
   return {
     days,
     hours,
     minutes,
-    seconds,
-    milliseconds
+    seconds
   };
 };
 

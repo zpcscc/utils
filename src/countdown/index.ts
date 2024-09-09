@@ -23,7 +23,7 @@ export type CountdownProps = {
 countdown({
   endTime: string;
   interval: number;
-  onTick: (time: { days: number; hours: number; minutes: number; seconds: number; milliseconds?: number }) => void;
+  onTick: (time: { days: number; hours: number; minutes: number; seconds: number; }) => void;
   onEnd: () => void;
 })
  * @example <caption>demo</caption>
@@ -40,35 +40,28 @@ countdown({
 const countdown = ({ endTime, onTick, onEnd, interval }: CountdownProps) => {
   const endTimestamp = new Date(endTime).getTime();
   const UPDATE_INTERVAL = interval || 1000;
+  let remainingTime = endTimestamp;
+  let timer: NodeJS.Timeout;
 
-  const startCountdown = () => {
-    const intervalId = setInterval(() => {
-      const currentTime = Date.now();
-      const remainingTime = endTimestamp - currentTime;
-
-      if (remainingTime <= 0) {
-        clearInterval(intervalId);
-        onTick?.({ days: 0, hours: 0, minutes: 0, seconds: 0, milliseconds: 0 });
-        onEnd?.();
-      } else {
-        const components = parseTime(remainingTime);
-        onTick?.(components);
-      }
-    }, UPDATE_INTERVAL);
+  const update = () => {
+    const currentTime = Date.now();
+    // 计算剩余时间
+    remainingTime = endTimestamp - currentTime;
+    if (remainingTime <= 0) {
+      remainingTime = 0;
+      onTick?.(parseTime(remainingTime));
+      onEnd?.();
+      clearTimeout(timer);
+      return;
+    }
+    onTick?.(parseTime(remainingTime));
+    // 计算下一次执行时间
+    const nextTick = Math.max(UPDATE_INTERVAL - (Date.now() - currentTime), 0);
+    // 每次依据当前时间，重新开始计时；避免长时间计时导致的累计误差；
+    timer = setTimeout(update, nextTick);
   };
 
-  // 立即执行第一次检查，以防止刚开始时错过了0秒的状态
-  const currentTime = Date.now();
-  const initialRemainingTime = endTimestamp - currentTime;
-
-  if (initialRemainingTime <= 0) {
-    onTick?.({ days: 0, hours: 0, minutes: 0, seconds: 0, milliseconds: 0 });
-    onEnd?.(); // 如果已经到时间，立即触发完成回调
-  } else {
-    const initialComponents = parseTime(initialRemainingTime);
-    onTick?.(initialComponents); // 立即触发第一次 onTick
-    startCountdown();
-  }
+  update();
 };
 
 export default countdown;
