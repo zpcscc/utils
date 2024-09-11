@@ -19,6 +19,7 @@ export type CountdownProps = {
  * @param {number} interval 倒计时间隔时间，默认 1000（1秒）
  * @param {function} onTick 每一步倒计时的回调
  * @param {function} onEnd 倒计时结束时的回调
+ * @returns {function} stop 停止倒计时
  * @example <caption>ts类型</caption>
 countdown({
   endTime: string;
@@ -29,15 +30,17 @@ countdown({
  * @example <caption>demo</caption>
 import { countdown } from '@zpcscc/utils';
 
-countdown({
+const { stop } = countdown({
   endTime: "2024-08-23T12:00:00", // 目标时间
   onTick: ({ days, hours, minutes, seconds }) => {
     console.log(`倒计时更新: ${days}天 ${hours}小时 ${minutes}分钟 ${seconds}秒`);
   },
   onEnd: () => console.log('倒计时结束！'), // 完成时的回调
 });
+
+stop(); // 可中途调用stop来停止倒计时
  */
-const countdown = ({ endTime, onTick, onEnd, interval }: CountdownProps) => {
+const countdown = ({ endTime, onTick, onEnd, interval }: CountdownProps): { stop: () => void } => {
   const endTimestamp = new Date(endTime).getTime();
   const UPDATE_INTERVAL = interval || 1000;
   let remainingTime = endTimestamp;
@@ -62,6 +65,12 @@ const countdown = ({ endTime, onTick, onEnd, interval }: CountdownProps) => {
   };
 
   update();
+
+  const stop = () => {
+    clearTimeout(timer);
+  };
+
+  return { stop };
 };
 
 export default countdown;

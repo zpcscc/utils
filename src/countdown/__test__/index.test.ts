@@ -7,6 +7,8 @@ describe('countdown', () => {
 
   afterEach(() => {
     jest.useRealTimers(); // 恢复真实定时器
+    jest.clearAllTimers(); // 清除所有计时器
+    jest.clearAllMocks(); // 清除所有模拟函数调用记录
   });
 
   it('应立即调用带有正确时间分量的onTick', (done) => {
@@ -115,4 +117,39 @@ describe('countdown', () => {
     });
     done();
   }, 5000);
+
+  it('应在呼叫停止时停止倒计时', () => {
+    const onTick = jest.fn();
+    const onEnd = jest.fn();
+
+    const endTime = new Date(Date.now() + 5000).toISOString();
+    const { stop } = countdown({ endTime, onTick, onEnd });
+
+    jest.advanceTimersByTime(1000); // 前进1秒钟
+    expect(onTick).toHaveBeenCalledTimes(2);
+
+    stop(); // 停止倒计时
+
+    // 在调用 stop 后推进时间，确认倒计时已停止
+    jest.advanceTimersByTime(2000); // 再前进2秒钟
+    expect(onTick).toHaveBeenCalledTimes(2);
+    expect(onEnd).not.toHaveBeenCalled(); // 不应调用
+  });
+
+  it('在调用stop后不应调用onTick或onEnd', () => {
+    const onTick = jest.fn();
+    const onEnd = jest.fn();
+
+    const endTime = new Date(Date.now() + 5000).toISOString();
+
+    const { stop } = countdown({ endTime, onTick, onEnd });
+
+    stop(); // 立即停止
+
+    // 前进5秒钟，超出倒计时范围
+    jest.advanceTimersByTime(5000);
+
+    expect(onTick).toHaveBeenCalledTimes(1);
+    expect(onEnd).not.toHaveBeenCalled();
+  });
 });
