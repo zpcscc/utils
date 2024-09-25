@@ -1,14 +1,18 @@
-# isNumber-检查“value”是否是有效“Number“
+# isNumber
 
 ## 描述
 
-<p>排除 Infinity、-Infinity、MAX_VALUE、MIN_VALUE、NaN、</p>
+<p>检查“value”是否是有效“Number“;排除 Infinity、-Infinity、MAX_VALUE、MIN_VALUE、NaN、</p>
 
 ## 参数
 
 | 参数名 | 类型             | 描述              |
 | ------ | ---------------- | ----------------- |
 | value  | <code>any</code> | <p>要判断的值</p> |
+
+| Param | Type             | Description       |
+| ----- | ---------------- | ----------------- |
+| value | <code>any</code> | <p>要判断的值</p> |
 
 ## 返回
 

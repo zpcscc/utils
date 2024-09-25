@@ -1,7 +1,8 @@
 import getType from 'src/getType';
 
 /**
- * @name toString-将各种格式的数据转为string
+ * @name toString
+ * @description 将各种格式的数据转为string
  * @param {any} data 需要转换的数据
  * @param {object} stringifyArgs 其他参数，用于传入JSON.stringify
  * @returns {string} 转换后的字符串数据

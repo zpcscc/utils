@@ -1,4 +1,4 @@
-# debounce-防抖
+# debounce
 
 ## 描述
 
@@ -10,6 +10,11 @@
 | ------ | --------------------- | --------------------- |
 | func   | <code>function</code> | <p>需要防抖的函数</p> |
 | wait   | <code>number</code>   | <p>防抖等待的时间</p> |
+
+| Param | Type                  | Description           |
+| ----- | --------------------- | --------------------- |
+| func  | <code>function</code> | <p>需要防抖的函数</p> |
+| wait  | <code>number</code>   | <p>防抖等待的时间</p> |
 
 ## 返回
 

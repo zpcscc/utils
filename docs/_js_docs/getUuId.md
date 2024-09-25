@@ -1,8 +1,17 @@
-# getUuid-生成全局唯一ID
+# getUuid
+
+## 描述
+
+<p>生成全局唯一ID</p>
 
 ## 参数
 
 | 参数名 | 类型                | 默认值                                | 描述                                  |
+| ------ | ------------------- | ------------------------------------- | ------------------------------------- |
+| length | <code>number</code> | <code>4</code>                        | <p>随机id的长度，不包含自定义前缀</p> |
+| prefix | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | <p>指定id的前缀</p>                   |
+
+| Param  | Type                | Default                               | Description                           |
 | ------ | ------------------- | ------------------------------------- | ------------------------------------- |
 | length | <code>number</code> | <code>4</code>                        | <p>随机id的长度，不包含自定义前缀</p> |
 | prefix | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | <p>指定id的前缀</p>                   |

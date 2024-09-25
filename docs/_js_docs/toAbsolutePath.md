@@ -1,10 +1,18 @@
-# toAbsolutePath-相对路径转绝对路径
+# toAbsolutePath
+
+## 描述
+
+<p>相对路径转绝对路径</p>
 
 ## 参数
 
 | 参数名 | 类型                | 描述               |
 | ------ | ------------------- | ------------------ |
 | url    | <code>string</code> | <p>相对路径url</p> |
+
+| Param | Type                | Description        |
+| ----- | ------------------- | ------------------ |
+| url   | <code>string</code> | <p>相对路径url</p> |
 
 ## 返回
 

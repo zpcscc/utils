@@ -1,5 +1,6 @@
 ---
-title: 获取数据类型
+group: Get
+title: getType
 ---
 
 <embed src="../_js_docs/getType.md"></embed>

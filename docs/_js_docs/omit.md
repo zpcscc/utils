@@ -1,4 +1,4 @@
-# omit-排除字段
+# omit
 
 ## 描述
 
@@ -7,6 +7,12 @@
 ## 参数
 
 | 参数名     | 类型                 | 描述                          |
+| ---------- | -------------------- | ----------------------------- |
+| obj        | <code>object</code>  | <p>待排除的对象</p>           |
+| keysToOmit | <code>array</code>   | <p>需要排除的字段名称数组</p> |
+| deep       | <code>boolean</code> | <p>是否递归处理所有子对象</p> |
+
+| Param      | Type                 | Description                   |
 | ---------- | -------------------- | ----------------------------- |
 | obj        | <code>object</code>  | <p>待排除的对象</p>           |
 | keysToOmit | <code>array</code>   | <p>需要排除的字段名称数组</p> |

@@ -1,5 +1,6 @@
 ---
-title: 转为十六进制
+group: 数字
+title: toHex
 ---
 
 <embed src="../_js_docs/toHex.md"></embed>

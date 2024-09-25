@@ -13,7 +13,8 @@ const typeMap = {
 type VersionType = keyof typeof typeMap;
 
 /**
- * @name sortVersions-版本号排序
+ * @name sortVersions
+ * @description 版本号排序
  * @param {string[]} data 需要排序的版本号数组
  * @return {string[]} 从小到大排序过后的数组
  * @example <caption>ts类型</caption>

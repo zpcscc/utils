@@ -7,3 +7,10 @@ export type ColorObjType = {
 };
 
 export type ColorType = 'rgb' | 'hex' | 'hsl';
+
+export type TimesType = {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+};

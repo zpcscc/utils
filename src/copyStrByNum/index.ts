@@ -1,7 +1,7 @@
 import toString from 'src/toString';
 
 /**
- * @name copyStrByNum-复制字符串
+ * @name copyStrByNum
  * @description 将指定字符串复制指定次数并使用传入的拼接符号拼接在一起
  * @param {string} str 待复制的字符串
  * @param {number} num=1 复制的次数

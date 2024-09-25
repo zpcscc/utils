@@ -30,7 +30,8 @@ const numberTypeRegMap = new Map([
 ]);
 
 /**
- * @name pickNumber-挑选出字符串中的所有数字，返回数字数组
+ * @name pickNumber
+ * @description 挑选出字符串中的所有数字，返回数字数组
  * @param {string} value 需要处理的字符串
  * @param {NumberType} type 需要挑选的数字类型
  * @return {number[]} 返回数字数组

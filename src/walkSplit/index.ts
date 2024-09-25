@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 
 /**
- * @name walkSplit-逐步拆分，生成器；
+ * @name walkSplit
  * @description 这是一个逐步拆分字符串的生成器。可以生成一个迭代器。每次调用 next，会返回当前步骤拆分的字符串内容
  * @param {string} str 需要拆分的字符串数据
  * @param {string[]} terminals 拆分的终止符数组

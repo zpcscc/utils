@@ -1,7 +1,8 @@
 import type { ColorType } from 'src/types';
 
 /**
- * @name getColor-获取随机颜色
+ * @name getColor
+ * @description 获取随机颜色
  * @param {'rgb' | 'hex'| 'hsl'} type 返回颜色的格式
  * @return {string} 返回生成的随机颜色字符串
  * @example <caption>ts类型</caption>

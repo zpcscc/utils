@@ -1,4 +1,4 @@
-# walkSplit-逐步拆分，生成器；
+# walkSplit
 
 ## 描述
 
@@ -7,6 +7,11 @@
 ## 参数
 
 | 参数名    | 类型                              | 描述                        |
+| --------- | --------------------------------- | --------------------------- |
+| str       | <code>string</code>               | <p>需要拆分的字符串数据</p> |
+| terminals | <code>Array.&lt;string&gt;</code> | <p>拆分的终止符数组</p>     |
+
+| Param     | Type                              | Description                 |
 | --------- | --------------------------------- | --------------------------- |
 | str       | <code>string</code>               | <p>需要拆分的字符串数据</p> |
 | terminals | <code>Array.&lt;string&gt;</code> | <p>拆分的终止符数组</p>     |

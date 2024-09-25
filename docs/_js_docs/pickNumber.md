@@ -1,4 +1,8 @@
-# pickNumber-挑选出字符串中的所有数字，返回数字数组
+# pickNumber
+
+## 描述
+
+<p>挑选出字符串中的所有数字，返回数字数组</p>
 
 ## 参数
 
@@ -6,6 +10,11 @@
 | ------ | ----------------------- | ------------------------- |
 | value  | <code>string</code>     | <p>需要处理的字符串</p>   |
 | type   | <code>NumberType</code> | <p>需要挑选的数字类型</p> |
+
+| Param | Type                    | Description               |
+| ----- | ----------------------- | ------------------------- |
+| value | <code>string</code>     | <p>需要处理的字符串</p>   |
+| type  | <code>NumberType</code> | <p>需要挑选的数字类型</p> |
 
 ## 返回
 

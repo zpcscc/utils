@@ -1,8 +1,17 @@
-# toData-将string转为json等数据
+# toData
+
+## 描述
+
+<p>将string转为json等数据</p>
 
 ## 参数
 
 | 参数名    | 类型                | 描述                                |
+| --------- | ------------------- | ----------------------------------- |
+| str       | <code>string</code> | <p>需要转换的字符串</p>             |
+| parseArgs | <code>Object</code> | <p>其他参数，用于传入JSON.parse</p> |
+
+| Param     | Type                | Description                         |
 | --------- | ------------------- | ----------------------------------- |
 | str       | <code>string</code> | <p>需要转换的字符串</p>             |
 | parseArgs | <code>Object</code> | <p>其他参数，用于传入JSON.parse</p> |

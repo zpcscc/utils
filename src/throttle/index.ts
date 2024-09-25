@@ -1,5 +1,5 @@
 /**
- * @name throttle-节流
+ * @name throttle
  * @description 节流函数
  * @param {function} func 需要节流的函数
  * @param {number} limit 节流等待的时间

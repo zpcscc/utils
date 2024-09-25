@@ -1,5 +1,5 @@
 /**
- * @name debounce-防抖
+ * @name debounce
  * @description 防抖函数
  * @param {function} func 需要防抖的函数
  * @param {number} wait 防抖等待的时间

@@ -4,7 +4,8 @@ import parseColorHsl from './parseHsl';
 import parseColorRgb from './parseRgb';
 
 /**
- * @name parseColor-将‘rgb’、‘hex’、‘hsl’颜色字符串解析为颜色对象
+ * @name parseColor
+ * @description 将‘rgb’、‘hex’、‘hsl’颜色字符串解析为颜色对象
  * @param {string} value 颜色字符串
  * @returns {ColorObjType} rgba颜色对象; 例：{ r: 102, g: 204, b: 255, a: 1 }
  * @example <caption>ts类型</caption>

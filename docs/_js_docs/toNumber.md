@@ -1,14 +1,18 @@
-# toNumber-将“value”转换为有效数字
+# toNumber
 
 ## 描述
 
-<p>排除了 Infinity、-Infinity、NaN，这类非正常数字，全部返回 0</p>
+<p>将“value”转换为有效数字;排除了 Infinity、-Infinity、NaN，这类非正常数字，全部返回 0</p>
 
 ## 参数
 
 | 参数名 | 类型             | 描述              |
 | ------ | ---------------- | ----------------- |
 | data   | <code>any</code> | <p>要转换的值</p> |
+
+| Param | Type             | Description       |
+| ----- | ---------------- | ----------------- |
+| data  | <code>any</code> | <p>要转换的值</p> |
 
 ## 返回
 

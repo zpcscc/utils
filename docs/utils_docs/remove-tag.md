@@ -1,5 +1,6 @@
 ---
-title: 删除html标签
+group: html
+title: removeTag
 ---
 
 <embed src="../_js_docs/removeTag.md"></embed>

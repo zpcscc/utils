@@ -2,7 +2,7 @@ import cloneDeep from 'src/cloneDeep';
 import getType from 'src/getType';
 import isEmpty from 'src/isEmpty';
 /**
- * @name omit-排除字段
+ * @name omit
  * @description 从一个对象中，排除指定字段，将剩余字段组成一个新对象并返回
  * @param {object} obj 待排除的对象
  * @param {array} keysToOmit 需要排除的字段名称数组

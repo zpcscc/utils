@@ -1,4 +1,8 @@
-# validate-数据校验
+# validate
+
+## 描述
+
+<p>数据校验</p>
 
 ## 参数
 
@@ -6,6 +10,11 @@
 | ------ | ------------------------- | ------------------------- | ------- | ----- | -------- | ----------------------- |
 | data   | <code>any</code>          | <p>需要校验的数据</p>     |
 | type   | <code>ValidateType</code> | <p>需要校验的类型 'phone' | 'email' | 'url' | 'IDCard' | 'date' ｜ 'integer'</p> |
+
+| Param | Type                      | Description               |
+| ----- | ------------------------- | ------------------------- | ------- | ----- | -------- | ----------------------- |
+| data  | <code>any</code>          | <p>需要校验的数据</p>     |
+| type  | <code>ValidateType</code> | <p>需要校验的类型 'phone' | 'email' | 'url' | 'IDCard' | 'date' ｜ 'integer'</p> |
 
 ## 返回
 

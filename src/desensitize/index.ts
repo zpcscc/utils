@@ -11,8 +11,9 @@ export const DesensitizeList = ['name', 'phone', 'IDCard', 'telephone', 'bankCar
 export type DesensitizeType = (typeof DesensitizeList)[number];
 
 /**
- * @name desensitize-对数据进行脱敏处理
+ * @name desensitize
  * @description
+对数据进行脱敏处理 <br/>
 一、姓名脱敏：<br/>
   &nbsp;&nbsp;1、中文姓名：<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;1）每4个汉字展示前1位，末3位屏蔽; <br/>
@@ -43,7 +44,7 @@ import { desensitize } from '@zpcscc/utils';
 import type { DesensitizeType } from '@zpcscc/utils';
 
 console.log(desensitize('')); // ''
-console.log(desensitize('张3粒死王五')); // 张3**王五
+console.log(desensitize('张3李四王五')); // 张3**王五
 console.log(desensitize('17775262736', 'phone')); // 177****2736
  */
 const desensitize = (value?: string, type?: DesensitizeType): string => {

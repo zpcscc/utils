@@ -19,7 +19,8 @@ export const validateTypeList = {
 export type ValidateType = keyof typeof validateTypeList;
 
 /**
- * @name validate-数据校验
+ * @name validate
+ * @description 数据校验
  * @param {any} data 需要校验的数据
  * @param {ValidateType} type 需要校验的类型 'phone' | 'email' | 'url' | 'IDCard' | 'date' ｜ 'integer'
  * @return {boolean} 返回校验的结果, 默认返回 false

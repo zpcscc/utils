@@ -1,4 +1,4 @@
-# copyStrByNum-复制字符串
+# copyStrByNum
 
 ## 描述
 
@@ -7,6 +7,12 @@
 ## 参数
 
 | 参数名   | 类型                | 默认值         | 描述                        |
+| -------- | ------------------- | -------------- | --------------------------- |
+| str      | <code>string</code> |                | <p>待复制的字符串</p>       |
+| num      | <code>number</code> | <code>1</code> | <p>复制的次数</p>           |
+| interval | <code>number</code> |                | <p>用于拼接字符串的符号</p> |
+
+| Param    | Type                | Default        | Description                 |
 | -------- | ------------------- | -------------- | --------------------------- |
 | str      | <code>string</code> |                | <p>待复制的字符串</p>       |
 | num      | <code>number</code> | <code>1</code> | <p>复制的次数</p>           |

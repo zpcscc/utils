@@ -1,4 +1,8 @@
-# toColor-将“rgb”、“hsl”、“hex”的颜色格式互相转换，转换为指定的格式
+# toColor
+
+## 描述
+
+<p>将“rgb”、“hsl”、“hex”的颜色格式互相转换，转换为指定的格式</p>
 
 ## 参数
 
@@ -6,6 +10,11 @@
 | ------ | ------------------- | -------------------------------------- |
 | value  | <code>string</code> | <p>“rgb”、“hsl”、“hex”格式的字符串</p> |
 | type   | <code>string</code> | <p>“rgb”、“hsl”、“hex”</p>             |
+
+| Param | Type                | Description                            |
+| ----- | ------------------- | -------------------------------------- |
+| value | <code>string</code> | <p>“rgb”、“hsl”、“hex”格式的字符串</p> |
+| type  | <code>string</code> | <p>“rgb”、“hsl”、“hex”</p>             |
 
 ## 返回
 

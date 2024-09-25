@@ -1,8 +1,17 @@
-# toString-将各种格式的数据转为string
+# toString
+
+## 描述
+
+<p>将各种格式的数据转为string</p>
 
 ## 参数
 
 | 参数名        | 类型                | 描述                                    |
+| ------------- | ------------------- | --------------------------------------- |
+| data          | <code>any</code>    | <p>需要转换的数据</p>                   |
+| stringifyArgs | <code>object</code> | <p>其他参数，用于传入JSON.stringify</p> |
+
+| Param         | Type                | Description                             |
 | ------------- | ------------------- | --------------------------------------- |
 | data          | <code>any</code>    | <p>需要转换的数据</p>                   |
 | stringifyArgs | <code>object</code> | <p>其他参数，用于传入JSON.stringify</p> |
