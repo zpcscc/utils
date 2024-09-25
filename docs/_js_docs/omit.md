@@ -12,6 +12,12 @@
 | keysToOmit | <code>array</code>   | <p>需要排除的字段名称数组</p> |
 | deep       | <code>boolean</code> | <p>是否递归处理所有子对象</p> |
 
+| Param      | Type                 | Description                   |
+| ---------- | -------------------- | ----------------------------- |
+| obj        | <code>object</code>  | <p>待排除的对象</p>           |
+| keysToOmit | <code>array</code>   | <p>需要排除的字段名称数组</p> |
+| deep       | <code>boolean</code> | <p>是否递归处理所有子对象</p> |
+
 ## 返回
 
 <code>object</code> - <p>排除指定字段后的对象</p>

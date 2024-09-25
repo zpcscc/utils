@@ -10,6 +10,10 @@
 | --------- | ------------------- | --------------------- |
 | inputTime | <code>string</code> | <p>需要转换的时间</p> |
 
+| Param     | Type                | Description           |
+| --------- | ------------------- | --------------------- |
+| inputTime | <code>string</code> | <p>需要转换的时间</p> |
+
 ## 返回
 
 <code>number</code> - <p>返回对应的时间戳</p>

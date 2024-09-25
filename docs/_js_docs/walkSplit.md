@@ -11,6 +11,11 @@
 | str       | <code>string</code>               | <p>需要拆分的字符串数据</p> |
 | terminals | <code>Array.&lt;string&gt;</code> | <p>拆分的终止符数组</p>     |
 
+| Param     | Type                              | Description                 |
+| --------- | --------------------------------- | --------------------------- |
+| str       | <code>string</code>               | <p>需要拆分的字符串数据</p> |
+| terminals | <code>Array.&lt;string&gt;</code> | <p>拆分的终止符数组</p>     |
+
 ## 返回
 
 <code>iterator</code> - <p>返回一个迭代器。可使用.next()，获取下一步的数据</p>

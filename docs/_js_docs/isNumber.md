@@ -10,6 +10,10 @@
 | ------ | ---------------- | ----------------- |
 | value  | <code>any</code> | <p>要判断的值</p> |
 
+| Param | Type             | Description       |
+| ----- | ---------------- | ----------------- |
+| value | <code>any</code> | <p>要判断的值</p> |
+
 ## 返回
 
 <code>boolean</code> - <p>返回布尔值</p>

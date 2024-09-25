@@ -1,3 +1,4 @@
+export { default as AtomStore } from './atomStore';
 export { default as cloneDeep } from './cloneDeep';
 export { default as copyStrByNum } from './copyStrByNum';
 export { default as countdown } from './countdown';

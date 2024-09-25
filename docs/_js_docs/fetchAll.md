@@ -12,6 +12,12 @@
 | maxConcurrency | <code>number</code>            | <code>5</code> | <p>最大并发数</p>               |
 | requestFn      | <code>function</code>          |                | <p>自定义的请求函数</p>         |
 
+| Param          | Type                           | Default        | Description                     |
+| -------------- | ------------------------------ | -------------- | ------------------------------- |
+| tasks          | <code>Array.&lt;any&gt;</code> |                | <p>待请求的接口相关任务列表</p> |
+| maxConcurrency | <code>number</code>            | <code>5</code> | <p>最大并发数</p>               |
+| requestFn      | <code>function</code>          |                | <p>自定义的请求函数</p>         |
+
 ## 返回
 
 <code>Array.&lt;any&gt;</code> - <p>请求完成后的数据数组</p>

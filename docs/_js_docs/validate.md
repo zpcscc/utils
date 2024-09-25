@@ -11,6 +11,11 @@
 | data   | <code>any</code>          | <p>需要校验的数据</p>     |
 | type   | <code>ValidateType</code> | <p>需要校验的类型 'phone' | 'email' | 'url' | 'IDCard' | 'date' ｜ 'integer'</p> |
 
+| Param | Type                      | Description               |
+| ----- | ------------------------- | ------------------------- | ------- | ----- | -------- | ----------------------- |
+| data  | <code>any</code>          | <p>需要校验的数据</p>     |
+| type  | <code>ValidateType</code> | <p>需要校验的类型 'phone' | 'email' | 'url' | 'IDCard' | 'date' ｜ 'integer'</p> |
+
 ## 返回
 
 <code>boolean</code> - <p>返回校验的结果, 默认返回 false</p>

@@ -6,6 +6,7 @@
 {{>description~}}
 {{~/if}}
 
+{{#if params~}}
 ## 参数
 {{#if (optionEquals "param-list-format" "list")}}{{>params-list~}}{{/if~}}
   {{#if (optionEquals "param-list-format" "table")~}}
@@ -24,6 +25,8 @@
     {{/if}}
   {{/if~}}
 {{/if~}}
+{{>params~}}
+{{~/if}}
 
 
 {{#if returns}}

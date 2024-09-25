@@ -30,6 +30,11 @@
 | value  | <code>string</code>          |
 | type   | <code>DesensitizeType</code> |
 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| value | <code>string</code>          |
+| type  | <code>DesensitizeType</code> |
+
 ## 返回
 
 <code>string</code> - <p>脱敏后的字符串</p>

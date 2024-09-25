@@ -12,6 +12,12 @@
 | num      | <code>number</code> | <code>1</code> | <p>复制的次数</p>           |
 | interval | <code>number</code> |                | <p>用于拼接字符串的符号</p> |
 
+| Param    | Type                | Default        | Description                 |
+| -------- | ------------------- | -------------- | --------------------------- |
+| str      | <code>string</code> |                | <p>待复制的字符串</p>       |
+| num      | <code>number</code> | <code>1</code> | <p>复制的次数</p>           |
+| interval | <code>number</code> |                | <p>用于拼接字符串的符号</p> |
+
 ## 返回
 
 <code>string</code> - <p>复制拼接后的字符串</p>

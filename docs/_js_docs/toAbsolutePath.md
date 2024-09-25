@@ -10,6 +10,10 @@
 | ------ | ------------------- | ------------------ |
 | url    | <code>string</code> | <p>相对路径url</p> |
 
+| Param | Type                | Description        |
+| ----- | ------------------- | ------------------ |
+| url   | <code>string</code> | <p>相对路径url</p> |
+
 ## 返回
 
 <code>string</code> - <p>返回绝对路径url</p>

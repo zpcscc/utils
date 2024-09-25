@@ -11,6 +11,11 @@
 | length | <code>number</code> | <code>4</code>                        | <p>随机id的长度，不包含自定义前缀</p> |
 | prefix | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | <p>指定id的前缀</p>                   |
 
+| Param  | Type                | Default                               | Description                           |
+| ------ | ------------------- | ------------------------------------- | ------------------------------------- |
+| length | <code>number</code> | <code>4</code>                        | <p>随机id的长度，不包含自定义前缀</p> |
+| prefix | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | <p>指定id的前缀</p>                   |
+
 ## 返回
 
 <code>string</code> - <p>返回一个唯一ID</p>

@@ -13,6 +13,13 @@
 | onTick   | <code>function</code> | <p>每一步倒计时的回调</p>               |
 | onEnd    | <code>function</code> | <p>倒计时结束时的回调</p>               |
 
+| Param    | Type                  | Description                             |
+| -------- | --------------------- | --------------------------------------- |
+| endTime  | <code>string</code>   | <p>结束时间</p>                         |
+| interval | <code>number</code>   | <p>倒计时间隔时间，默认 1000（1秒）</p> |
+| onTick   | <code>function</code> | <p>每一步倒计时的回调</p>               |
+| onEnd    | <code>function</code> | <p>倒计时结束时的回调</p>               |
+
 ## 返回
 
 <code>function</code> - <p>stop 停止倒计时</p>

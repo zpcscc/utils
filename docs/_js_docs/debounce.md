@@ -11,6 +11,11 @@
 | func   | <code>function</code> | <p>需要防抖的函数</p> |
 | wait   | <code>number</code>   | <p>防抖等待的时间</p> |
 
+| Param | Type                  | Description           |
+| ----- | --------------------- | --------------------- |
+| func  | <code>function</code> | <p>需要防抖的函数</p> |
+| wait  | <code>number</code>   | <p>防抖等待的时间</p> |
+
 ## 返回
 
 <code>function</code> - <p>返回防抖后的函数</p>

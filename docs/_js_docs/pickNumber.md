@@ -11,6 +11,11 @@
 | value  | <code>string</code>     | <p>需要处理的字符串</p>   |
 | type   | <code>NumberType</code> | <p>需要挑选的数字类型</p> |
 
+| Param | Type                    | Description               |
+| ----- | ----------------------- | ------------------------- |
+| value | <code>string</code>     | <p>需要处理的字符串</p>   |
+| type  | <code>NumberType</code> | <p>需要挑选的数字类型</p> |
+
 ## 返回
 
 <code>Array.&lt;number&gt;</code> - <p>返回数字数组</p>
