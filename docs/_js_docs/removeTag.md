@@ -10,10 +10,6 @@
 | ------ | ------------------- | -------------------------- |
 | value  | <code>string</code> | <p>需要删除tag的字符串</p> |
 
-| Param | Type                | Description                |
-| ----- | ------------------- | -------------------------- |
-| value | <code>string</code> | <p>需要删除tag的字符串</p> |
-
 ## 返回
 
 <code>string</code> - <p>返回没有tag的字符串</p>

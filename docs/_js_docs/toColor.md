@@ -11,11 +11,6 @@
 | value  | <code>string</code> | <p>“rgb”、“hsl”、“hex”格式的字符串</p> |
 | type   | <code>string</code> | <p>“rgb”、“hsl”、“hex”</p>             |
 
-| Param | Type                | Description                            |
-| ----- | ------------------- | -------------------------------------- |
-| value | <code>string</code> | <p>“rgb”、“hsl”、“hex”格式的字符串</p> |
-| type  | <code>string</code> | <p>“rgb”、“hsl”、“hex”</p>             |
-
 ## 返回
 
 <code>string</code> - <p>返回转换为对应格式的颜色字符串</p>

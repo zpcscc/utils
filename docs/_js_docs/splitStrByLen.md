@@ -11,11 +11,6 @@
 | value  | <code>string</code> | <p>待分割的字符串</p>             |
 | len    | <code>number</code> | <p>分割的数组每项的字符串长度</p> |
 
-| Param | Type                | Description                       |
-| ----- | ------------------- | --------------------------------- |
-| value | <code>string</code> | <p>待分割的字符串</p>             |
-| len   | <code>number</code> | <p>分割的数组每项的字符串长度</p> |
-
 ## 返回
 
 <code>Array.&lt;string&gt;</code> - <p>分割后的数组</p>
