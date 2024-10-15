@@ -10,10 +10,6 @@
 | ------ | ------------------- | ----------------- |
 | value  | <code>string</code> | <p>颜色字符串</p> |
 
-| Param | Type                | Description       |
-| ----- | ------------------- | ----------------- |
-| value | <code>string</code> | <p>颜色字符串</p> |
-
 ## 返回
 
 <code>ColorObjType</code> - <p>rgba颜色对象; 例：{ r: 102, g: 204, b: 255, a: 1 }</p>

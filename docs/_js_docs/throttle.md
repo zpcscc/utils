@@ -11,11 +11,6 @@
 | func   | <code>function</code> | <p>需要节流的函数</p> |
 | limit  | <code>number</code>   | <p>节流等待的时间</p> |
 
-| Param | Type                  | Description           |
-| ----- | --------------------- | --------------------- |
-| func  | <code>function</code> | <p>需要节流的函数</p> |
-| limit | <code>number</code>   | <p>节流等待的时间</p> |
-
 ## 返回
 
 <code>function</code> - <p>返回节流后的函数</p>

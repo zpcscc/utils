@@ -11,11 +11,6 @@
 | str       | <code>string</code> | <p>需要转换的字符串</p>             |
 | parseArgs | <code>Object</code> | <p>其他参数，用于传入JSON.parse</p> |
 
-| Param     | Type                | Description                         |
-| --------- | ------------------- | ----------------------------------- |
-| str       | <code>string</code> | <p>需要转换的字符串</p>             |
-| parseArgs | <code>Object</code> | <p>其他参数，用于传入JSON.parse</p> |
-
 ## 返回
 
 <code>any</code> - <p>返回对应格式的数据</p>

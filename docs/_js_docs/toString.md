@@ -11,11 +11,6 @@
 | data          | <code>any</code>    | <p>需要转换的数据</p>                   |
 | stringifyArgs | <code>object</code> | <p>其他参数，用于传入JSON.stringify</p> |
 
-| Param         | Type                | Description                             |
-| ------------- | ------------------- | --------------------------------------- |
-| data          | <code>any</code>    | <p>需要转换的数据</p>                   |
-| stringifyArgs | <code>object</code> | <p>其他参数，用于传入JSON.stringify</p> |
-
 ## 返回
 
 <code>string</code> - <p>转换后的字符串数据</p>

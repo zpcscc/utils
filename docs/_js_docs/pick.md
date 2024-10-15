@@ -11,11 +11,6 @@
 | obj        | <code>object</code> | <p>待提取的对象</p>           |
 | keysToPick | <code>array</code>  | <p>需要提取的字段名称数组</p> |
 
-| Param      | Type                | Description                   |
-| ---------- | ------------------- | ----------------------------- |
-| obj        | <code>object</code> | <p>待提取的对象</p>           |
-| keysToPick | <code>array</code>  | <p>需要提取的字段名称数组</p> |
-
 ## 返回
 
 <code>object</code> - <p>提取后的对象</p>

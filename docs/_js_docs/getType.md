@@ -10,10 +10,6 @@
 | ------ | ---------------- | ------------------------- |
 | data   | <code>any</code> | <p>需要判断类型的数据</p> |
 
-| Param | Type             | Description               |
-| ----- | ---------------- | ------------------------- |
-| data  | <code>any</code> | <p>需要判断类型的数据</p> |
-
 ## 返回
 
 <code>string</code> - <p>返回对应的类型 <code>Array</code>、<code>Boolean</code>、<code>Date</code>、<code>Error</code>、<code>Function</code>、<code>Map</code>、<code>Null</code>、<code>Number</code>、<code>RegExp</code>、<code>Set</code>、<code>String</code>、<code>Symbol</code>、<code>Undefined</code>、<code>Arguments</code></p>
